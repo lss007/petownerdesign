@@ -1,0 +1,1773 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a, .btn {
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -ms-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+:focus {
+  outline: none;
+}
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+/******** button *************/
+
+.btnStyle {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    padding: 18px 45px;
+    border: 0;
+    color: #fff;
+}
+.btnStyle:hover {
+  color: #fff;
+}
+.btnStyle:before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background: #12588e;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.btnStyle:hover:before {
+  left: 0%;
+  right: 0%;
+  opacity: 1;
+}
+.btn_primary {
+  background: #074574;
+}
+.btn_secondary {
+    background: #FF3EB3;
+    padding: 9px 25px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.btn_secondary:before{
+    background:#f135a7; 
+}
+
+/******** dashboard page start *******/
+
+/***sidebar-layout-start****/
+
+.sidebar-nav {
+    position: fixed;
+    width: 320px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+}
+.sidebar-nav .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+.sidebarLinks {
+    min-height: 100vh;
+    position: relative;
+}
+.logoSec {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    padding: 50px 20px 30px 50px;
+    top: 0;
+    z-index: 1;
+}
+.logoSec > a > img {
+    max-width: 72px;
+}
+.sideColCard {
+    padding: 170px 0 30px;
+}
+.sidebarLink > ul > li {
+    position: relative;
+}
+.sidebarLink > ul > li + li {
+    margin: 20px 0;
+}       
+.sidebarLink > ul > li > a {
+    color: #172A48;
+    display: block;
+    font-size: 18px;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    padding: 6px 20px 6px 50px;
+    position: relative;
+    border-left: 2px solid transparent;
+}
+.sidebarLink > ul > li > a.active {
+    color: #FF3EB3;
+    border-color: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover {
+    color: #FF3EB3;
+    border-color: #FF3EB3;
+}
+.sidebarLink > ul > li > a .linkIcon {
+    vertical-align: text-bottom;
+    width: 35px;
+    display: inline-block;
+}
+.sidebarLink > ul > li > a .linkIcon > svg {
+    width: 20px;
+}
+.sidebarLink > ul > li > a .linkIcon > svg path, .sidebarLink > ul > li > a .linkIcon > svg ellipse {
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.sidebarLink > ul > li > a.active .linkIcon.strokeIcon > svg path {
+    stroke: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover .linkIcon.strokeIcon > svg path, .sidebarLink > ul > li > a:hover .linkIcon.strokeIcon > svg ellipse {
+    stroke: #FF3EB3;
+}
+.sidebarLink > ul > li > a.active .linkIcon.fillIcon > svg path {
+    fill: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover .linkIcon.fillIcon > svg path, .sidebarLink > ul > li > a:hover .linkIcon.fillIcon > svg ellipse {
+    fill: #FF3EB3;
+}
+.title_sidebar_list {
+    display: inline-block;
+}
+.toggle {
+    width: 25px;
+    height: 16px;
+    /* top: 10px; */
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: 5px;
+}
+.bar {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    -webkit-transition: all 500ms ease-in-out 0s;
+    -o-transition: all 500ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
+    top: 7px;
+    border-radius: 20px;
+}
+.bar:nth-child(1) {
+    top: 0px;
+}
+.bar:nth-child(3) {
+    top: 14px;
+    width: 60%;
+    right: 0;
+}
+/***sidebar-layout-end****/
+
+.page-content {
+    padding: 30px;
+    min-height: 100vh;
+    margin-left: 320px;
+    background-color: #EEF6FC;
+    border-top-left-radius: 40px;
+    margin-top: 74px;
+}
+.header-section {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    padding: 20px;
+    margin-left: 320px;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.header-section.fixed-header {
+    box-shadow: 7px 2px 10px rgba(0,0,0,0.1);
+}
+.rightIconbar {
+    text-align: right;
+}
+.rightIconbar > ul > li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 20px;
+}
+.userCol > a > img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.cardStyle {
+    padding: 60px;
+}
+.borderRadiusRight{
+    border-top-right-radius: 40px;
+}
+.rightSidebar {
+    background-color: #ffffff;
+    padding: 0 60px 30px;
+    min-height: 100vh;
+    height: 100%;
+}
+.alertCardStyle {
+    background-color: #FFDEC1;
+    border-radius: 10px;
+    padding: 0 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.alertCardCol {
+    padding: 20px 0;
+}
+.alertCloseIcon {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1;
+    cursor: pointer;
+}
+.alertCardText > ul > li {
+    position: relative;
+    padding-left: 30px;
+}
+.alertCardText > ul > li + li {
+    margin-top: 3px;
+}
+.alertCardText > ul > li > span.alerthealthIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.healthText {
+    color: #FDA458;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.alertCardText > ul > li.callockText {
+    color: #172A48;
+}
+.page-content.pageContentStyle {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+.cardStyle.cardLandingStyle {
+    background-color: #EEF6FC;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 100vh;
+    height: 100%;
+}
+.healthImgCol {
+    padding: 0 35px;
+    margin-top: -35px;
+}
+.titlelg > h5 {
+    color: #172A48;
+    font-size: 23px;
+}
+.titlelg > span {
+    color: #172A48;
+    font-size: 14px;
+    display: block;
+}
+.petCardfeat {
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.petCardArrow > svg{
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.petCardfeat:hover .petCardArrow > svg{
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+}
+.blankLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.petCardfeatIcon {
+    width: 58px;
+    height: 58px;
+    background-color: #c3c3c3;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 33px rgba(0,0,0,0.1);
+}
+.petCardfeatText > h6 {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.bgStyle1 {
+    background-color: #15C8BC;
+}
+.bgStyle2 {
+    background-color: #FF3EB3;
+}
+.bgStyle3 {
+    background-color: #074574;
+}
+.bgStyle4 {
+    background-color: #FFCD50;
+}
+.cardboxSection {
+    padding: 30px 0;
+}
+.alertCardText {
+    padding-left: 15px;
+}
+.petCardfeatText {
+    padding-left: 14px;
+}
+.cardSection2 {
+    padding: 30px 0;
+}
+.titlemd > h5 {
+    color: #172A48;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+.viewall_link {
+    font-size: 12px;
+    color: #172A48;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.viewall_link:hover{
+    text-decoration: underline;
+}
+.titleSec > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.titleSec > ul > li + li {
+    margin-left: 20px;
+}
+.addnew_link {
+    font-size: 12px;
+    color: #172A48;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.cardStyle2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0 33px rgb(0 0 0 / 6%);
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.cardhoverStyle:hover {
+    box-shadow: 0px 6px 35px rgb(0 0 0 / 9%);
+    transform: translate(0, -6px);
+}
+.cardImgCol > img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.cardText {
+    padding: 12px 15px 6px;
+}
+.cardtitlelg > h4 {
+    color: #074574;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+.cardtitlelg > span {
+    color: #828282;
+    font-size: 12px;
+    display: block;
+    padding-top: 3px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget {
+    width: 100%;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    border: 0;
+    height: auto;
+    padding: 15px;
+}
+.select_datepicker .picker-switch.accordion-toggle {
+    display: none;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.active:hover,
+.select_datepicker .bootstrap-datetimepicker-widget table td span.active {
+    background-color: #F5F5F5;
+    text-shadow: none;
+    color: #172A48;
+    border-radius: 4px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, .select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    background-color: #FF3EB3;
+    border-radius: 20px;
+    bottom: auto;
+    top: 5px;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    border: 0;
+}
+.select_datepicker {
+    padding-top: 10px;
+}
+.select_datepicker th.picker-switch {
+    color: #172A48;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.select_datepicker th {
+    position: relative;
+}
+.select_datepicker th.prev span::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-image: url(../images/arrow.svg);
+    background-position: left center;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.select_datepicker th.next span::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-image: url(../images/arrow.svg);
+    background-position: left center;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select_datepicker .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: transparent;
+}
+.select_datepicker .datepicker-months th.picker-switch, .select_datepicker .datepicker-years th.picker-switch, .select_datepicker .datepicker-decades th.picker-switch{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.pleft {
+    padding-left: 20px;
+}
+.appointmentCol {
+    padding-top: 50px;
+}
+.petCardArrow {
+    display: block;
+}
+.panelCol {
+    background-color: #F9F9F9;
+    padding: 15px 50px 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.panelCol + .panelCol {
+    margin-top: 10px;
+}
+.panelCol:hover {
+    background-color: #fff;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+}
+.panelCol::before {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    background-image: url(../images/angle-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+     -webkit-transform:translate(0, -50%);
+    -o-transform:translate(0, -50%);
+    transform:translate(0, -50%);
+    z-index: 1;
+    cursor: pointer;
+}
+.panelCol .petCardfeatIcon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.panelCol .petCardfeatText > h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.callockStyle2 {
+    font-size: 12px;
+    color: #828282;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: block;
+    padding-top: 4px;
+}
+.callockStyle2 span.iconCol {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.iconCol {
+    padding-right: 6px;
+}
+.iconCol > img {
+    opacity: 0.6;
+}
+.panelSec{
+    padding-top: 20px;
+}
+/******** dashboard page end *******/
+
+/******** login/signup page start *******/
+
+.pageContent {
+  position: relative;
+}
+.mh-100 {
+  height: 100%;
+  min-height: 100vh;
+}
+.formSection {
+    height: 100%;
+    position: relative;
+    max-width: 494px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.logoStyle {
+    display: inline-block;
+}
+.formContent > h4 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.formStyle {
+    background: transparent;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #000;
+    padding: 10px 50px 10px 30px;
+    border-color: #DCDCDC;
+    font-weight: 600;
+    resize: none;
+}
+.formStyle::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B9B9B9;
+}
+.formStyle::-moz-placeholder { /* Firefox 19+ */
+  color: #B9B9B9;
+}
+.formStyle:-ms-input-placeholder { /* IE 10+ */
+  color: #B9B9B9;
+}
+.formStyle:-moz-placeholder { /* Firefox 18- */
+  color: #B9B9B9;
+}
+.form-control.formStyle:focus {
+  color: #000;
+  border-color: #DCDCDC;
+  outline: 0;
+  box-shadow: none;
+}
+.inputformIcon {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+.imgColStyle {
+    background-color: #172A48;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 40px 0 0 0;
+}
+.imgColStyle::before, .imgColStyle::after{
+	content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.imgColStyle::before {
+    background-image: url(../images/stroke-shape.svg);
+    background-position: top right;
+}
+.imgColStyle::after {
+    background-image: url(../images/shape-1.svg);
+    background-position: center right;
+}
+.dotShape {
+    position: relative;
+}
+.dotShape::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/dot-shape.svg);
+    background-position: center;
+    z-index: 1;
+}
+.formGroup {
+    margin-bottom: 10px;
+    position: relative;
+}
+.chkLinkStyle {
+    padding: 20px 0 0;
+}
+.formCheck input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.formCheck label {
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 30px;
+    margin: 0;
+}
+.formCheck label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #DCDCDC;
+    position: absolute;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 1px;
+}
+.formCheck input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 6px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.forgetpass > a{
+	color: #090963;
+	font-size: 16px;
+}
+.form-group.formCheck {
+    margin: 0;
+    text-align: left;
+}
+.forgetpass {
+    text-align: right;
+}
+.textLinkCol > p{
+	font-size: 14px;
+}
+.textLinkCol {
+    padding-top: 15px;
+}
+.textLinkCol > p > a {
+    color: #090963;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.imgCol {
+    margin-left: -365px;
+    position: relative;
+    z-index: 1;
+}
+.formContent .btnCol {
+    padding-top: 30px;
+}
+.was-validated .form-control.formStyle:invalid {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: inherit;
+    padding-right: 50px;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: none;
+}
+.needs-validation .invalid-feedback {
+    text-align: left;
+    padding-left: 15px;
+}
+.formCheck .form-check {
+    padding-left: 0;
+}
+/******** login/signup page end *******/
+
+/******** book-appointment-groomer-start ******/
+
+.pageInnerStyle{
+    padding: 50px;
+}
+.titlexl > h5 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 800;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+.checkboxStyle .cardStyle2 {
+    border-radius: 10px;
+}
+.checkboxStyle {
+    position: relative;
+}
+.checkboxStyle input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    margin: 0;
+}
+.checkboxStyle input[type=checkbox] {
+  display: none;
+}
+.checkboxStyle input[type=checkbox] + label:before {
+    content: "";
+    border-radius: 50%;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    color: transparent;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.checkboxStyle input[type=checkbox] + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    width: 6px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.checkboxStyle input[type=checkbox] + label:active:before, .checkboxStyle input[type=checkbox] + label:active:after {
+    -webkit-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+}
+.checkboxStyle input[type=checkbox]:checked + label:before {
+    background-color: #FF3EB3;
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox]:checked + label:after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox] + label .cardStyle2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+}
+.checkboxStyle input[type=checkbox]:checked + label .cardStyle2:before {
+    border-color: #FF3EB3;
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox]:checked + label .cardtitlelg > h4{
+    color: #FF3EB3;
+}
+.spacetop{
+    padding-top: 30px;
+}
+
+.selectOptionList {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.selectOptionList > ul > li {
+    display:block;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 20px;
+}
+.radiocheckStyle input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radiocheckStyle .radio-label {
+    position: relative;
+    margin: 0;
+    padding-left: 35px;
+    display: block;
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.radiocheckStyle input[type=radio] + .radio-label:before {
+    content: "";
+    background: #e0e0e0;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    -webkit-transition:all 250ms ease;
+    -o-transition:all 250ms ease;
+    transition:all 250ms ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.radiocheckStyle input[type=radio]:checked + .radio-label:before {
+  background-color: #FF3EB3;
+}
+.radiocheckStyle input[type=radio]:focus + .radio-label:before {
+  outline: none;
+}
+.radiocheckStyle input[type=radio] + .radio-label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+      -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.tagCol > span {
+    background-color: #15C8BC;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 5px 0;
+}
+.priceText, .tagCol {
+    padding-top: 6px;
+}
+.priceText > span {
+    color: #15C8BC;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+.listStyle > li {
+    color: #333333;
+    font-size: 13px;
+}
+.listStyle {
+    padding: 10px 0 0 35px;
+}
+.selectOptionList > ul {
+    padding-right: 20px;
+}
+.calendarStyle {
+    width: 735px;
+    margin-left: 50px;
+}
+.datepickerStyle {
+    max-width: 420px;
+}
+.select_datepicker.datepickerStyle2 {
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active, 
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active:hover, 
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td span.active {
+    background-color: #FF3EB3;
+    color: #fff;
+}
+.selectInputOption {
+    max-width: 300px;
+    position: relative;
+}
+.selectInputOption .form-control {
+    border: 0;
+    padding: 15px 40px 10px 15px;
+    height: auto;
+    border-radius: 4px;
+    color: #000000;
+    appearance: none;
+}
+.selectInputOption .form-control:focus{
+    box-shadow: none;
+}
+.selectInputOption::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border: solid #333333;
+    border-width: 0 3px 3px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+}
+.pdbottom {
+    padding-bottom: 150px;
+    position: relative;
+}
+.bottombar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #C6E1F5;
+    text-align: center;
+    margin-left: 320px;
+    padding: 28px 30px;
+}
+.lgwidth {
+    min-width: 372px;
+}
+.btn .btnArrow {
+    transform: translate(5px, 0);
+    display: inline-block;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.btn:hover .btnArrow{
+    transform: translate(9px, 0);
+}
+/******** book-appointment-groomer-end ******/
+
+/****************************************
+*********** MEDIA-QUARY ************
+*****************************************/
+
+@media (max-width: 1860px) {
+.imgCol {
+    margin-left: -350px;
+}
+.imgCol > img {
+    max-width: 960px;
+}
+.calendarStyle {
+    width: 620px;
+}
+}
+@media (max-width: 1760px) {
+.imgCol {
+    margin-left: -330px;
+}
+.imgCol > img {
+    max-width: 900px;
+}
+.cardStyle {
+    padding: 40px;
+}
+.alertCardStyle {
+    margin-top: 20px;
+}
+.healthImgCol {
+    padding: 0 20px 0 0;
+}
+.rightSidebar {
+    padding: 0 30px 20px;
+}
+.sidebar-nav, .logoSec {
+    width: 260px;
+}
+.logoSec {
+    padding: 30px 20px 20px 30px;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 260px;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 20px 6px 30px;
+}
+.sidebarLink > ul > li + li {
+    margin: 12px 0;
+}
+.sideColCard {
+    padding: 150px 0 20px;
+}
+.alertCardStyle {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.healthText {
+    font-size: 18px;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 14px;
+}
+.cardImgCol > img {
+    height: 100px;
+}
+.cardText {
+    padding: 10px 10px 5px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.day {
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    border: 0;
+    height: auto;
+    padding: 12px;
+}
+.appointmentCol {
+    padding-top: 30px;
+}
+.alertCloseIcon {
+    right: 15px;
+}
+.calendarStyle {
+    width: 580px;
+}
+.bottombar {
+    padding: 20px;
+}
+}
+@media (max-width: 1640px) {
+.imgCol > img {
+    max-width: 800px;
+}
+.imgCol {
+    margin-left: -290px;
+}
+.dotShape::before {
+    right: 100px;
+    left: 100px;
+    bottom: 100px;
+    top: 100px;
+    background-size: contain;
+}
+.imgColStyle::before {
+    background-size: contain;
+    max-width: 550px;
+    margin-left: auto;
+}
+.imgColStyle::after {
+    background-size: contain;
+    top: 70px;
+    bottom: 70px;
+    max-width: 350px;
+    margin-left: auto;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    top: 4px;
+    right: 4px;
+    width: 5px;
+    height: 5px;
+    border: 0;
+}
+.calendarStyle {
+    width: 480px;
+}
+.datepickerStyle {
+    max-width: 380px;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 70px;
+}
+
+}
+@media (max-width: 1500px) {
+.imgCol > img {
+    max-width: 700px;
+}
+.imgCol {
+    margin-left: -270px;
+}
+.cardStyle {
+    padding: 30px;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 20px;
+    font-size: 16px;
+}
+.sidebarLink > ul > li > a .linkIcon {
+    width: 30px;
+}
+.sideColCard {
+    padding: 130px 0 20px;
+}
+.logoSec {
+    padding: 20px;
+}
+.logoSec > a > img {
+    max-width: 60px;
+}
+.header-section {
+    padding: 15px;
+}
+.page-content {
+    margin-top: 65px;
+}
+.sidebar-nav, .logoSec {
+    width: 230px;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 230px;
+}
+.alertCardColImg img {
+    max-width: 30px;
+}
+.alertCardText {
+    padding-left: 5px;
+}
+.healthText {
+    font-size: 16px;
+}
+.alerthealthIcon > img {
+    max-width: 15px;
+}
+.alertCardText > ul > li {
+    padding-left: 20px;
+}
+.alertCardText > ul > li + li {
+    margin-top: 0;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 12px;
+}
+.btn_secondary {
+    padding: 6px 18px;
+    font-size: 12px;
+}
+.petCardfeatIcon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.petCardfeatText {
+    padding-left: 10px;
+}
+.petCardfeatText > h6 {
+    font-size: 12px;
+}
+.petCardArrow > svg {
+    width: 18px;
+}
+span.petCardArrow {
+    line-height: 15px;
+}
+.cardSection2 {
+    padding: 20px 0;
+}
+.cardStyle2 {
+    border-radius: 15px;
+    padding: 4px;
+}
+.cardImgCol > img {
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.day {
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    padding: 8px;
+    font-size: 13px;
+}
+.pleft {
+    padding-left: 8px;
+}
+.panelCol {
+    padding: 10px 30px 10px 10px;
+}
+.panelCol::before {
+    right: 12px;
+}
+.select_datepicker th.prev span::before {
+    left: 12px;
+    width: 36px;
+    height: 36px;
+}
+.select_datepicker th.next span::before {
+    right: 12px;
+    width: 36px;
+    height: 36px;
+}
+.callockText .alerthealthIcon > img {
+    max-width: 12px;
+}
+.calendarStyle {
+    width: 320px;
+}
+.bottombar {
+    padding: 15px;
+}
+.lgwidth {
+    min-width: 300px;
+    padding: 15px;
+}
+.pdbottom {
+    padding-bottom: 120px;
+}
+.spacetop {
+    padding-top: 20px;
+}
+.selectOptionList {
+    padding: 25px;
+    border-radius: 15px;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 12px;
+}
+.select_datepicker.datepickerStyle2 {
+    margin-top: 20px;
+}
+.selectInputOption {
+    max-width: 250px;
+}
+.selectInputOption .form-control {
+    font-size: 14px;
+    padding: 10px 30px 7px 15px;
+}
+.selectInputOption::before {
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border-width: 0 2px 2px 0;
+}
+}
+@media (max-width: 1400px) {
+	.imgCol {
+    margin-left: -200px;
+}
+.rightSidebar {
+    padding: 0 20px 20px;
+}
+.cardStyle {
+    padding: 20px;
+}
+.alertCardStyle {
+    padding: 0 25px 0 20px;
+    margin-bottom: 20px;
+}
+.healthImgCol > img {
+    max-width: 150px;
+}
+.cardboxSection {
+    padding: 20px 0;
+}
+}
+@media (max-width: 1199px) {
+.imgCol {
+    margin-left: 0;
+}
+.imgCol > img {
+    max-width: 100%;
+}
+.header-section, .page-content, .bottombar {
+    margin-left:160px;
+}
+.sidebar-nav, .logoSec {
+    width: 160px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    padding: 6px;
+}
+.cardStyle {
+    padding: 15px;
+}
+.cardStyle.cardLandingStyle {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.rightSidebar {
+    padding: 0 15px 20px;
+}
+.pleft {
+    padding-left: 0;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 15px;
+    font-size: 14px;
+}
+.healthImgCol > img {
+    max-width: 100px;
+}
+.sidebarLink > ul > li + li {
+    margin: 6px 0;
+}
+.alertCardCol {
+    padding: 8px 0;
+}
+.healthImgCol {
+    margin-top: -15px;
+}
+.petCardfeatText > h6 {
+    font-size: 10px;
+}
+.petCardfeatText {
+    padding-left: 8px;
+}
+.cardboxSection {
+    padding: 20px 0;
+}
+.cardImgCol > img {
+    height: 65px;
+    border-radius: 10px 10px 0 0;
+}
+.cardStyle2 {
+    border-radius: 10px;
+    padding: 2px;
+}
+.cardText {
+    padding: 8px 8px 3px;
+}
+.cardtitlelg > h4 {
+    font-size: 15px;
+}
+.cardtitlelg > span {
+    font-size: 10px;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 15px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    top: 3px;
+    right: 3px;
+    width: 5px;
+    height: 5px;
+}
+.calendarStyle {
+    width: 250px;
+    margin-left: 20px;
+}
+}
+@media (max-width: 991px) {
+.imgColStyle {
+    background-color: transparent;
+    min-height: 100%;
+    display: block;
+    border-radius: 0;
+}
+.dotShape::before, .imgColStyle::before, .imgColStyle::after{
+	display: none;
+}
+.pageContent {
+    padding: 0 15px;
+}
+.formSection {
+    padding: 50px 0;
+}
+body.sidebarNavOpen {
+    position: relative;
+    overflow: hidden;
+}
+.sidebarNavOpen::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(35, 57, 82, 0.7);
+    z-index: 3;
+}
+.sidebarNavOpen .sidebar-nav {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.sidebar-nav {
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    z-index: 99;
+    width: 250px;
+}
+.sidebarNavOpen .bar:nth-child(1) {
+    transform: rotate(135deg);
+    top: 8px;
+}
+.sidebarNavOpen .bar:nth-child(2) {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+.sidebarNavOpen .bar:nth-child(3) {
+    transform: rotate(-135deg);
+    top: 8px;
+    width: 100%;
+}
+.toggle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.page-content {
+    padding: 30px 15px;
+    border-radius: 0;
+}
+.logoSec {
+    width: 60px;
+    padding: 0 0 0 15px;
+}
+.cardStyle.cardLandingStyle {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-height: auto;
+    height: auto;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 0;
+}
+.logoSec > a > img {
+    max-width: 45px;
+    margin-top: 10px;
+}
+.petCardfeat {
+    margin-bottom: 15px;
+}
+.cardImgCol > img {
+    height: 235px;
+}
+.cardtitlelg > h4 {
+    font-size: 20px;
+}
+.cardtitlelg > span {
+    font-size: 14px;
+}
+.cardText {
+    padding: 15px 15px 8px;
+}
+.cardStyle2 {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.titlemd > h5 {
+    font-size: 18px;
+}
+.rightSidebar {
+    padding: 30px 15px;
+}
+.sideColCard {
+    padding: 60px 0 20px;
+}
+.panelCol .petCardfeat {
+    margin-bottom: 0;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 150px;
+}
+.calendarStyle {
+    margin-left: 0;
+}
+}
+@media (max-width: 767px) {
+.cardImgCol > img {
+    height: 155px;
+}
+.healthImgCol {
+    display: none;
+}
+.btnStyle.btn_secondary {
+    height: 33px;
+    padding: 8px 20px;
+}
+.petCardfeatText > h6 {
+    font-size: 12px;
+}
+.page-content.pdbottom {
+    padding-bottom: 100px;
+}
+.calendarStyle {
+    width: 100%;
+}
+.datepickerStyle {
+    max-width: 100%;
+}
+.selectOptionList > ul {
+    padding-right: 0;
+}
+}
+
+@media (max-width: 585px) {
+.formSection {
+    padding: 30px 0;
+    max-width: 100%;
+}
+.formContent > h4 {
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 26px;
+}
+.formSection {
+    padding: 20px 0;
+}
+.formStyle {
+    height: 45px;
+    padding: 10px 50px 10px 20px;
+}
+.chkLinkStyle {
+    padding: 10px 0 0;
+}
+.formCheck label {
+    font-size: 14px;
+    padding-left: 22px;
+    line-height: 14px;
+}
+.formCheck label:before {
+    width: 16px;
+    height: 16px;
+    top: -1px;
+}
+.formCheck input:checked + label:after {
+    width: 5px;
+    height: 9px;
+    left: 7px;
+}
+.forgetpass > a {
+    font-size: 14px;
+}
+.btnStyle {
+    height: 50px;
+    padding: 10px 30px;
+}
+.cardImgCol > img {
+    height: auto;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 10px;
+}
+.selectInputOption {
+    max-width: 100%;
+}
+.checkboxStyle .cardImgCol > img {
+    height: auto;
+}
+}
+@media (max-width: 485px) {
+.textLinkCol {
+    padding-top: 10px;
+}
+.formContent > h4 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.formContent .btnCol {
+    padding-top: 15px;
+}
+.alertCardColImg {
+    display: none;
+}
+.alertCardText {
+    padding-left: 0;
+}
+.alertCardStyle {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.alertCloseIcon {
+    right: 8px;
+    top: 0px;
+}
+.btnStyle.btn_secondary {
+    height: 26px;
+    padding: 4px 12px;
+    font-size: 10px;
+}
+.healthText {
+    font-size: 13px;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 10px;
+}
+.cardboxSection {
+    padding: 20px 0 0;
+}
+.cardSection2 {
+    padding: 20px 0 0;
+}
+.alertCloseIcon img {
+    max-width: 8px;
+}
+.titlelg > h5 {
+    margin: 0;
+}
+.sidebar-nav {
+    width: 100%;
+}
+.header-section {
+    z-index: 999;
+}
+.sideColCard {
+    padding: 30px 0 20px;
+}
+.sidebar-nav {
+    padding-top: 70px;
+}
+}
