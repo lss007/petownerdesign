@@ -33,7 +33,9 @@ img {
 .btn.focus, .btn:focus {
     box-shadow: none;
 }
-
+a.btn_primary:focus, a.btn_primary:hover {
+    color: #fff;
+}
 /******** button *************/
 
 .btnStyle {
@@ -77,14 +79,14 @@ img {
 .btn_primary {
   background: #074574;
 }
-.btn_secondary {
+.btnStyle.btn_secondary {
     background: #FF3EB3;
     padding: 9px 25px;
     font-size: 12px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
 }
-.btn_secondary:before{
+.btnStyle.btn_secondary:before{
     background:#f135a7; 
 }
 
@@ -962,7 +964,7 @@ img {
     transition:all 250ms ease;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 2px;
 }
 .radiocheckStyle input[type=radio]:checked + .radio-label:before {
   background-color: #FF3EB3;
@@ -974,7 +976,7 @@ img {
     content: '';
     display: block;
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 6px;
     width: 6px;
     height: 9px;
@@ -1092,6 +1094,247 @@ img {
 }
 /******** book-appointment-groomer-end ******/
 
+/******** confirm-booking-start ******/
+
+.colmd {
+    max-width: 520px;
+    margin: 0 auto;
+}
+.cardStylemd {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.confirmTitle {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.confirmTitle > h5 {
+    color: #172A48;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+.confirmTitle > h5 > span {
+    color: #FF3EB3;
+    padding-left: 15px;
+}
+.confirmappointment {
+    padding: 30px;
+}
+.widthStyle {
+    max-width: 275px;
+    margin: 0 auto;
+}
+.confirmappointment .petCardfeatText > h5 {
+    color: #172A48;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+.confirmappointment .petCardfeatText {
+    padding-left: 20px;
+}
+.confirmappointment .callockStyle2 {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 0;
+}
+.confirmappointment .iconCol > img {
+    opacity: 1;
+}
+.confirmprice{
+    padding: 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+.confirmprice > h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #172A48;
+    font-weight: 700;
+}
+.confirmprice > h4 > span {
+    display: inline-block;
+    color: #15C8BC;
+    padding-left: 30px;
+}
+.cancelationPolicy {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.cancelationPolicy > h6{
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cancelationPolicy > p {
+    color: #172A48;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.confirmbtn {
+    padding: 30px;
+    text-align: center;
+}
+
+.success-message {
+  text-align: center;
+}
+.success-message__title {
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 200ms ease;
+    color: #219653;
+    padding-top: 12px;
+}
+.SuccesMdl .modal-dialog {
+    max-width: 500px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.SuccesMdl .modal-content {
+    padding: 50px;
+    border-radius: 0;
+    border: 0;
+}
+.success-message__content > p {
+    color: #172A48;
+    font-size: 16px;
+    margin: 0;
+}
+.btn.mdbtn {
+    padding: 9px 60px;
+    font-size: 12px;
+}
+.mdlbtn{
+    margin-top: 15px;
+}
+.SuccesMdl {
+    background-color: rgba(23,42,72,0.90);
+    padding-right: 0 !important;
+}
+/******** confirm-booking-end ******/
+
+.customCardStyle {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+.userProfileImg > img {
+    width: 100%;
+    border-radius: 20px;
+}
+.userProfileImg {
+    position: relative;
+}
+.uploadImgStyle {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background-color: #fff;
+    padding: 11px 12px;
+    border-radius: 10px;
+}
+.uploadImgStyle .form-control-file {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    top: 0;
+    right: 0;
+}
+.userproDetail {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.formGroupStyle label{
+    margin: 0;
+}
+.lebelsm {
+    color: #172A48;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.inputvalue > p {
+    color: #828282;
+    text-align: right;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 400;
+}
+.lebelmd {
+    color: #074574;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #F2F2F2;
+    display: block;
+    padding: 0 0 5px;
+}
+.inputform {
+    position: relative;
+    padding: 0 0 10px 30px;
+    border-bottom: 1px solid #F2F2F2;
+    color: #828282;
+    font-size: 15px;
+}
+.inputIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.formGroupStyle {
+    margin-bottom: 20px;
+}
+.inputvalue {
+    padding-bottom: 10px;
+}
+.btnCol2 {
+    padding-top: 20px;
+}
+.btnStyle.lgbtn {
+    min-width: 116px;
+    padding: 10px 8px;
+}
+.formCol label {
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+.formCol .form-control {
+    padding: 0 0 5px 0;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid #F2F2F2;
+    border-radius: 0;
+}
+.formCol .form-control:focus {
+    box-shadow: none;
+}
+.formCol {
+    padding-top: 20px;
+}
+.mlSpace {
+    margin-left: 40px;
+}
+.cardwidthmd {
+    width: 510px;
+}
+.cardwidthlg {
+    width: 580px;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -1182,6 +1425,28 @@ img {
 .bottombar {
     padding: 20px;
 }
+.customCardStyle {
+    padding: 20px;
+}
+.cardwidthmd {
+    width: 480px;
+}
+.cardwidthlg {
+    width: 500px;
+}
+.mlSpace {
+    margin-left: 20px;
+}
+.userproDetail {
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.btnCol2 {
+    padding-top: 10px;
+}
+.formGroupStyle {
+    margin-bottom: 15px;
+}
 }
 @media (max-width: 1640px) {
 .imgCol > img {
@@ -1225,6 +1490,12 @@ img {
 }
 .checkboxStyle .cardImgCol > img {
     height: 70px;
+}
+.confirmappointment {
+    padding: 20px;
+}
+.confirmprice {
+    padding: 15px;
 }
 
 }
@@ -1287,7 +1558,7 @@ img {
 .alertCardText > ul > li.callockText {
     font-size: 12px;
 }
-.btn_secondary {
+.btnStyle.btn_secondary {
     padding: 6px 18px;
     font-size: 12px;
 }
@@ -1372,7 +1643,7 @@ span.petCardArrow {
     border-radius: 15px;
 }
 .selectOptionList > ul > li + li {
-    padding-top: 12px;
+    padding-top: 15px;
 }
 .select_datepicker.datepickerStyle2 {
     margin-top: 20px;
@@ -1390,9 +1661,68 @@ span.petCardArrow {
     height: 8px;
     border-width: 0 2px 2px 0;
 }
+.cancelationPolicy {
+    padding: 20px;
+}
+.confirmbtn {
+    padding: 20px;
+}
+.confirmappointment .petCardfeatText > h5 {
+    font-size: 16px;
+}
+.confirmappointment .callockStyle2 {
+    font-size: 12px;
+    line-height: 16px;
+}
+.confirmTitle > h5 > span {
+    padding-left: 10px;
+}
+.confirmprice > h4 > span {
+    padding-left: 20px;
+}
+.confirmappointment .callockStyle2 span.iconCol > img {
+    max-width: 10px;
+}
+.confirmappointment .petCardfeatIcon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+.confirmprice > h4 {
+    font-size: 20px;
+}
+.confirmTitle {
+    padding: 15px;
+}
+.widthStyle {
+    max-width: 225px;
+}
+.inputvalue > p {
+    font-size: 14px;
+    line-height: 16px;
+}
+.cardwidthmd {
+    width: 420px;
+}
+.lebelsm {
+    font-size: 14px;
+}
+.lebelmd{
+    font-size: 16px;
+}
+.inputform {
+    padding: 0 0 8px 25px;
+    font-size: 14px;
+}
+.formCol {
+    padding-top: 15px;
+}
+.formCol label {
+    font-size: 14px;
+}
 }
 @media (max-width: 1400px) {
-	.imgCol {
+.imgCol {
     margin-left: -200px;
 }
 .rightSidebar {
@@ -1410,6 +1740,12 @@ span.petCardArrow {
 }
 .cardboxSection {
     padding: 20px 0;
+}
+.mlSpace {
+    margin-left: 0;
+}
+.cardwidthlg {
+    width: 420px;
 }
 }
 @media (max-width: 1199px) {
@@ -1497,6 +1833,18 @@ span.petCardArrow {
     width: 250px;
     margin-left: 20px;
 }
+.pageInnerStyle {
+    padding: 30px;
+}
+.customCardStyle {
+    padding: 15px;
+}
+.cardwidthmd {
+    width: 380px;
+}
+.cardwidthlg {
+    width: 360px;
+}
 }
 @media (max-width: 991px) {
 .imgColStyle {
@@ -1566,7 +1914,7 @@ body.sidebarNavOpen {
     z-index: 9;
 }
 .page-content {
-    padding: 30px 15px;
+    padding: 20px 15px;
     border-radius: 0;
 }
 .logoSec {
@@ -1623,6 +1971,29 @@ body.sidebarNavOpen {
 .calendarStyle {
     margin-left: 0;
 }
+.page-content.pdbottom {
+    padding-bottom: 100px;
+}
+body {
+    background-color: #eef6fc;
+}
+.cardwidthmd,  .cardwidthlg{
+    width: 100%;
+}
+.inputvalue > p {
+    font-size: 16px;
+    line-height: 18px;
+}
+.customCardStyle {
+    margin: 15px 0;
+}
+.customCardStyle {
+    padding: 20px;
+    border-radius: 10px;
+}
+.userProfileImg > img {
+    border-radius: 10px;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -1631,15 +2002,8 @@ body.sidebarNavOpen {
 .healthImgCol {
     display: none;
 }
-.btnStyle.btn_secondary {
-    height: 33px;
-    padding: 8px 20px;
-}
 .petCardfeatText > h6 {
     font-size: 12px;
-}
-.page-content.pdbottom {
-    padding-bottom: 100px;
 }
 .calendarStyle {
     width: 100%;
@@ -1650,8 +2014,40 @@ body.sidebarNavOpen {
 .selectOptionList > ul {
     padding-right: 0;
 }
+.cardStylemd {
+    border-radius: 10px;
+    margin-top: 20px;
 }
-
+.btnStyle {
+    padding: 10px 30px;
+}
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
+.confirmprice {
+    padding: 10px;
+}
+.lgwidth {
+    min-width: 250px;
+}
+.confirmappointment, .cancelationPolicy, .confirmbtn {
+    padding: 15px;
+}
+.inputvalue > p {
+    text-align: left;
+}
+.uploadImgStyle {
+    left: 10px;
+    bottom: 10px;
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+.formCol .form-control {
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+}
+}
 @media (max-width: 585px) {
 .formSection {
     padding: 30px 0;
@@ -1690,10 +2086,6 @@ body.sidebarNavOpen {
 .forgetpass > a {
     font-size: 14px;
 }
-.btnStyle {
-    height: 50px;
-    padding: 10px 30px;
-}
 .cardImgCol > img {
     height: auto;
 }
@@ -1706,6 +2098,49 @@ body.sidebarNavOpen {
 .checkboxStyle .cardImgCol > img {
     height: auto;
 }
+.tagCol > span, .priceText > span {
+    display: inline-block;
+}
+.priceText, .tagCol {
+    padding-top: 2px;
+    padding-left: 35px;
+}
+.SuccesMdl .modal-dialog {
+    max-width: 100%;
+    padding: 15px;
+}
+.SuccesMdl .modal-body {
+    padding: 0;
+}
+.confirmprice > h4 {
+    font-size: 18px;
+}
+.confirmTitle > h5 {
+    font-size: 18px;
+}
+.colmd {
+    max-width: 100%;
+}
+.confirmappointment .petCardfeatText {
+    padding-left: 15px;
+}
+.formCol label {
+    font-size: 13px;
+}
+.inputform {
+    margin-top: 10px;
+}
+.inputvalue > p {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.customCardStyle {
+    padding: 15px;
+}
+.customCardStyle {
+    margin: 10px 0;
+}
+
 }
 @media (max-width: 485px) {
 .textLinkCol {
@@ -1736,12 +2171,11 @@ body.sidebarNavOpen {
     top: 0px;
 }
 .btnStyle.btn_secondary {
-    height: 26px;
-    padding: 4px 12px;
+    padding: 4px 14px;
     font-size: 10px;
 }
 .healthText {
-    font-size: 13px;
+    font-size: 14px;
 }
 .alertCardText > ul > li.callockText {
     font-size: 10px;
@@ -1769,5 +2203,89 @@ body.sidebarNavOpen {
 }
 .sidebar-nav {
     padding-top: 70px;
+}
+.selectOptionList {
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.radiocheckStyle .radio-label {
+    padding-left: 20px;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 8px;
+}
+.listStyle {
+    padding: 6px 0 0 25px;
+}
+.titlexl > h5 {
+    font-size: 20px;
+    margin: 0;
+}
+.titlemd > h5 {
+    font-size: 16px;
+}
+.cardtitlelg > h4 {
+    font-size: 18px;
+}
+.radiocheckStyle input[type=radio] + .radio-label:before {
+    width: 15px;
+    height: 15px;
+    top: 3px;
+}
+.radiocheckStyle input[type=radio] + .radio-label:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 8px;
+}
+.priceText, .tagCol {
+    padding-left: 20px;
+}
+.lgwidth {
+    min-width: 100%;
+}
+.spacetop {
+    padding-top: 15px;
+}
+.page-content.pdbottom {
+    padding-bottom: 85px;
+}
+.success-message__content > p {
+    font-size: 14px;
+}
+.SuccesMdl .modal-content {
+    padding: 30px;
+}
+.success-message > img {
+    max-width: 60px;
+}
+.btn.mdbtn {
+    padding: 8px 50px;
+}
+.mdlbtn {
+    margin-top: 10px;
+}
+.cancelationPolicy > p {
+    font-size: 12px;
+}
+.btnStyle {
+    font-size: 14px;
+}
+.inputIcon > img {
+    max-width: 12px;
+}
+.inputform {
+    padding: 0 0 6px 20px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.inputIcon {
+    top: -2px;
+}
+.formGroupStyle {
+    margin-bottom: 10px;
+}
+.btnStyle.lgbtn {
+    padding: 8px;
 }
 }
