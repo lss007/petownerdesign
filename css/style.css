@@ -1195,12 +1195,6 @@ a.btn_primary:focus, a.btn_primary:hover {
 .SuccesMdl .modal-dialog {
     max-width: 500px;
     border-radius: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
 }
 .SuccesMdl .modal-content {
     padding: 50px;
@@ -1213,15 +1207,22 @@ a.btn_primary:focus, a.btn_primary:hover {
     margin: 0;
 }
 .btn.mdbtn {
-    padding: 9px 60px;
+    padding: 10px 55px;
     font-size: 12px;
 }
 .mdlbtn{
     margin-top: 15px;
 }
-.SuccesMdl {
+.modleStyle {
     background-color: rgba(23,42,72,0.90);
     padding-right: 0 !important;
+}
+.modleStyle .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
 }
 /******** confirm-booking-end ******/
 
@@ -1335,6 +1336,279 @@ a.btn_primary:focus, a.btn_primary:hover {
 .cardwidthlg {
     width: 580px;
 }
+
+/************ my-pet page start *********/
+
+.btnStyle.custombtn {
+    padding: 16px 30px 12px;
+}
+.cardtableCol {
+    background-color: #fff;
+    padding: 15px 85px 15px 15px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.petInfo > ul > li > span {
+    display: inline-block;
+}
+.petInfolabel {
+    color: #828282;
+    font-size: 14px;
+    min-width: 115px;
+}
+.petInfo > ul > li {
+    display: block;
+}
+.petInfo > ul > li + li {
+    padding-top: 12px;
+}
+.petInfoText {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.petInfoText.lgtxet {
+    color: #15C8BC;
+    font-size: 16px;
+}
+.cardtbaleImg {
+    margin-right: 50px;
+}
+.cardtbaleImg > img {
+    border-radius: 20px 0 0 20px;
+    height: 210px;
+    object-fit: cover;
+}
+.cardtablebtn {
+    text-align: right;
+}
+.cardtablebtn .btnStyle {
+    min-width: 130px;
+    padding: 9px 15px;
+}
+.cardtablebtn > ul > li {
+    margin-top: 6px;
+}
+.btnStyle.btngreen {
+    background-color: #15C8BC;
+}
+.btnStyle.btngreen::before {
+    background-color: #12bfb4;
+}
+.btnStyle.btnred {
+    background-color: #eb5757;
+}
+.btnStyle.btnred::before {
+    background-color: #e04d4d;
+}
+.tableIcon {
+    text-align: right;
+    padding-bottom: 10px;
+}
+.tableIcon > a {
+    display: inline-block;
+}
+.tableIcon > a + a {
+    padding-left: 10px;
+}
+.customModle .modal-dialog{
+    max-width: 800px;
+}
+.customModle .modal-content {
+    padding: 30px;
+    border-radius: 20px;
+}
+.customModle .close {
+    opacity: .8;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 1;
+}
+.customModle .close img {
+    width: 15px;
+}
+.modal-body.modlFormStyle {
+    padding: 0;
+}
+.mdlTitle > h4 {
+    color: #172A48;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 40px;
+}
+.file-upload {
+  background-color: #ffffff;
+}
+.file-upload-content {
+  display: none;
+  text-align: center;
+  border: 2px dashed #F2F2F2;
+  padding: 15px;
+}
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.image-upload-wrap {
+    border: 2px dashed #F2F2F2;
+    position: relative;
+    border-radius: 8px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.image-title-wrap {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+}
+.drag-text {
+  text-align: center;
+}
+.drag-text > span {
+    color: #828282;
+    font-size: 13px;
+}
+.drag-text h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #074574;
+    font-size: 12px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.file-upload-image {
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.remove-image {
+    margin: 0;
+    color: #333333;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: #0053b6;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0;
+}
+.mdlTitle {
+    margin-bottom: 30px;
+}
+.modlFormStyle .formStyle {
+    border-color: #F2F2F2;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    padding: 0 45px 0px 0;
+    font-size: 15px;
+    color: #828282;
+    appearance: none;
+}
+.modlFormStyle .formStyle::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #828282;
+}
+.modlFormStyle .formStyle::-moz-placeholder { /* Firefox 19+ */
+  color: #828282;
+}
+.modlFormStyle .formStyle:-ms-input-placeholder { /* IE 10+ */
+  color: #828282;
+}
+.modlFormStyle .formStyle:-moz-placeholder { /* Firefox 18- */
+  color: #828282;
+}
+.modlFormStyle .inputformIcon {
+    right: 0;
+}
+.selectCol{
+    position: relative;
+}
+.selectCol::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 11px;
+    height: 11px;
+    border: solid #074574;
+    border-width: 0 2px 2px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+}
+.modlFormStyle .formGroup {
+    margin-bottom: 15px;
+}
+.datepickerInput .input-group-append {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 99;
+    padding: 13px 0;
+}
+.datepickerInput .input-group-text {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.datepickerInput .bootstrap-datetimepicker-widget.dropdown-menu{
+    width: 100%;
+}
+.datepickerInput .table thead th, .select_datepicker .table td {
+    border: 0;
+}
+.modlFormStyle .btnCol {
+    margin: 20px 0 10px;
+}
+.paratext {
+    color: #828282;
+    font-size: 14px;
+    line-height: 24px;
+}
+.tableStyle {
+    padding-top: 10px;
+}
+.tableStyle .table thead th, .tableStyle td {
+    border: 0;
+}
+.tableStyle .table thead th {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.tableStyle .table td {
+    color: #4f4f4f;
+    font-size: 13px;
+    font-weight: 400;
+}
+.tableStyle .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F8F8;
+}
+button.close:focus {
+    outline: none;
+}
+/************ my-pet page end *********/
+
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
