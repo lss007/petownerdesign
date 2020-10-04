@@ -7,6 +7,7 @@ if (sc > 30) {
     }
 });
 
+/****************************************************/
 
 $('.toggle').click(function(){
   $('body').toggleClass('sidebarNavOpen')
@@ -17,6 +18,8 @@ $(document).on("click", function(event){
         $("body").removeClass("sidebarNavOpen");
     }
 });
+
+/****************************************************/
 
 (function() {
       'use strict';
@@ -36,12 +39,16 @@ $(document).on("click", function(event){
       }, false);
       })();
 
+/****************************************************/      
+
 $('#datetimepicker1').datetimepicker({
   inline: true,
 });
   $('#datetimepicker2').datetimepicker({
         format: 'L'
       });
+
+ /****************************************************/ 
 
  function readURL(input) {
   if (input.files && input.files[0]) {
@@ -77,5 +84,4 @@ $('.image-upload-wrap').bind('dragover', function () {
 });
 
 
-
-
+/****************************************************/  

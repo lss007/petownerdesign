@@ -1223,6 +1223,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     align-items: center;
     height: 100%;
     margin: 0 auto;
+    padding: 15px;
 }
 /******** confirm-booking-end ******/
 
@@ -1401,9 +1402,14 @@ a.btn_primary:focus, a.btn_primary:hover {
 .btnStyle.btnred::before {
     background-color: #e04d4d;
 }
+.petdetailCol {
+    position: relative;
+    padding-top: 30px;
+}
 .tableIcon {
-    text-align: right;
-    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .tableIcon > a {
     display: inline-block;
@@ -1609,6 +1615,139 @@ button.close:focus {
 }
 /************ my-pet page end *********/
 
+.tabSec {
+    margin-top: 20px;
+}
+.tablinks ul.tabs {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+.tablinks ul.tabs li {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    padding: 20px;
+    background-color:#EEF6FC;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px 0 0 15px;
+}
+.tablinks ul.tabs li.active {
+    background-color:#fff;
+    display: block;
+}
+.tabsCollapse .tab_container {
+    clear: both;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+    display: block;
+    border-radius: 15px;
+}
+.tabsCollapse .tab_content {
+    padding: 60px;
+    display: none;
+}
+.tabsCollapse .tab_drawer_heading {
+    display: none; 
+}
+.tabuserCol > span {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 17px;
+}
+.tabuserCol.bgcircle1 > span{
+    background-color: #FF3EB3;
+}
+.tabuserCol.bgcircle2 > span{
+    background-color: #074574;
+}
+.tabuserCol.bgcircle3 > span{
+    background-color: #FF783E;
+}
+.tabuserCol.bgcircle4 > span{
+    background-color: #5A8E41;
+}
+.tablinks {
+    padding-top: 30px;
+    width: 280px;
+}
+.tabuserInfo > h5 {
+    font-size: 15px;
+    color: #172A48;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    padding-right: 50px;
+}
+.tabuserInfo > p {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 2px;
+    margin: 0;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.userseen {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #bdbdbd;
+    font-weight: 400;
+}
+.tabuserInfo {
+    padding-left: 5px;
+}
+.tabStatusText > p {
+    color: #172A48;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+.tabStatusForward > span {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.tabStatusForward > a {
+    padding-left: 20px;
+}
+.tabmsgCol {
+    border-top: 1px solid #E9E9E9;
+    margin-top: 25px;
+    padding: 50px 200px 0 0;
+}
+.tabmsgCol > p {
+    color: #4f4f4f;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+.tabRegardsCol span{
+    display: block;
+    color: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tabRegardsCol span + span{
+    margin-top: 8px;
+}
+.tabRegardsCol {
+    padding: 20px 0 0;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -1622,6 +1761,12 @@ button.close:focus {
 }
 .calendarStyle {
     width: 620px;
+}
+.cardtbaleImg {
+    margin-right: 20px;
+}
+.cardtableCol {
+    padding: 15px 50px 15px 15px;
 }
 }
 @media (max-width: 1760px) {
@@ -1721,6 +1866,39 @@ button.close:focus {
 .formGroupStyle {
     margin-bottom: 15px;
 }
+.cardtbaleImg > img {
+    height: 160px;
+}
+.cardtableCol {
+    padding: 15px;
+    margin-top: 15px;
+}
+.tableIcon {
+    padding-bottom: 8px;
+}
+.tableIcon > a + a {
+    padding-left: 5px;
+}
+.editIcon > img {
+    width: 12px;
+}
+.trashIcon > img {
+    width: 14px;
+}
+.btnStyle.custombtn {
+    padding: 12px 24px 10px;
+    font-size: 14px;
+}
+.petInfo > ul > li + li {
+    padding-top: 5px;
+}
+.tabsCollapse .tab_content {
+    padding: 40px;
+}
+.tabmsgCol {
+    margin-top: 20px;
+    padding: 30px 120px 0 0;
+}
 }
 @media (max-width: 1640px) {
 .imgCol > img {
@@ -1771,7 +1949,9 @@ button.close:focus {
 .confirmprice {
     padding: 15px;
 }
-
+.tabmsgCol {
+    padding: 30px 50px 0 0;
+}
 }
 @media (max-width: 1500px) {
 .imgCol > img {
@@ -1994,6 +2174,68 @@ span.petCardArrow {
 .formCol label {
     font-size: 14px;
 }
+.petInfo > ul > li + li {
+    padding-top: 0;
+}
+.cardtbaleImg > img {
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+}
+.cardtableCol {
+    border-radius: 10px;
+}
+.petInfolabel {
+    font-size: 13px;
+    min-width: 100px;
+}
+.cardtablebtn .btnStyle.btn_secondary {
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 115px;
+}
+.petInfoText {
+    font-size: 13px;
+}
+.cardtablebtn > ul > li {
+    margin-top: 4px;
+}
+.petInfoText.lgtxet {
+    font-size: 14px;
+}
+.petdetailCol {
+    padding-top: 25px;
+}
+.tabmsgCol {
+    padding: 20px 0 0 0;
+}
+.tabsCollapse .tab_content {
+    padding: 30px;
+}
+.tabStatusText > p {
+    font-size: 14px;
+}
+.tabStatusForward > span {
+    font-size: 14px;
+    padding-right: 0;
+}
+.tabStatusForward > a {
+    padding-left: 15px;
+}
+.deletearrow {
+    width: 30px;
+    display: inline-block;
+}
+.tabmsgCol > p {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+.tablinks ul.tabs li {
+    padding: 15px;
+}
+.tablinks {
+    padding-top: 20px;
+}
 }
 @media (max-width: 1400px) {
 .imgCol {
@@ -2020,6 +2262,11 @@ span.petCardArrow {
 }
 .cardwidthlg {
     width: 420px;
+}
+.col-9.colwidth {
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
 }
 }
 @media (max-width: 1199px) {
@@ -2118,6 +2365,11 @@ span.petCardArrow {
 }
 .cardwidthlg {
     width: 360px;
+}
+.col-9.colwidth {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 }
 @media (max-width: 991px) {
@@ -2268,6 +2520,13 @@ body {
 .userProfileImg > img {
     border-radius: 10px;
 }
+.customModle .modal-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+.mdlTitle {
+    margin-bottom: 20px;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -2320,6 +2579,25 @@ body {
 .formCol .form-control {
     padding: 5px 0 5px 0;
     font-size: 14px;
+}
+.cardtablebtn {
+    text-align: left;
+}
+.cardtablebtn > ul > li {
+    display: inline-block;
+}
+.tablinks .tabs {
+    display: none;
+}
+.tabsCollapse .tab_drawer_heading {
+    display: block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 }
 @media (max-width: 585px) {
@@ -2414,7 +2692,24 @@ body {
 .customCardStyle {
     margin: 10px 0;
 }
-
+.cardtbaleImg > img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+}
+.cardtbaleImg {
+    margin-right: 0;
+}
+.cardtableStyle .col-sm-auto {
+    flex: 0 0 100%;
+    width: 100%;
+}
+.petInfolabel {
+    min-width: 150px;
+}
+.petInfo > ul > li {
+    margin-bottom: 5px;
+}
 }
 @media (max-width: 485px) {
 .textLinkCol {
@@ -2562,4 +2857,12 @@ body {
 .btnStyle.lgbtn {
     padding: 8px;
 }
+.cardtbaleImg > img {
+    height: 220px;
+}
+.cardtableCol {
+    padding: 10px;
+    margin-top: 10px;
+}
+
 }
