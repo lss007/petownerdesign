@@ -87,7 +87,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     font-family: 'Roboto', sans-serif;
 }
 .btnStyle.btn_secondary:before{
-    background:#f135a7; 
+    background:#f135a7;
 }
 
 /******** dashboard page start *******/
@@ -133,7 +133,7 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .sidebarLink > ul > li + li {
     margin: 20px 0;
-}       
+}
 .sidebarLink > ul > li > a {
     color: #172A48;
     display: block;
@@ -474,7 +474,7 @@ a.btn_primary:focus, a.btn_primary:hover {
 .select_datepicker .picker-switch.accordion-toggle {
     display: none;
 }
-.select_datepicker .bootstrap-datetimepicker-widget table td.active, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.active,
 .select_datepicker .bootstrap-datetimepicker-widget table td.active:hover,
 .select_datepicker .bootstrap-datetimepicker-widget table td span.active {
     background-color: #F5F5F5;
@@ -927,11 +927,45 @@ a.btn_primary:focus, a.btn_primary:hover {
 .spacetop{
     padding-top: 30px;
 }
-
-.selectOptionList {
-    padding: 40px;
+.selectOptionScroll {
+    padding: 40px 0 40px 40px;
     background-color: #fff;
     border-radius: 20px;
+    height: 494px;
+}
+.selectOptionScroll .mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+.selectOptionScroll .mCSB_scrollTools {
+    opacity: 1;
+    right: 20px;
+}
+.selectOptionScroll .mCSB_scrollTools, .selectOptionScroll .mCSB_scrollTools .mCSB_draggerContainer {
+    opacity: 1;
+    right: 20px;
+    width: 6px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.selectOptionScroll .mCSB_scrollTools .mCSB_draggerRail {
+    opacity: 1;
+    right: 0;
+    width: 6px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+/* .selectOptionScroll .mCSB_scrollTools .mCSB_draggerRail{
+  background-color: #FF3EB3;
+  width: 6px;
+  border-radius: 10px;
+} */
+.selectOptionScroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #FF3EB3;
+  width: 6px;
+  border-radius: 10px;
+}
+.selectOptionList {
+    padding-right: 40px;
 }
 .selectOptionList > ul > li {
     display:block;
@@ -1029,8 +1063,8 @@ a.btn_primary:focus, a.btn_primary:hover {
     padding: 20px;
     margin-top: 30px;
 }
-.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active, 
-.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active:hover, 
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active,
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active:hover,
 .select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td span.active {
     background-color: #FF3EB3;
     color: #fff;
@@ -1046,6 +1080,8 @@ a.btn_primary:focus, a.btn_primary:hover {
     border-radius: 4px;
     color: #000000;
     appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
 }
 .selectInputOption .form-control:focus{
     box-shadow: none;
@@ -1175,7 +1211,7 @@ a.btn_primary:focus, a.btn_primary:hover {
 .cancelationPolicy > p {
     color: #172A48;
     font-size: 13px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 .confirmbtn {
     padding: 30px;
@@ -1651,7 +1687,7 @@ button.close:focus {
     display: none;
 }
 .tabsCollapse .tab_drawer_heading {
-    display: none; 
+    display: none;
 }
 .tabuserCol > span {
     width: 36px;
@@ -1748,6 +1784,7 @@ button.close:focus {
 .tabRegardsCol {
     padding: 20px 0 0;
 }
+
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -1926,7 +1963,7 @@ button.close:focus {
     max-width: 350px;
     margin-left: auto;
 }
-.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before,
 .select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
     top: 4px;
     right: 4px;
@@ -2092,8 +2129,8 @@ span.petCardArrow {
 .spacetop {
     padding-top: 20px;
 }
-.selectOptionList {
-    padding: 25px;
+.selectOptionScroll {
+    padding: 25px 0 25px 25px;
     border-radius: 15px;
 }
 .selectOptionList > ul > li + li {
@@ -2343,7 +2380,7 @@ span.petCardArrow {
 .rightIconbar > ul > li + li {
     margin-left: 15px;
 }
-.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, 
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before,
 .select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
     top: 3px;
     right: 3px;
@@ -2370,6 +2407,12 @@ span.petCardArrow {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+}
+.tabsCollapse .tab_container {
+    border-radius: 10px;
+}
+.tabsCollapse .tab_content {
+    padding: 20px;
 }
 }
 @media (max-width: 991px) {
@@ -2599,6 +2642,16 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+.selectOptionScroll {
+    border-radius: 8px;
+}
+.selectOptionList {
+    padding-right: 20px;
+}
+.selectOptionScroll .mCSB_scrollTools, .selectOptionScroll .mCSB_scrollTools .mCSB_draggerContainer {
+    right: 0;
+    width: 3px;
+}
 }
 @media (max-width: 585px) {
 .formSection {
@@ -2773,8 +2826,8 @@ body {
 .sidebar-nav {
     padding-top: 70px;
 }
-.selectOptionList {
-    padding: 20px 15px;
+.selectOptionScroll {
+    padding: 20px 0 20px 15px;
     border-radius: 10px;
 }
 .radiocheckStyle .radio-label {
@@ -2784,7 +2837,7 @@ body {
     padding-top: 8px;
 }
 .listStyle {
-    padding: 6px 0 0 25px;
+    padding: 6px 0 0 20px;
 }
 .titlexl > h5 {
     font-size: 20px;

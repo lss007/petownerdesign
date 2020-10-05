@@ -39,7 +39,7 @@ $(document).on("click", function(event){
       }, false);
       })();
 
-/****************************************************/      
+/****************************************************/
 
 $('#datetimepicker1').datetimepicker({
   inline: true,
@@ -48,7 +48,7 @@ $('#datetimepicker1').datetimepicker({
         format: 'L'
       });
 
- /****************************************************/ 
+ /****************************************************/
 
  function readURL(input) {
   if (input.files && input.files[0]) {
@@ -84,4 +84,6 @@ $('.image-upload-wrap').bind('dragover', function () {
 });
 
 
-/****************************************************/  
+/****************************************************/
+
+$(".selectOptionScroll").mCustomScrollbar();
