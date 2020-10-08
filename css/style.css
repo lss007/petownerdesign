@@ -644,7 +644,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     text-transform: uppercase;
 }
 .formStyle {
-    background: transparent;
+    background: #fff;
     height: 50px;
     border-radius: 50px;
     font-size: 14px;
@@ -1098,7 +1098,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     transform: translate(0, -50%) rotate(45deg);
     pointer-events: none;
 }
-.pdbottom {
+.pageInnerStyle.pdbottom {
     padding-bottom: 150px;
     position: relative;
 }
@@ -1784,7 +1784,32 @@ button.close:focus {
 .tabRegardsCol {
     padding: 20px 0 0;
 }
-
+.lightTitle {
+    font-weight: 400;
+    text-transform: initial;
+}
+.cardwidthxl {
+    max-width: 685px;
+}
+.tabtitle > h4 {
+    color: #172A48;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.modifiedLink > a {
+    color: #FF3EB3;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.rightSpace {
+    margin-right: 150px;
+}
+.leftpd{
+  padding-left:30px;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -2123,7 +2148,7 @@ span.petCardArrow {
     min-width: 300px;
     padding: 15px;
 }
-.pdbottom {
+.pageInnerStyle.pdbottom {
     padding-bottom: 120px;
 }
 .spacetop {
@@ -2570,6 +2595,10 @@ body {
 .mdlTitle {
     margin-bottom: 20px;
 }
+.tabStatusForward {
+    text-align: right;
+    margin-top: 10px;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -2614,10 +2643,10 @@ body {
     text-align: left;
 }
 .uploadImgStyle {
-    left: 10px;
-    bottom: 10px;
-    padding: 5px 6px;
-    border-radius: 5px;
+  left: 10px;
+  bottom: 10px;
+  padding: 5px 6px;
+  border-radius: 5px;
 }
 .formCol .form-control {
     padding: 5px 0 5px 0;
@@ -2633,14 +2662,32 @@ body {
     display: none;
 }
 .tabsCollapse .tab_drawer_heading {
-    display: block;
-    cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 20px;
+  background-color: #eef6fc;
+  margin-bottom: 5px;
+}
+.tabsCollapse .d_active.tab_drawer_heading {
+    background-color: #fff;
+}
+.tabRegardsCol {
+    padding: 0;
+}
+.tabmsgCol {
+    padding: 15px 0 0 0;
+}
+.tabmsgCol {
+    margin-top: 15px;
+}
+.tabmsgCol > p {
+    padding-bottom: 0;
 }
 .selectOptionScroll {
     border-radius: 8px;
@@ -2762,6 +2809,9 @@ body {
 }
 .petInfo > ul > li {
     margin-bottom: 5px;
+}
+.tabsCollapse .tab_drawer_heading {
+    padding: 15px;
 }
 }
 @media (max-width: 485px) {

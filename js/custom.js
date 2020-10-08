@@ -41,12 +41,12 @@ $(document).on("click", function(event){
 
 /****************************************************/
 
-$('#datetimepicker1').datetimepicker({
+$('#datetimepicker1,#datetimepicker3').datetimepicker({
   inline: true,
 });
   $('#datetimepicker2').datetimepicker({
-        format: 'L'
-      });
+    format: 'L'
+  });
 
  /****************************************************/
 
