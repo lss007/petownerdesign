@@ -1810,6 +1810,100 @@ button.close:focus {
 .leftpd{
   padding-left:30px;
 }
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 180px;
+}
+.checkboxStyle2 {
+    margin: 20px 0;
+}
+.checkboxStyle2 .cardStyle2 {
+    padding: 10px;
+}
+.checkboxStyle.checkboxStyle2 input[type=checkbox] + label:before {
+    width: 24px;
+    height: 24px;
+    top: -6px;
+    right: -6px;
+}
+.checkboxStyle.checkboxStyle2 input[type=checkbox] + label:after {
+    width: 7px;
+    height: 12px;
+    border-width: 0 3px 3px 0;
+    right: 2px;
+    top: -2px;
+}
+.cardInfo > h4 {
+    color: #172A48;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+.priceCol > span {
+    color: #828282;
+    font-size: 13px;
+    font-weight: 600;
+}
+.viewDetailLink {
+    text-align: right;
+    padding-top: 8px;
+}
+.viewDetailLink > a {
+    color: #FF3EB3;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.viewDetailLink > a > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.viewDetailLink > a > span > img {
+    width: 18px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.reservationDetail {
+    padding-right: 100px;
+}
+.priceCol > span + span {
+    padding-left: 8px;
+}
+.navigationStyle ul.pagination {
+    justify-content: center;
+}
+.navigationStyle {
+    padding-top: 20px;
+}
+.navigationStyle a.page-link {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.navigationStyle a.page-link:focus {
+    box-shadow:none;
+}
+.navigationStyle .page-item.active .page-link {
+    background-color: transparent;
+    color: #FF3EB3;
+}
+.previous a.page-link {
+    transform: rotate(180deg);
+    margin-top: 1px;
+}
+.navigationStyle li.page-item.previous {
+    margin-right: 10px;
+}
+.navigationStyle li.page-item.next {
+    margin-left:10px;
+}
+.checkboxStyle2 .cardText {
+    padding: 15px 0 5px;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -1961,6 +2055,9 @@ button.close:focus {
     margin-top: 20px;
     padding: 30px 120px 0 0;
 }
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 150px;
+}
 }
 @media (max-width: 1640px) {
 .imgCol > img {
@@ -2014,6 +2111,11 @@ button.close:focus {
 .tabmsgCol {
     padding: 30px 50px 0 0;
 }
+.reservationDetail {
+    padding-right: 0;
+}
+
+
 }
 @media (max-width: 1500px) {
 .imgCol > img {
@@ -2330,6 +2432,21 @@ span.petCardArrow {
     flex: 0 0 85%;
     max-width: 85%;
 }
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 135px;
+}
+.leftpd {
+    padding-left: 20px;
+}
+.priceCol > span {
+    font-size: 12px;
+}
+.viewDetailLink > a {
+    font-size: 12px;
+}
+.viewDetailLink > a > span > img {
+    width: 14px;
+}
 }
 @media (max-width: 1199px) {
 .imgCol {
@@ -2599,6 +2716,12 @@ body {
     text-align: right;
     margin-top: 10px;
 }
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 235px;
+}
+.rightSpace {
+    margin-right: 100px;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -2698,6 +2821,19 @@ body {
 .selectOptionScroll .mCSB_scrollTools, .selectOptionScroll .mCSB_scrollTools .mCSB_draggerContainer {
     right: 0;
     width: 3px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 160px;
+}
+.rightSpace {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+.checkboxStyle2 {
+    margin: 0;
+}
+.reservationDetail .titlexl {
+    padding-bottom: 15px;
 }
 }
 @media (max-width: 585px) {
@@ -2812,6 +2948,15 @@ body {
 }
 .tabsCollapse .tab_drawer_heading {
     padding: 15px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 270px;
+}
+.navigationStyle {
+    padding-top: 0;
+}
+.viewDetailLink {
+    padding-top: 5px;
 }
 }
 @media (max-width: 485px) {
@@ -2967,5 +3112,7 @@ body {
     padding: 10px;
     margin-top: 10px;
 }
-
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 200px;
+}
 }

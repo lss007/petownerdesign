@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Petowner</title>
   </head>
@@ -34,7 +35,7 @@
                       <span class="title_sidebar_list">Dashboard</span>
                   </a>
                 </li>
-                  <li><a href="profile.html" class="active">
+                  <li><a href="profile.html">
                     <span class="linkIcon strokeIcon">
                       <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,7 +74,7 @@
                     </span>
                     <span class="title_sidebar_list">Bookings</span></a>
                   </li>
-                  <li><a href="shop-product.html">
+                  <li><a href="shop-product.html" class="active">
                     <span class="linkIcon strokeIcon">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 8H3L1 19H19L17 8H14M6 8V5C6 2.79086 7.79086 1 10 1V1C12.2091 1 14 2.79086 14 5V8M6 8H14M6 8V11M14 8V11" stroke="#074574" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -117,162 +118,197 @@
             </div>
           </div>
         </div>
-        <div class="page-content pageInnerStyle">
+        <div class="page-content pageInnerStyle pdbottom">
             <div class="header-section">
              <div class="header-top">
                 <div class="form-row align-items-center">
-                      <div class="col-auto d-block d-lg-none">
-                        <div class="logoSec">
-                          <a href="dashboard.html"><img src="images/logo.png" alt="..."></a>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="rightIconbar">
-                          <ul>
-                            <li class="notification">
-                              <a href="javascript:void(0);">
-                                <img src="images/bell.svg" alt="...">
-                              </a>
-                            </li>
-                            <li class="userCol">
-                              <a href="javascript:void(0);">
-                                <img src="images/user.png" alt="...">
-                              </a>
-                            </li>
-                            <li class="notification">
-                              <a href="login.html">
-                                <img src="images/log-out.svg" alt="...">
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-auto d-block d-lg-none">
-                        <div class="toggle">
-                          <div class="bar"></div>
-                          <div class="bar"></div>
-                          <div class="bar"></div>
-                        </div>
-                     </div>
+                  <div class="col-auto d-block d-lg-none">
+                    <div class="logoSec">
+                      <a href="dashboard.html"><img src="images/logo.png" alt="..."></a>
                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="rightIconbar">
+                      <ul>
+                        <li class="notification">
+                          <a href="javascript:void(0);">
+                            <img src="images/bell.svg" alt="...">
+                          </a>
+                        </li>
+                        <li class="userCol">
+                          <a href="javascript:void(0);">
+                            <img src="images/user.png" alt="...">
+                          </a>
+                        </li>
+                        <li class="notification">
+                          <a href="login.html">
+                            <img src="images/log-out.svg" alt="...">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto d-block d-lg-none">
+                    <div class="toggle">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>
+                 </div>
+                </div>
               </div>
             </div>
           <div class="page-inner">
-            <div class="row">
-              <div class="col-lg-auto">
-                <div class="customCardStyle cardwidthmd">
-                  <div class="userProfileImg">
-                    <img src="images/user-profile.jpg" alt="...">
-                    <span class="uploadImgStyle">
-                      <img src="images/upload-btn.svg" alt="...">
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </span>
-                  </div>
-                  <div class="userproDetail">
-                    <form>
-                      <div class="row formGroupStyle">
-                        <div class="col-sm-6">
-                          <label class="lebelsm">My profile</label>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="inputvalue"><p>Lorem ipsum doller inset are some dummy about info</p></div>
+            <div class="titlexl">
+              <h5>Who are you shopping for?</h5>
+            </div>
+            <div class="cardSection2 cardwidthxl cardwidthxxl">
+              <div class="titlemd">
+                <h5 class="mb-0">Select Category</h5>
+              </div>
+                <div class="spacetop shopProduct">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-2">
+                      <div class="checkboxStyle">
+                         <input type="checkbox" id="dog" name="dog" value="pet">
+                          <label for="dog">
+                            <div class="cardStyle2">
+                              <div class="cardImgCol">
+                                <img src="images/morphysm.jpg" alt="...">
+                              </div>
+                              <div class="cardText">
+                                <div class="cardtitlelg">
+                                  <h4>Dog</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
                         </div>
                       </div>
-                      <div class="row formGroupStyle">
-                        <div class="col-sm-6">
-                          <label class="lebelmd">kally Wilson</label>
+                    <div class="col-sm-6 col-lg-2">
+                      <div class="checkboxStyle">
+                         <input type="checkbox" id="cat" name="cat" value="pet">
+                          <label for="cat">
+                            <div class="cardStyle2">
+                              <div class="cardImgCol">
+                                <img src="images/catysm.jpg" alt="...">
+                              </div>
+                              <div class="cardText">
+                                <div class="cardtitlelg">
+                                  <h4>Cat</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
                         </div>
-                        <div class="col-sm-6">
-                          <div class="inputform">
-                            <span class="inputIcon"><img src="images/phone.svg" alt="..."></span>+001- 234-567-789
+                      </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <div class="checkboxStyle">
+                         <input type="checkbox" id="birds" name="birds" value="pet">
+                          <label for="birds">
+                            <div class="cardStyle2">
+                              <div class="cardImgCol">
+                                <img src="images/mithosm.jpg" alt="...">
+                              </div>
+                              <div class="cardText">
+                                <div class="cardtitlelg">
+                                  <h4>Birds</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <div class="checkboxStyle">
+                         <input type="checkbox" id="fish" name="fish" value="pet">
+                          <label for="fish">
+                            <div class="cardStyle2">
+                              <div class="cardImgCol">
+                                <img src="images/fish.jpg" alt="...">
+                              </div>
+                              <div class="cardText">
+                                <div class="cardtitlelg">
+                                  <h4>Small Animals</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2">
+                        <div class="checkboxStyle">
+                           <input type="checkbox" id="horse" name="horse" value="pet">
+                            <label for="horse">
+                              <div class="cardStyle2">
+                                <div class="cardImgCol">
+                                  <img src="images/horse.jpg" alt="...">
+                                </div>
+                                <div class="cardText">
+                                  <div class="cardtitlelg">
+                                    <h4>Equine</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="row formGroupStyle">
-                        <div class="col-sm-12">
-                          <div class="inputform">
-                            <span class="inputIcon"><img src="images/email.svg" alt="..."></span>SomRownfer0021@gmail.com
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row formGroupStyle">
-                        <div class="col-sm-12">
-                          <div class="inputform">
-                            <span class="inputIcon"><img src="images/lacation-2.svg" alt="..."></span>2715 Ash Dr. San Jose, South Dakota 83475
-                          </div>
-                        </div>
-                      </div>
-                      <div class="btnCol2">
-                        <button class="btn btnStyle btn_primary lgbtn" type="button">Save</button>
                       </div>
                     </form>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-auto">
-                <div class="customCardStyle mlSpace cardwidthlg">
-                  <form>
-                      <div class="formGroupStyle">
-                        <label class="lebelsm">Account</label>
-                        <div class="formCol">
-                          <div class="row">
-                            <label for="accountId" class="col-sm-6">Your account ID</label>
-                            <div class="col-sm-6">
-                              <input type="email" class="form-control" id="accountId" placeholder="#53654545">
-                            </div>
-                          </div>
+              <div class="cardSection2">
+                <div class="titlemd">
+                  <h5 class="mb-0">Select date Range <span class="lightTitle"> When will you be traveling?</span></h5>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="datepickerStyle2">
+                        <div class="select_datepicker datepickerStyle2">
+                          <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                         </div>
                       </div>
-                      <div class="formGroupStyle pt-md-4">
-                        <label class="lebelsm">Change password</label>
-                        <div class="formCol">
-                          <div class="row">
-                            <label for="newpassword" class="col-sm-6">New Password</label>
-                            <div class="col-sm-6">
-                              <input type="password" class="form-control" id="newpassword" placeholder="*********">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="formCol">
-                          <div class="row">
-                            <label for="retypepassword" class="col-sm-6">Retype Password</label>
-                            <div class="col-sm-6">
-                              <input type="password" class="form-control" id="retypepassword" placeholder="*********">
-                            </div>
-                          </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="datepickerStyle2">
+                        <div class="select_datepicker datepickerStyle2">
+                          <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
                         </div>
                       </div>
-                      <div class="btnCol2">
-                        <button class="btn btnStyle btn_primary lgbtn" type="button">Update</button>
+                    </div>
+                  </div>
+                </div>
+              <div class="appointmentCol">
+                <div class="titlemd">
+                  <h5 class="mb-0">Select Country <span class="lightTitle"> for Pets Hotel Accomodation</span></h5>
+                </div>
+                <div class="spacetop">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group formGroup">
+                        <input type="text" class="form-control formStyle" placeholder="Country">
+                        <span class="inputformIcon"><img src="images/country.svg" alt="..."></span>
                       </div>
-                    </form>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="bottombar">
+              <a href="reservation-details.html" class="btn btnStyle btn_primary lgwidth" type="button">
+                <span>Check Availability</span>
+                <span class="btnArrow">
+                  <svg width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 9L23.5 5M23.5 5L19.5 1M23.5 5L1 5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Modal -->
-<div class="modal fade SuccesMdl" id="SuccesMdl" tabindex="-1" aria-labelledby="SuccesMdlLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="success-message">
-          <img src="images/success.svg" alt="...">
-          <h1 class="success-message__title">Pawsome!</h1>
-          <div class="success-message__content">
-              <p>Your Appointment is Booked Succesfully!</p>
-          </div>
-          <div class="mdlbtn">
-            <button class="btn btnStyle btn_primary mdbtn" type="button" data-dismiss="modal">OK</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -281,6 +317,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>
