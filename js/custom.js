@@ -87,3 +87,33 @@ $('.image-upload-wrap').bind('dragover', function () {
 /****************************************************/
 
 $(".selectOptionScroll").mCustomScrollbar();
+
+
+/************************************************/
+
+// increase Decrease product value
+var minVal = 1, maxVal = 2000; // Set Max and Min values
+$(".increaseQty").on('click', function(){
+		var $parentElm = $(this).parents(".qtySelector");
+		$(this).addClass("clicked");
+		setTimeout(function(){
+			$(".clicked").removeClass("clicked");
+		},100);
+		var value = $parentElm.find(".qtyValue").val();
+		if (value < maxVal) {
+			value++;
+		}
+		$parentElm.find(".qtyValue").val(value);
+});
+$(".decreaseQty").on('click', function(){
+		var $parentElm = $(this).parents(".qtySelector");
+		$(this).addClass("clicked");
+		setTimeout(function(){
+			$(".clicked").removeClass("clicked");
+		},100);
+		var value = $parentElm.find(".qtyValue").val();
+		if (value > 1) {
+			value--;
+		}
+		$parentElm.find(".qtyValue").val(value);
+	});
