@@ -2063,6 +2063,7 @@ button.close:focus {
     background-color: #fff;
     width: 100%;
     box-shadow: 0 0 33px rgba(0, 0, 0, 6%);
+    margin-top: 30px;
 }
 .proCardStyleImg > a {
     text-align: center;
@@ -2130,6 +2131,8 @@ button.close:focus {
 .qtySelector {
     border: 1px solid #e0e0e0;
     border-radius: 50px;
+    background-color: #fff;
+    padding: 0px 5px;
 }
 .qtySelector .clicked{
 	-webkit-transform: scale(0.9);
@@ -2155,8 +2158,11 @@ button.close:focus {
     justify-content: center;
     width: 22px;
     height: 30px;
-    padding: 0;
+    padding: 3px 6px;
     cursor: pointer;
+}
+.decreaseQty img, .increaseQty img {
+    max-width: 8px;
 }
 .cartPriceCol {
     padding-top: 15px;
@@ -2177,17 +2183,73 @@ button.close:focus {
     text-transform: uppercase;
 }
 .productCart > a > span{
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 .productCart > a > span + span {
     padding-left: 5px;
 }
-.rowSpaceTop {
-    padding-top: 30px;
-}
 .proCardSec{
-  max-width:1260px;
+    max-width:1260px;
+}
+.productDetailSec .proDetailImgSlide {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+.productDetailSec .proDtlImgCol img {
+    height: 240px;
+    width: auto;
+    border-radius: 0;
+}
+.productDetailSec .proThumbCol {
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+}
+.productDetailSec .proThumbCol > img {
+    height: 70px;
+    object-fit: contain;
+}
+.ratingStarts {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 2px;
+}
+.proDetailOption {
+    padding: 20px 0;
+    max-width: 520px;
+}
+.proDetailOption .productSelect .form-control {
+    height: 55px;
+    padding: 10px 40px 10px 20px;
+    font-size: 14px;
+}
+.proDetailOption .productSelect::before {
+    width: 10px;
+    height: 10px;
+    right: 25px;
+    margin-top: -3px;
+}
+.proDetailOption .qtySelector {
+    padding: 0 15px;
+}
+.proDetailOption .decreaseQty, .proDetailOption .increaseQty {
+    width: 35px;
+    height: 54px;
+}
+.proDetailOption .decreaseQty img, .proDetailOption .increaseQty img {
+    max-width: 15px;
+}
+.proDetailOption .qtyValue {
+    font-size: 14px;
+}
+.productDetailSec {
+    padding-right: 200px;
 }
 /****************************************
 *********** MEDIA-QUARY ************
@@ -2343,6 +2405,9 @@ button.close:focus {
 .checkboxStyle.checkboxStyle2 .cardImgCol > img {
     height: 150px;
 }
+.productDetailSec {
+    padding-right: 120px;
+}
 }
 @media (max-width: 1640px) {
 .imgCol > img {
@@ -2399,7 +2464,9 @@ button.close:focus {
 .reservationDetail {
     padding-right: 0;
 }
-
+.productDetailSec {
+    padding-right: 60px;
+}
 
 }
 @media (max-width: 1500px) {
@@ -2703,12 +2770,16 @@ span.petCardArrow {
 .proCardStyle {
     padding: 10px;
     border-radius: 6px;
+    margin-top: 20px;
 }
 .qtySelectorwidth {
     width: 75px;
 }
 .selectwidth {
     max-width: 105px;
+}
+.productDetailSec {
+    padding-right: 0;
 }
 }
 @media (max-width: 1400px) {
@@ -3060,6 +3131,16 @@ body {
     padding-left: 0;
     margin-top: 8px;
 }
+.proCardSec {
+    max-width: 100%;
+}
+.proCardStyle {
+    margin: 0 0 20px;
+}
+
+.relatedPro .titlemd {
+    padding-bottom: 30px;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -3178,6 +3259,9 @@ body {
 }
 .shopProduct .cardtitlelg > h4 {
     font-size: 15px;
+}
+.proDetailOption {
+    max-width: 100%;
 }
 }
 @media (max-width: 585px) {
@@ -3316,6 +3400,45 @@ body {
 }
 .shopingSelectStyle > ul > li {
     width: 49%;
+}
+.proCardStyleImg > a {
+    padding: 10px;
+}
+.cartPriceCol {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.proCardStyleText > h4 {
+    padding-top: 15px;
+}
+.productCart > a > span > img {
+    max-width: 15px;
+    margin-top: -4px;
+}
+.proDetailOption .productSelect .form-control {
+    height: 45px;
+}
+.proDetailOption .decreaseQty, .proDetailOption .increaseQty {
+    height: 45px;
+}
+.proDetailOption .decreaseQty img, .proDetailOption .increaseQty img {
+    max-width: 16px;
+}
+.proDetailOption .qtySelector {
+    margin-top: 10px;
+}
+.productDetailSec .proDetailImgSlide {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.productDetailSec .proDtlImgCol img {
+    height: 180px;
+}
+.productDetailSec .proThumbCol > img {
+    height: 50px;
+}
+.productDetailSec .proThumbCol {
+    padding: 8px;
 }
 }
 @media (max-width: 485px) {
@@ -3496,6 +3619,14 @@ body {
 }
 .radioCheckStyle2 label.radio-label {
     font-size: 13px;
+}
+.proCardStyleImg > a > img {
+    height: 100px;
+}
+.colbreakStyle {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 }
 @media (max-width: 385px) {
