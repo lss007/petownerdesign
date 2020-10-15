@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel='stylesheet' href='https://swiperjs.com/package/swiper-bundle.min.css'>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Petowner</title>
@@ -159,323 +158,125 @@
             </div>
           <div class="page-inner">
             <div class="titlexl">
-              <h5 class="mb-0">Product Detail</h5>
+              <h5 class="mb-0">View Cart</h5>
             </div>
-            <div class="cardSection2">
-              <div class="productDetailSec">
-                <div class="row">
-                  <div class="col-xl-auto">
-                    <div class="proDetailSlider">
-                      <div class="swiper-container proDetailImgSlide">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="proDtlImgCol"><img src="images/productdetail-img.jpg" alt="..."></div>
+            <div class="spacetop">
+              <div class="tableSec viewCartTbl">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col" class="text-right">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="deleteIcon"><span><img src="images/delete.svg" alt="..."></span></td>
+                        <td class="produttd">
+                          <span class="produttdImg"><img src="images/product-img2.png" alt="..."></span>
+                          <span class="produttdText">Sepicat Clumping Ultra Light</span>
+                        </td>
+                        <td>
+                          <div class="productSelect selectwidthlg">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>10 L</option>
+                              <option>10 L</option>
+                            </select>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="proDtlImgCol"><img src="images/productdetail-img.jpg" alt="..."></div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="proDtlImgCol"><img src="images/productdetail-img.jpg" alt="..."></div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="proDtlImgCol"><img src="images/productdetail-img.jpg" alt="..."></div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="proDtlImgCol"><img src="images/productdetail-img.jpg" alt="..."></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="proThumbsCol">
-                        <div class="swiper-container proThumbs">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <div class="proThumbCol"><img src="images/product-img2.png" alt="..."></div>
+                        </td>
+                        <td class="priceTblCol">
+                          <span>$45.00</span>
+                        </td>
+                        <td>
+                          <div class="qtySelector qtySelectorwidthlg row no-gutters">
+                            <div class="col-auto">
+                              <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
                             </div>
-                            <div class="swiper-slide">
-                              <div class="proThumbCol"><img src="images/product-img2.png" alt="..."></div>
+                            <div class="col">
+                              <input type="text" class="qtyValue" value="1" />
                             </div>
-                            <div class="swiper-slide">
-                              <div class="proThumbCol"><img src="images/product-img2.png" alt="..."></div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="proThumbCol"><img src="images/product-img2.png" alt="..."></div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="proThumbCol"><img src="images/product-img2.png" alt="..."></div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"><img src="images/angle-arrow.svg" alt="..."></div>
-                        <div class="swiper-button-prev"><img src="images/angle-arrow.svg" alt="..."></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl">
-                    <div class="proDtlContent">
-                      <div class="titlexl clrtheme">
-                        <h5 class="mb-0">Sepicat Clumping Ultra Light</h5>
-                      </div>
-                      <div class="titlemd pt-2">
-                        <h5 class="mb-0 text-capitalize">
-                          5.0
-                          <span class="ratingStarts">
-                            <a href="javascript:void(0);"><img src="images/star.svg" alt="..."></a>
-                            <a href="javascript:void(0);"><img src="images/star.svg" alt="..."></a>
-                            <a href="javascript:void(0);"><img src="images/star.svg" alt="..."></a>
-                            <a href="javascript:void(0);"><img src="images/star.svg" alt="..."></a>
-                            <a href="javascript:void(0);"><img src="images/star.svg" alt="..."></a>
-                          </span>
-                        </h5>
-                      </div>
-                      <div class="proDetailOption">
-                        <div class="form-row">
-                          <div class="col-sm-6">
-                            <div class="productSelect selectwidthmd">
-                              <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Choose size</option>
-                                <option>Choose name</option>
-                              </select>
+                            <div class="col-auto">
+                              <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
                             </div>
                           </div>
-                          <div class="col-sm-6">
-                            <div class="qtySelector qtySelectorwidthmd row no-gutters">
-                              <div class="col-auto">
-                                <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
-                              </div>
-                              <div class="col">
-                                <input type="text" class="qtyValue" value="1" />
-                              </div>
-                              <div class="col-auto">
-                                <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
-                              </div>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="deleteIcon"><span><img src="images/delete.svg" alt="..."></span></td>
+                        <td class="produttd">
+                          <span class="produttdImg"><img src="images/product-img1.png" alt="..."></span>
+                          <span class="produttdText">Sepi Cat Pearls fresh</span>
+                        </td>
+                        <td>
+                          <div class="productSelect selectwidthlg">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>16 L</option>
+                              <option>16 L</option>
+                            </select>
+                          </div>
+                        </td>
+                        <td class="priceTblCol">
+                          <span>$25.00</span>
+                        </td>
+                        <td>
+                          <div class="qtySelector qtySelectorwidthlg row no-gutters">
+                            <div class="col-auto">
+                              <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
+                            </div>
+                            <div class="col">
+                              <input type="text" class="qtyValue" value="1" />
+                            </div>
+                            <div class="col-auto">
+                              <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="titlemd">
-                        <h5 class="mb-0 text-capitalize"><span>Price:</span> <span class="titlethemeclr pl-1">$45.00</span></h5>
-                      </div>
-                      <div class="themeCol topspace">
-                        <p>A premium clumping cat litter that is up to 40% lighter than other scoopable litters.Clumps on the surface for easy removal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum dolor nec laoreet lacinia. Praesent sit amet porttitor nisl. Etiam ut urna elit. Cras ac dolor in turpis sagittis malesuada. Praesent mi tortor, dictum eget pulvinar non, luctus a metus.</p>
-                      </div>
-                      <div class="btnCol pt-2">
-                        <a href="product.html" class="btn btnStyle btn_primary lgwidth" type="button">
-                          <span>Add to cart</span>
-                          <span class="btnArrow">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1.8335 1.125H2.96183C3.44867 1.125 3.69208 1.125 3.88874 1.21405C4.06206 1.29254 4.20939 1.41885 4.31344 1.57815C4.43149 1.75888 4.46868 1.99944 4.54305 2.48056L4.84074 4.40626M4.84074 4.40626L5.53277 8.88284C5.69708 9.94567 5.77923 10.4771 6.04657 10.8587C6.28188 11.1945 6.61474 11.4499 7.00006 11.5903C7.43784 11.7498 7.97241 11.6916 9.04155 11.5752L16.2262 10.793C17.0803 10.7 17.5073 10.6535 17.841 10.4796C18.2705 10.2559 18.6042 9.88387 18.7801 9.43271C18.9168 9.08219 18.9168 8.65261 18.9168 7.79345V7.79345C18.9168 6.87345 18.9168 6.41345 18.7659 6.04728C18.5716 5.57601 18.2047 5.19671 17.7402 4.98686C17.3792 4.82381 16.9195 4.8085 16 4.77788L4.84074 4.40626Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                              <ellipse cx="8.08317" cy="16.5933" rx="1.66666" ry="1.875" stroke="#fff" stroke-width="1.8"/>
-                              <ellipse cx="16.0002" cy="16.5933" rx="1.66667" ry="1.875" stroke="#fff" stroke-width="1.8"/>
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="spacetop relatedPro mt-4">
-                  <div class="titlemd">
-                    <h5 class="mb-0">Related Product</h5>
-                  </div>
-                  <div class="row">
-                    <div class="col-6 col-lg-4 col-xl-3 colbreakStyle">
-                      <div class="proCardStyle">
-                        <div class="proCardStyleImg">
-                          <a href="product-detail.html"><img src="images/product-img1.png" alt="..."></a>
-                        </div>
-                          <div class="proCardStyleText">
-                            <h4>Sepi light Ultra</h4>
-                            <div class="selectAddOption">
-                              <div class="row no-gutters">
-                                <div class="col">
-                                  <div class="productSelect selectwidth">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                      <option>Choose size</option>
-                                      <option>Choose name</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-auto">
-                                  <div class="qtySelector qtySelectorwidth row no-gutters">
-                                    <div class="col-auto">
-                                      <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="qtyValue" value="1">
-                                    </div>
-                                    <div class="col-auto">
-                                      <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
-                                    </div>
-                                  </div>
-                               </div>
+                        </td>
+                        <td class="priceTblCol text-right">
+                          <span>$25.00</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="deleteIcon"><span><img src="images/delete.svg" alt="..."></span></td>
+                        <td class="produttd">
+                          <span class="produttdImg"><img src="images/product-img3.png" alt="..."></span>
+                          <span class="produttdText">Sepi Cat Pearls fresh</span>
+                        </td>
+                        <td>
+                          <div class="productSelect selectwidthlg">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>5 L</option>
+                              <option>5 L</option>
+                            </select>
+                          </div>
+                        </td>
+                        <td class="priceTblCol">
+                          <span>$25.00</span>
+                        </td>
+                        <td>
+                          <div class="qtySelector qtySelectorwidthlg row no-gutters">
+                            <div class="col-auto">
+                              <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
+                            </div>
+                            <div class="col">
+                              <input type="text" class="qtyValue" value="1" />
+                            </div>
+                            <div class="col-auto">
+                              <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
                             </div>
                           </div>
-                          <div class="cartPriceCol">
-                            <div class="form-row align-items-center">
-                              <div class="col">
-                                <div class="productPrice">
-                                  <span>$45.00</span>
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="productCart">
-                                  <a href="javascript:void(0);"><span>Add To Cart</span><span><img src="images/cart.svg"></span></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-4 col-xl-3 colbreakStyle">
-                      <div class="proCardStyle">
-                        <div class="proCardStyleImg">
-                          <a href="product-detail.html"><img src="images/product-img2.png" alt="..."></a>
-                        </div>
-                        <div class="proCardStyleText">
-                          <h4>Sepi light Ultra</h4>
-                            <div class="selectAddOption">
-                              <div class="row no-gutters">
-                                <div class="col">
-                                  <div class="productSelect selectwidth">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                      <option>Choose size</option>
-                                      <option>Choose name</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-auto">
-                                  <div class="qtySelector qtySelectorwidth row no-gutters">
-                                    <div class="col-auto">
-                                      <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="qtyValue" value="1">
-                                    </div>
-                                    <div class="col-auto">
-                                      <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
-                                    </div>
-                                  </div>
-                               </div>
-                            </div>
-                          </div>
-                          <div class="cartPriceCol">
-                            <div class="form-row align-items-center">
-                              <div class="col">
-                                <div class="productPrice">
-                                  <span>$45.00</span>
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="productCart">
-                                  <a href="javascript:void(0);"><span>Add To Cart</span><span><img src="images/cart.svg"></span></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-4 col-xl-3 colbreakStyle">
-                      <div class="proCardStyle">
-                        <div class="proCardStyleImg">
-                          <a href="product-detail.html"><img src="images/product-img3.png" alt="..."></a>
-                        </div>
-                        <div class="proCardStyleText">
-                          <h4>Sepi Cat Pearls fresh</h4>
-                            <div class="selectAddOption">
-                              <div class="row no-gutters">
-                                <div class="col">
-                                  <div class="productSelect selectwidth">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                      <option>Choose size</option>
-                                      <option>Choose name</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-auto">
-                                  <div class="qtySelector qtySelectorwidth row no-gutters">
-                                    <div class="col-auto">
-                                      <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="qtyValue" value="1">
-                                    </div>
-                                    <div class="col-auto">
-                                      <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
-                                    </div>
-                                  </div>
-                               </div>
-                            </div>
-                          </div>
-                          <div class="cartPriceCol">
-                            <div class="form-row align-items-center">
-                              <div class="col">
-                                <div class="productPrice">
-                                  <span>$45.00</span>
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="productCart">
-                                  <a href="javascript:void(0);"><span>Add To Cart</span><span><img src="images/cart.svg"></span></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-4 col-xl-3 colbreakStyle">
-                      <div class="proCardStyle">
-                        <div class="proCardStyleImg">
-                          <a href="product-detail.html"><img src="images/product-img4.png" alt="..."></a>
-                        </div>
-                        <div class="proCardStyleText">
-                          <h4>Sepi LightWeight</h4>
-                            <div class="selectAddOption">
-                              <div class="row no-gutters">
-                                <div class="col">
-                                  <div class="productSelect selectwidth">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                      <option>Choose size</option>
-                                      <option>Choose name</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-auto">
-                                  <div class="qtySelector qtySelectorwidth row no-gutters">
-                                    <div class="col-auto">
-                                      <span class="decreaseQty"><img src="images/minus.svg" alt="..."></span>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="qtyValue" value="1">
-                                    </div>
-                                    <div class="col-auto">
-                                      <span class="increaseQty"><img src="images/plus.svg" alt="..."></span>
-                                    </div>
-                                  </div>
-                               </div>
-                            </div>
-                          </div>
-                          <div class="cartPriceCol">
-                            <div class="form-row align-items-center">
-                              <div class="col">
-                                <div class="productPrice">
-                                  <span>$45.00</span>
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="productCart">
-                                  <a href="javascript:void(0);"><span>Add To Cart</span><span><img src="images/cart.svg"></span></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        </td>
+                        <td class="priceTblCol text-right">
+                          <span>$25.00</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -483,58 +284,45 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="js/slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src='https://swiperjs.com/package/swiper-bundle.min.js'></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-    var galleryThumbs = new Swiper('.proThumbs', {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      });
-      var galleryTop = new Swiper('.proDetailImgSlide', {
-       spaceBetween: 10,
-       navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev',
-       },
-       thumbs: {
-         swiper: galleryThumbs
-       }
-      });
       // increase Decrease product value
       var minVal = 1, maxVal = 2000; // Set Max and Min values
       $(".increaseQty").on('click', function(){
-      		var $parentElm = $(this).parents(".qtySelector");
-      		$(this).addClass("clicked");
-      		setTimeout(function(){
-      			$(".clicked").removeClass("clicked");
-      		},100);
-      		var value = $parentElm.find(".qtyValue").val();
-      		if (value < maxVal) {
-      			value++;
-      		}
-      		$parentElm.find(".qtyValue").val(value);
+          var $parentElm = $(this).parents(".qtySelector");
+          $(this).addClass("clicked");
+          setTimeout(function(){
+            $(".clicked").removeClass("clicked");
+          },100);
+          var value = $parentElm.find(".qtyValue").val();
+          if (value < maxVal) {
+            value++;
+          }
+          $parentElm.find(".qtyValue").val(value);
       });
       $(".decreaseQty").on('click', function(){
-      		var $parentElm = $(this).parents(".qtySelector");
-      		$(this).addClass("clicked");
-      		setTimeout(function(){
-      			$(".clicked").removeClass("clicked");
-      		},100);
-      		var value = $parentElm.find(".qtyValue").val();
-      		if (value > 1) {
-      			value--;
-      		}
-      		$parentElm.find(".qtyValue").val(value);
-      	});
+          var $parentElm = $(this).parents(".qtySelector");
+          $(this).addClass("clicked");
+          setTimeout(function(){
+            $(".clicked").removeClass("clicked");
+          },100);
+          var value = $parentElm.find(".qtyValue").val();
+          if (value > 1) {
+            value--;
+          }
+          $parentElm.find(".qtyValue").val(value);
+        });
     </script>
   </body>
 </html>

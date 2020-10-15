@@ -2162,7 +2162,7 @@ button.close:focus {
     cursor: pointer;
 }
 .decreaseQty img, .increaseQty img {
-    max-width: 8px;
+    width: 10px;
 }
 .cartPriceCol {
     padding-top: 15px;
@@ -2250,6 +2250,58 @@ button.close:focus {
 }
 .productDetailSec {
     padding-right: 200px;
+}
+.viewCartTbl{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 50px;
+}
+.produttdImg {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 12px;
+}
+.produttdImg > img {
+    height: 40px;
+    object-fit: contain;
+}
+.produttdText {
+    color: #074574;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.selectwidthlg {
+    width: 150px;
+}
+.priceTblCol > span {
+    font-size: 14px;
+    color: #FF3EB3;
+    font-weight: 800;
+}
+.qtySelectorwidthlg{
+  width: 125px;
+}
+.viewCartTbl .table td, .viewCartTbl .table th {
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+td.deleteIcon {
+    padding-left: 25px;
+}
+.viewCartTbl .table th {
+    color: #172A48;
+    font-size: 12px;
+    font-weight: 700;
+}
+.viewCartTbl .decreaseQty, .viewCartTbl .increaseQty {
+    padding: 3px 5px;
+}
+.viewCartTbl .decreaseQty img {
+    height: 2px;
 }
 /****************************************
 *********** MEDIA-QUARY ************
