@@ -2243,7 +2243,7 @@ button.close:focus {
     height: 54px;
 }
 .proDetailOption .decreaseQty img, .proDetailOption .increaseQty img {
-    max-width: 15px;
+    width: 15px;
 }
 .proDetailOption .qtyValue {
     font-size: 14px;
@@ -2251,10 +2251,10 @@ button.close:focus {
 .productDetailSec {
     padding-right: 200px;
 }
-.viewCartTbl{
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 50px;
+.viewCartTbl {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
 }
 .produttdImg {
     display: inline-block;
@@ -2288,9 +2288,10 @@ button.close:focus {
     vertical-align: middle;
     border-top: none;
     border-bottom: 1px solid #f2f2f2;
+    padding: 10px;
 }
-td.deleteIcon {
-    padding-left: 25px;
+.viewCartTbl .table td.deleteIcon {
+    padding-left: 20px;
 }
 .viewCartTbl .table th {
     color: #172A48;
@@ -2302,6 +2303,62 @@ td.deleteIcon {
 }
 .viewCartTbl .decreaseQty img {
     height: 2px;
+}
+.btnStyle.smbtn {
+    padding: 12px 30px 8px;
+    font-size: 12px;
+}
+.tblebtnColLeft > ul > li {
+    display: inline-block;
+}
+.tblebtnColLeft > ul > li + li {
+    margin-left: 8px;
+}
+.formStyle.formStylemb {
+    height: 38px;
+    padding: 8px 20px;
+    min-width: 220px;
+}
+.tblebtnCol {
+    padding: 15px 0 30px;
+    border-bottom: 1px solid #828282;
+}
+.cartTotalCol {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.cartTotalCol > h4{
+  color: #074574;
+  font-size: 24px;
+  text-align: right;
+  font-weight: 800;
+}
+.cartTotalStyle {
+    text-align: right;
+}
+.cartTotalStyle > ul > li {
+    padding-top: 12px;
+}
+.cartsubPrice {
+    color: #FF3EB3;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 185px;
+    display: inline-block;
+}
+.cartsubTotal {
+    color: #074574;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.checkoutbtn {
+    text-align: right;
+    margin-top: 30px;
+}
+.checkoutbtn .btnStyle.smbtn {
+    min-width: 200px;
 }
 /****************************************
 *********** MEDIA-QUARY ************
@@ -2833,6 +2890,49 @@ span.petCardArrow {
 .productDetailSec {
     padding-right: 0;
 }
+.viewCartTbl {
+    padding: 20px;
+}
+.produttdText {
+    padding-left: 10px;
+}
+.qtySelectorwidthlg {
+    width: 150px;
+}
+.btnStyle.smbtn {
+    padding: 8px 30px;
+}
+.formStyle.formStylemb {
+    height: 34px;
+    padding: 8px 15px;
+}
+.cartTotalCol {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.cartTotalCol > h4 {
+    font-size: 18px;
+}
+.cartTotalStyle > ul > li {
+    padding-top: 6px;
+}
+.cartsubTotal {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.cartsubPrice {
+    font-size: 14px;
+    min-width: 150px;
+}
+.checkoutbtn {
+    margin-top: 20px;
+}
+.produttdImg {
+    padding: 8px;
+}
+.deleteIcon > a > img {
+    width: 12px;
+}
 }
 @media (max-width: 1400px) {
 .imgCol {
@@ -3006,6 +3106,19 @@ span.petCardArrow {
 }
 .shopProduct .checkboxStyle .cardImgCol > img {
     height: 60px;
+}
+.viewCartTbl .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.viewCartTbl .table td, .viewCartTbl .table th {
+    padding: 8px;
+    white-space: nowrap;
+}
+.produttdText {
+    margin-right: 30px;
 }
 }
 @media (max-width: 991px) {
@@ -3315,6 +3428,9 @@ body {
 .proDetailOption {
     max-width: 100%;
 }
+.tblebtnCol {
+    padding: 10px 0 20px;
+}
 }
 @media (max-width: 585px) {
 .formSection {
@@ -3491,6 +3607,13 @@ body {
 }
 .productDetailSec .proThumbCol {
     padding: 8px;
+}
+.tblebtnColRight {
+    margin-top: 10px;
+}
+.cartTotalCol {
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 }
 @media (max-width: 485px) {
@@ -3680,6 +3803,43 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
 }
+.cartsubPrice {
+    min-width: 100px;
+}
+.produttdText {
+    font-size: 13px;
+}
+.produttdImg > img {
+    height: 30px;
+}
+.selectwidthlg {
+    width: 120px;
+}
+.qtySelectorwidthlg {
+    width: 100px;
+}
+.priceTblCol > span {
+    font-size: 13px;
+}
+.cartTotalCol > h4 {
+    font-size: 16px;
+}
+.cartsubTotal {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.checkoutbtn .btnStyle.smbtn {
+    min-width: 160px;
+}
+.viewCartTbl {
+    padding: 15px;
+}
+.formStyle.formStylemb {
+    min-width: 150px;
+}
+.btnStyle.smbtn {
+    padding: 8px 20px;
+}
 }
 @media (max-width: 385px) {
   .proDtlImgCol img {
@@ -3690,5 +3850,15 @@ body {
   }
   .proThumbsCol {
       padding: 0 15px;
+  }
+  .tblebtnColLeft > ul > li {
+    display: block;
+}
+  .tblebtnColLeft > ul > li + li {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  .btnStyle.smbtn {
+    width: 100%;
   }
 }
