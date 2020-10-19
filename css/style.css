@@ -3306,6 +3306,15 @@ body {
 .relatedPro .titlemd {
     padding-bottom: 30px;
 }
+.tableStyle .table thead th, .tableStyle .table td {
+    white-space: nowrap;
+}
+.tableStyle .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
