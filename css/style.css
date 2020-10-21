@@ -2360,6 +2360,17 @@ button.close:focus {
 .checkoutbtn .btnStyle.smbtn {
     min-width: 200px;
 }
+
+/******** checkout ***********/
+
+.checkoutCard .confirmTitle > h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.checkoutCard .confirmTitle > h5 > span {
+    padding-left: 5px;
+}
+
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/

@@ -2367,6 +2367,8 @@ button.close:focus {
 ** pet-hotel-dashboard **
 ***************************/
 
+/****** dashboard *******/
+
 .tableStyle2 .table th {
     text-transform: uppercase;
     font-size: 13px;
@@ -2398,6 +2400,9 @@ button.close:focus {
     right: 20px;
     top: 0;
 }
+
+/******* profile **********/
+
 .uploadColStyle .fileinput-button {
     position: relative;
     overflow: hidden;
@@ -2466,6 +2471,20 @@ button.close:focus {
   display: none;
 }
 
+/******* my-reservation ********/
+
+.reservationCol .cardtableCol {
+    border-radius: 15px;
+    padding: 15px 60px 15px 15px;
+    margin-top: 10px;
+}
+.reservationCol {
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+.reservationCol .titlemd {
+    padding-bottom: 15px;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -2682,6 +2701,18 @@ button.close:focus {
 .tableStyle2 .table th, .tableStyle2 .table td {
     padding: 12px;
 }
+.reservationCol .petdetailCol {
+    padding-top: 15px;
+}
+.reservationCol .cardtableCol {
+    padding: 15px;
+}
+.col-9.colwidth.colwidth2 {
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+
 }
 @media (max-width: 1500px) {
 .imgCol > img {
@@ -3047,6 +3078,16 @@ span.petCardArrow {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+.reservationCol .cardtableCol {
+    padding: 10px;
+}
+.reservationCol {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.reservationCol .titlemd {
+    padding-bottom: 10px;
+}
 }
 @media (max-width: 1400px) {
 .imgCol {
@@ -3096,6 +3137,14 @@ span.petCardArrow {
 }
 .themeCol > p {
     line-height: 20px;
+}
+.col-9.colwidth.colwidth2 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.reservationCol .petdetailCol {
+    padding-top: 10px;
 }
 }
 @media (max-width: 1199px) {
@@ -3548,6 +3597,9 @@ body {
 .tblebtnCol {
     padding: 10px 0 20px;
 }
+.rightbtn {
+    margin-bottom: 20px;
+}
 }
 @media (max-width: 585px) {
 .formSection {
@@ -3813,7 +3865,7 @@ body {
     padding: 6px 0 0 20px;
 }
 .titlexl > h5 {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
 }
 .titlemd > h5 {
