@@ -51,6 +51,9 @@ a.btn_primary:focus, a.btn_primary:hover {
     border: 0;
     color: #fff;
 }
+.btnStyle:focus {
+    color: #fff;
+}
 .btnStyle:hover {
   color: #fff;
 }

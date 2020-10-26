@@ -54,6 +54,9 @@ a.btn_primary:focus, a.btn_primary:hover {
 .btnStyle:hover {
   color: #fff;
 }
+.btnStyle:focus {
+    color: #fff;
+}
 .btnStyle:before {
     content: "";
     position: absolute;

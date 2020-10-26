@@ -36,6 +36,9 @@ img {
 a.btn_primary:focus, a.btn_primary:hover {
     color: #fff;
 }
+.btnStyle:focus {
+    color: #fff;
+}
 /******** button *************/
 
 .btnStyle {
@@ -2674,7 +2677,7 @@ select.form-control.inputStyleCol {
     padding: 15px;
     border-radius: 4px;
     width: 275px;
-    box-shadow: 0 0 32px rgba(0,0,0,0.1);
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
 }
 .reservationCalendar .date {
     border: 1px solid #EFEFEF;
@@ -2742,8 +2745,8 @@ select.form-control.inputStyleCol {
     display: none;
 }
 .toggleSwitch label, .toggleSwitch > span {
-    line-height: 20px;
-    height: 20px;
+    line-height: 24px;
+    height: 22px;
     vertical-align: middle;
 }
 .toggleSwitch input:focus ~ a,
@@ -2790,10 +2793,10 @@ select.form-control.inputStyleCol {
     right: 0;
     z-index: 4;
     display: block;
-    height: 18px;
+    height: 20px;
     padding: 0;
     left: 0;
-    width: 18px;
+    width: 20px;
     background-color: #fff;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease-out;
@@ -2807,7 +2810,7 @@ select.form-control.inputStyleCol {
     content: "";
     position: absolute;
     left: 0;
-    right: -12px;
+    right: -10px;
     top: 50%;
     background-color: #fff;
     height: 1px;
@@ -2853,22 +2856,19 @@ select.form-control.inputStyleCol {
 .btnStyle.btnwidthxs {
     min-width: 110px;
 }
-
 .cardBox {
     background-color: #fff;
-    min-width: 180px;
-    padding: 15px 20px;
+    padding: 15px 63px 15px 15px;
     border-radius: 5px;
     height: 90px;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 32px rgba(0,0,0,0.1);
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
+    margin: 0 10px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
 }
-.cardBox > span {
-    display: inline-block;
-    vertical-align: middle;
-}
-.cardBox > span.cardBoxIcon {
+.cardBoxIcon {
     width: 43px;
     height: 43px;
     background-color: #ddd;
@@ -2876,12 +2876,15 @@ select.form-control.inputStyleCol {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
-span.cardBoxIcon.cardBoxLightgreen {
+.cardBoxIcon.cardBoxLightgreen {
     background-color: rgba(21,200,188,0.2);
 }
-span.cardBoxIcon.cardBoxLightorange {
+.cardBoxIcon.cardBoxLightorange {
     background-color: rgba(253,164,88,0.2);
 }
 .cardBox > span.cardBoxIcon > svg {
@@ -2889,35 +2892,32 @@ span.cardBoxIcon.cardBoxLightorange {
 }
 .cardBoxText {
     color: #928D8D;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    min-width: 85px;
 }
 .performanceTitle {
     display: block;
     color: #15C8BC;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
-.mdCol{
-  max-width: 1260px;
+.mdCol {
+    max-width: 1280px;
+    margin-left: -10px;
 }
-.tabStyle2 .lblStyle {
-    font-weight: 600;
-    margin-top: 20px;
-    font-size: 18px;
+.tab-pane{
+  max-width: 980px;
 }
 .reviewCol {
-    padding-bottom: 10px;
     background-color: #fff;
-    padding: 20px 20px 20px !important;
+    padding: 25px;
     border-radius: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .cUserImg {
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -2925,12 +2925,22 @@ span.cardBoxIcon.cardBoxLightorange {
 .commentTopCol {
     position: relative;
 }
+.uNameCol > span{
+  color: #828282;
+  font-size: 12px;
+  font-weight: 400;
+}
 .uNameCol .uName {
     color: #2F80ED;
     font-weight: 600;
+    font-size: 14px;
 }
 .ratingStarts {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 2px;
     color: #E0E0E0;
+    margin-bottom: 10px;
 }
 .commentTopCol .ratingStarts {
     line-height: 1;
@@ -2939,9 +2949,15 @@ span.cardBoxIcon.cardBoxLightorange {
     color: #FF0000;
     display: inline-block;
 }
+.commentTopCol .ratingStarts > ul > li > img {
+    margin-left: -2px;
+    width: 14px;
+}
 .commentTopCol h5 {
     font-size: 14px;
     font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
 }
 .commentDate {
     position: absolute;
@@ -2950,6 +2966,8 @@ span.cardBoxIcon.cardBoxLightorange {
 }
 .commentDate, .shareCol, .likeDislike {
     color: #828282;
+    font-weight: 400;
+    font-size: 14px;
 }
 .shareCol {
     font-size: 12px;
@@ -2978,6 +2996,11 @@ span.cardBoxIcon.cardBoxLightorange {
     top: 0;
     bottom: 0;
     z-index: 1;
+}
+.reviewContentCol > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 /****************************************
 *********** MEDIA-QUARY ************
@@ -3139,6 +3162,9 @@ span.cardBoxIcon.cardBoxLightorange {
 .formContentGroup label {
     font-size: 14px;
 }
+.formContentGroup .inputStyleCol {
+    font-size: 14px;
+}
 }
 @media (max-width: 1640px) {
 .imgCol > img {
@@ -3211,6 +3237,25 @@ span.cardBoxIcon.cardBoxLightorange {
     -ms-flex: 0 0 90%;
     flex: 0 0 90%;
     max-width: 90%;
+}
+.mdCol {
+    max-width: 100%;
+}
+.cardBox {
+    min-width: 100%;
+    padding: 15px;
+    height: 80px;
+}
+.performanceTitle {
+    font-size: 16px;
+}
+.cardBoxIcon {
+    width: 35px;
+    height: 35px;
+}
+.cardBoxIcon > svg {
+    width: 15px;
+    height: 15px;
 }
 }
 @media (max-width: 1500px) {
@@ -3624,8 +3669,14 @@ span.petCardArrow {
 .nextday > a > span > img {
     padding-left: 5px;
 }
-.formContentGroup .inputStyleCol {
-    font-size: 14px;
+.cardBox {
+    padding: 10px;
+    height: 70px;
+}
+.reviewCol {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 }
 @media (max-width: 1400px) {
@@ -3684,6 +3735,9 @@ span.petCardArrow {
 }
 .reservationCol .petdetailCol {
     padding-top: 10px;
+}
+.tab-pane {
+    max-width: 100%;
 }
 }
 @media (max-width: 1199px) {
@@ -3821,6 +3875,9 @@ span.petCardArrow {
 }
 .produttdText {
     margin-right: 30px;
+}
+.cardSpaceTop {
+    margin-top: 15px;
 }
 }
 @media (max-width: 991px) {
@@ -4371,6 +4428,25 @@ body {
 }
 .btnStyle.btnwidthsm {
     min-width: 115px;
+}
+.reservationCalendar {
+    padding: 10px;
+    width: 100%;
+}
+.reviewCol {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.ratingStarts {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+.reviewContentCol > p {
+    font-size: 13px;
+}
+.likeDislike > ul > li + li {
+    margin-left: 5px;
 }
 }
 @media (max-width: 485px) {

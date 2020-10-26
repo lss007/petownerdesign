@@ -1,0 +1,4783 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a, .btn {
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -ms-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+:focus {
+  outline: none;
+}
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+a.btn_primary:focus, a.btn_primary:hover {
+    color: #fff;
+}
+/******** button *************/
+
+.btnStyle {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    padding: 18px 45px;
+    border: 0;
+    color: #fff;
+}
+.btnStyle:focus {
+    color: #fff;
+}
+.btnStyle:hover {
+  color: #fff;
+}
+.btnStyle:before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background: #12588e;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.btnStyle:hover:before {
+  left: 0%;
+  right: 0%;
+  opacity: 1;
+}
+.btn_primary {
+  background: #074574;
+}
+.btnStyle.btn_secondary {
+    background: #FF3EB3;
+    padding: 9px 25px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.btnStyle.btn_secondary:before{
+    background:#f135a7;
+}
+
+/******** dashboard page start *******/
+
+/***sidebar-layout-start****/
+
+.sidebar-nav {
+    position: fixed;
+    width: 320px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+}
+.sidebar-nav .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+.sidebarLinks {
+    min-height: 100vh;
+    position: relative;
+}
+.logoSec {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    padding: 50px 20px 30px 50px;
+    top: 0;
+    z-index: 1;
+}
+.logoSec > a > img {
+    max-width: 72px;
+}
+.sideColCard {
+    padding: 170px 0 30px;
+}
+.sidebarLink > ul > li {
+    position: relative;
+}
+.sidebarLink > ul > li + li {
+    margin: 20px 0;
+}
+.sidebarLink > ul > li > a {
+    color: #172A48;
+    display: block;
+    font-size: 18px;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    padding: 6px 50px 6px 50px;
+    position: relative;
+    border-left: 2px solid transparent;
+}
+.sidebarLink > ul > li > a.active {
+    color: #FF3EB3;
+    border-color: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover {
+    color: #FF3EB3;
+    border-color: #FF3EB3;
+}
+.sidebarLink > ul > li > a .linkIcon {
+    vertical-align: text-bottom;
+    width: 35px;
+    display: inline-block;
+}
+.sidebarLink > ul > li > a .linkIcon > svg {
+    width: 20px;
+}
+.sidebarLink > ul > li > a .linkIcon > svg path, .sidebarLink > ul > li > a .linkIcon > svg ellipse {
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.sidebarLink > ul > li > a.active .linkIcon.strokeIcon > svg path {
+    stroke: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover .linkIcon.strokeIcon > svg path, .sidebarLink > ul > li > a:hover .linkIcon.strokeIcon > svg ellipse {
+    stroke: #FF3EB3;
+}
+.sidebarLink > ul > li > a.active .linkIcon.fillIcon > svg path {
+    fill: #FF3EB3;
+}
+.sidebarLink > ul > li > a:hover .linkIcon.fillIcon > svg path, .sidebarLink > ul > li > a:hover .linkIcon.fillIcon > svg ellipse {
+    fill: #FF3EB3;
+}
+.subMenuLink {
+    display: none;
+    width: 100%;
+}
+.subMenuLink > ul > li {
+    display: block;
+    margin: 30px;
+}
+.subMenuLink > ul > li > a {
+    color: #172A48;
+    display: block;
+    font-size: 18px;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    padding: 6px 0 6px 60px;
+    position: relative;
+}
+.subMenuLink > ul > li > a.active, .subMenuLink > ul > li > a:hover {
+    color: #FF3EB3;
+}
+.dropOpen .subMenuLink {
+    display: block;
+}
+.updownArrow {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.upAngle {
+    display: none;
+}
+.dropOpen .upAngle {
+    display: block;
+}
+.dropOpen .downAngle {
+    display: none;
+}
+
+.title_sidebar_list {
+    display: inline-block;
+}
+.toggle {
+    width: 25px;
+    height: 16px;
+    /* top: 10px; */
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: 5px;
+}
+.bar {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    -webkit-transition: all 500ms ease-in-out 0s;
+    -o-transition: all 500ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
+    top: 7px;
+    border-radius: 20px;
+}
+.bar:nth-child(1) {
+    top: 0px;
+}
+.bar:nth-child(3) {
+    top: 14px;
+    width: 60%;
+    right: 0;
+}
+/***sidebar-layout-end****/
+
+.page-content {
+    padding: 30px;
+    min-height: 100vh;
+    margin-left: 320px;
+    background-color: #EEF6FC;
+    border-top-left-radius: 40px;
+    margin-top: 74px;
+}
+.header-section {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    padding: 20px;
+    margin-left: 320px;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.header-section.fixed-header {
+    box-shadow: 7px 2px 10px rgba(0,0,0,0.1);
+}
+.rightIconbar {
+    text-align: right;
+}
+.rightIconbar > ul > li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 20px;
+}
+.userCol > a > img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.cardStyle {
+    padding: 60px;
+}
+.borderRadiusRight{
+    border-top-right-radius: 40px;
+}
+.rightSidebar {
+    background-color: #ffffff;
+    padding: 0 60px 30px;
+    min-height: 100vh;
+    height: 100%;
+}
+.alertCardStyle {
+    background-color: #FFDEC1;
+    border-radius: 10px;
+    padding: 0 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.alertCardCol {
+    padding: 20px 0;
+}
+.alertCloseIcon {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1;
+    cursor: pointer;
+}
+.alertCardText > ul > li {
+    position: relative;
+    padding-left: 30px;
+}
+.alertCardText > ul > li + li {
+    margin-top: 3px;
+}
+.alertCardText > ul > li > span.alerthealthIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.healthText {
+    color: #FDA458;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.alertCardText > ul > li.callockText {
+    color: #172A48;
+}
+.page-content.pageContentStyle {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+.cardStyle.cardLandingStyle {
+    background-color: #EEF6FC;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 100vh;
+    height: 100%;
+}
+.healthImgCol {
+    padding: 0 35px;
+    margin-top: -35px;
+}
+.titlelg > h5 {
+    color: #172A48;
+    font-size: 23px;
+}
+.titlelg > span {
+    color: #172A48;
+    font-size: 14px;
+    display: block;
+}
+.petCardfeat {
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.petCardArrow > svg{
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.petCardfeat:hover .petCardArrow > svg{
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+}
+.blankLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.petCardfeatIcon {
+    width: 58px;
+    height: 58px;
+    background-color: #c3c3c3;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 33px rgba(0,0,0,0.1);
+}
+.petCardfeatText > h6 {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.bgStyle1 {
+    background-color: #15C8BC;
+}
+.bgStyle2 {
+    background-color: #FF3EB3;
+}
+.bgStyle3 {
+    background-color: #074574;
+}
+.bgStyle4 {
+    background-color: #FFCD50;
+}
+.cardboxSection {
+    padding: 30px 0;
+}
+.alertCardText {
+    padding-left: 15px;
+}
+.petCardfeatText {
+    padding-left: 14px;
+}
+.cardSection2 {
+    padding: 30px 0;
+}
+.titlemd > h5 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+.viewall_link {
+    font-size: 12px;
+    color: #172A48;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.viewall_link:hover{
+    text-decoration: underline;
+}
+.titleSec > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.titleSec > ul > li + li {
+    margin-left: 20px;
+}
+.addnew_link {
+    font-size: 12px;
+    color: #172A48;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.cardStyle2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0 33px rgb(0 0 0 / 6%);
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.cardhoverStyle:hover {
+    box-shadow: 0px 6px 35px rgb(0 0 0 / 9%);
+    transform: translate(0, -6px);
+}
+.cardImgCol > img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.cardText {
+    padding: 12px 15px 6px;
+}
+.cardtitlelg > h4 {
+    color: #074574;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+.cardtitlelg > span {
+    color: #828282;
+    font-size: 12px;
+    display: block;
+    padding-top: 3px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget {
+    width: 100%;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    border: 0;
+    height: auto;
+    padding: 15px;
+}
+.select_datepicker .picker-switch.accordion-toggle {
+    display: none;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active,
+.select_datepicker .bootstrap-datetimepicker-widget table td.active:hover,
+.select_datepicker .bootstrap-datetimepicker-widget table td span.active {
+  background-color: #FF3EB3;
+  text-shadow: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before, .select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    background-color: #FF3EB3;
+    border-radius: 20px;
+    bottom: auto;
+    top: 5px;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    border: 0;
+}
+.select_datepicker {
+    padding-top: 10px;
+}
+.select_datepicker th.picker-switch {
+    color: #172A48;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.select_datepicker th {
+    position: relative;
+}
+.select_datepicker th.prev span::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-image: url(../images/arrow.svg);
+    background-position: left center;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.select_datepicker th.next span::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-image: url(../images/arrow.svg);
+    background-position: left center;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select_datepicker .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: transparent;
+}
+.select_datepicker .datepicker-months th.picker-switch, .select_datepicker .datepicker-years th.picker-switch, .select_datepicker .datepicker-decades th.picker-switch{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.pleft {
+    padding-left: 20px;
+}
+.appointmentCol {
+    padding-top: 50px;
+}
+.petCardArrow {
+    display: block;
+}
+.panelCol {
+    background-color: #F9F9F9;
+    padding: 15px 50px 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.panelCol + .panelCol {
+    margin-top: 10px;
+}
+.panelCol:hover {
+    background-color: #fff;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+}
+.panelCol::before {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    background-image: url(../images/angle-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+     -webkit-transform:translate(0, -50%);
+    -o-transform:translate(0, -50%);
+    transform:translate(0, -50%);
+    z-index: 1;
+    cursor: pointer;
+}
+.panelCol .petCardfeatIcon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.panelCol .petCardfeatText > h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.callockStyle2 {
+    font-size: 12px;
+    color: #828282;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: block;
+    padding-top: 4px;
+}
+.callockStyle2 span.iconCol {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.iconCol {
+    padding-right: 6px;
+}
+.iconCol > img {
+    opacity: 0.6;
+}
+.panelSec{
+    padding-top: 20px;
+}
+/******** dashboard page end *******/
+
+/******** login/signup page start *******/
+
+.pageContent {
+  position: relative;
+}
+.mh-100 {
+  height: 100%;
+  min-height: 100vh;
+}
+.formSection {
+    height: 100%;
+    position: relative;
+    max-width: 494px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.logoStyle {
+    display: inline-block;
+}
+.formContent > h4 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.formStyle {
+    background: #fff;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #000;
+    padding: 10px 50px 10px 30px;
+    border-color: #DCDCDC;
+    font-weight: 600;
+    resize: none;
+}
+.formStyle::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B9B9B9;
+}
+.formStyle::-moz-placeholder { /* Firefox 19+ */
+  color: #B9B9B9;
+}
+.formStyle:-ms-input-placeholder { /* IE 10+ */
+  color: #B9B9B9;
+}
+.formStyle:-moz-placeholder { /* Firefox 18- */
+  color: #B9B9B9;
+}
+.form-control.formStyle:focus {
+  color: #000;
+  border-color: #DCDCDC;
+  outline: 0;
+  box-shadow: none;
+}
+.inputformIcon {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+.imgColStyle {
+    background-color: #172A48;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 40px 0 0 0;
+}
+.imgColStyle::before, .imgColStyle::after{
+	content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.imgColStyle::before {
+    background-image: url(../images/stroke-shape.svg);
+    background-position: top right;
+}
+.imgColStyle::after {
+    background-image: url(../images/shape-1.svg);
+    background-position: center right;
+}
+.dotShape {
+    position: relative;
+}
+.dotShape::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/dot-shape.svg);
+    background-position: center;
+    z-index: 1;
+}
+.formGroup {
+    margin-bottom: 10px;
+    position: relative;
+}
+.chkLinkStyle {
+    padding: 20px 0 0;
+}
+.formCheck input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.formCheck label {
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 30px;
+    margin: 0;
+}
+.formCheck label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #DCDCDC;
+    position: absolute;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 1px;
+}
+.formCheck input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 6px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.forgetpass > a{
+	color: #090963;
+	font-size: 16px;
+}
+.form-group.formCheck {
+    margin: 0;
+    text-align: left;
+}
+.forgetpass {
+    text-align: right;
+}
+.textLinkCol > p{
+	font-size: 14px;
+}
+.textLinkCol {
+    padding-top: 15px;
+}
+.textLinkCol > p > a {
+    color: #090963;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.imgCol {
+    margin-left: -365px;
+    position: relative;
+    z-index: 1;
+}
+.formContent .btnCol {
+    padding-top: 30px;
+}
+.was-validated .form-control.formStyle:invalid {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: inherit;
+    padding-right: 50px;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: none;
+}
+.needs-validation .invalid-feedback {
+    text-align: left;
+    padding-left: 15px;
+}
+.formCheck .form-check {
+    padding-left: 0;
+}
+/******** login/signup page end *******/
+
+/******** book-appointment-groomer-start ******/
+
+.pageInnerStyle{
+    padding: 50px;
+}
+.titlexl > h5 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 800;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+.checkboxStyle .cardStyle2 {
+    border-radius: 10px;
+}
+.checkboxStyle {
+    position: relative;
+}
+.checkboxStyle input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    margin: 0;
+}
+.checkboxStyle input[type=checkbox] {
+  display: none;
+}
+.checkboxStyle input[type=checkbox] + label:before {
+    content: "";
+    border-radius: 50%;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    color: transparent;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.checkboxStyle input[type=checkbox] + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    width: 6px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.checkboxStyle input[type=checkbox] + label:active:before, .checkboxStyle input[type=checkbox] + label:active:after {
+    -webkit-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+}
+.checkboxStyle input[type=checkbox]:checked + label:before {
+    background-color: #FF3EB3;
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox]:checked + label:after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox] + label .cardStyle2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+}
+.checkboxStyle input[type=checkbox]:checked + label .cardStyle2:before {
+    border-color: #FF3EB3;
+    opacity: 1;
+    visibility: visible;
+}
+.checkboxStyle input[type=checkbox]:checked + label .cardtitlelg > h4{
+    color: #FF3EB3;
+}
+.spacetop{
+    padding-top: 30px;
+}
+.selectOptionScroll {
+    padding: 40px 0 40px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 494px;
+}
+.selectOptionScroll .mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+.selectOptionScroll .mCSB_scrollTools {
+    opacity: 1;
+    right: 20px;
+}
+.selectOptionScroll .mCSB_scrollTools, .selectOptionScroll .mCSB_scrollTools .mCSB_draggerContainer {
+    opacity: 1;
+    right: 20px;
+    width: 6px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.selectOptionScroll .mCSB_scrollTools .mCSB_draggerRail {
+    opacity: 1;
+    right: 0;
+    width: 6px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+/* .selectOptionScroll .mCSB_scrollTools .mCSB_draggerRail{
+  background-color: #FF3EB3;
+  width: 6px;
+  border-radius: 10px;
+} */
+.selectOptionScroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #FF3EB3;
+  width: 6px;
+  border-radius: 10px;
+}
+.selectOptionList {
+    padding-right: 40px;
+}
+.selectOptionList > ul > li {
+    display:block;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 20px;
+}
+.radiocheckStyle input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radiocheckStyle .radio-label {
+    position: relative;
+    margin: 0;
+    padding-left: 35px;
+    display: block;
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.radiocheckStyle input[type=radio] + .radio-label:before {
+    content: "";
+    background: #e0e0e0;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    -webkit-transition:all 250ms ease;
+    -o-transition:all 250ms ease;
+    transition:all 250ms ease;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.radiocheckStyle input[type=radio]:checked + .radio-label:before {
+  background-color: #FF3EB3;
+}
+.radiocheckStyle input[type=radio]:focus + .radio-label:before {
+  outline: none;
+}
+.radiocheckStyle input[type=radio] + .radio-label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 6px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+      -webkit-transition:.2s;
+    -o-transition:.2s;
+    transition:.2s;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.tagCol > span {
+    background-color: #15C8BC;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 5px 0;
+}
+.priceText, .tagCol {
+    padding-top: 6px;
+}
+.priceText > span {
+    color: #15C8BC;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+.listStyle > li {
+    color: #333333;
+    font-size: 13px;
+}
+.listStyle {
+    padding: 10px 0 0 35px;
+}
+.selectOptionList > ul {
+    padding-right: 20px;
+}
+.calendarStyle {
+    width: 735px;
+    margin-left: 50px;
+}
+.datepickerStyle {
+    max-width: 420px;
+}
+.select_datepicker.datepickerStyle2 {
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active,
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td.active:hover,
+.select_datepicker.datepickerStyle2 .bootstrap-datetimepicker-widget table td span.active {
+    background-color: #FF3EB3;
+    color: #fff;
+}
+.selectInputOption {
+    max-width: 300px;
+    position: relative;
+}
+.selectInputOption .form-control {
+    border: 0;
+    padding: 15px 40px 10px 15px;
+    height: auto;
+    border-radius: 4px;
+    color: #000000;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+.selectInputOption .form-control:focus{
+    box-shadow: none;
+}
+.selectInputOption::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border: solid #333333;
+    border-width: 0 3px 3px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+}
+.pageInnerStyle.pdbottom {
+    padding-bottom: 150px;
+    position: relative;
+}
+.bottombar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #C6E1F5;
+    text-align: center;
+    margin-left: 320px;
+    padding: 28px 30px;
+}
+.lgwidth {
+    min-width: 372px;
+}
+.btn .btnArrow {
+    transform: translate(5px, 0);
+    display: inline-block;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.btn:hover .btnArrow{
+    transform: translate(9px, 0);
+}
+/******** book-appointment-groomer-end ******/
+
+/******** confirm-booking-start ******/
+
+.colmd {
+    max-width: 520px;
+    margin: 0 auto;
+}
+.cardStylemd {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.confirmTitle {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.confirmTitle > h5 {
+    color: #172A48;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+.confirmTitle > h5 > span {
+    color: #FF3EB3;
+    padding-left: 15px;
+}
+.confirmappointment {
+    padding: 30px;
+}
+.widthStyle {
+    max-width: 275px;
+    margin: 0 auto;
+}
+.confirmappointment .petCardfeatText > h5 {
+    color: #172A48;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+.confirmappointment .petCardfeatText {
+    padding-left: 20px;
+}
+.confirmappointment .callockStyle2 {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 0;
+}
+.confirmappointment .iconCol > img {
+    opacity: 1;
+}
+.confirmprice{
+    padding: 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+.confirmprice > h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #172A48;
+    font-weight: 700;
+}
+.confirmprice > h4 > span {
+    display: inline-block;
+    color: #15C8BC;
+    padding-left: 30px;
+}
+.cancelationPolicy {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.cancelationPolicy > h6{
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cancelationPolicy > p {
+    color: #172A48;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.confirmbtn {
+    padding: 30px;
+    text-align: center;
+}
+
+.success-message {
+  text-align: center;
+}
+.success-message__title {
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 200ms ease;
+    color: #219653;
+    padding-top: 12px;
+}
+.SuccesMdl .modal-dialog {
+    max-width: 500px;
+    border-radius: 0;
+}
+.SuccesMdl .modal-content {
+    padding: 50px;
+    border-radius: 0;
+    border: 0;
+}
+.success-message__content > p {
+    color: #172A48;
+    font-size: 16px;
+    margin: 0;
+}
+.btn.mdbtn {
+    padding: 10px 55px;
+    font-size: 12px;
+}
+.mdlbtn{
+    margin-top: 15px;
+}
+.modleStyle {
+    background-color: rgba(23,42,72,0.90);
+    padding-right: 0 !important;
+}
+.modleStyle .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+/******** confirm-booking-end ******/
+
+.customCardStyle {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+.userProfileImg > img {
+    width: 100%;
+    border-radius: 20px;
+}
+.userProfileImg {
+    position: relative;
+}
+.uploadImgStyle {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background-color: #fff;
+    padding: 11px 12px;
+    border-radius: 10px;
+}
+.uploadImgStyle .form-control-file {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    top: 0;
+    right: 0;
+}
+.userproDetail {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.formGroupStyle label{
+    margin: 0;
+}
+.lebelsm {
+    color: #172A48;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.inputvalue > p {
+    color: #828282;
+    text-align: right;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 400;
+}
+.lebelmd {
+    color: #074574;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #F2F2F2;
+    display: block;
+    padding: 0 0 5px;
+}
+.inputform {
+    position: relative;
+    padding: 0 0 10px 30px;
+    border-bottom: 1px solid #F2F2F2;
+    color: #828282;
+    font-size: 15px;
+}
+.inputIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.formGroupStyle {
+    margin-bottom: 20px;
+}
+.inputvalue {
+    padding-bottom: 10px;
+}
+.btnCol2 {
+    padding-top: 20px;
+}
+.btnStyle.lgbtn {
+    min-width: 116px;
+    padding: 10px 8px;
+}
+.formCol label {
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+.formCol .form-control {
+    padding: 0 0 5px 0;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid #F2F2F2;
+    border-radius: 0;
+}
+.formCol .form-control:focus {
+    box-shadow: none;
+}
+.formCol {
+    padding-top: 20px;
+}
+.mlSpace {
+    margin-left: 40px;
+}
+.cardwidthmd {
+    width: 510px;
+}
+.cardwidthlg {
+    width: 580px;
+}
+
+/************ my-pet page start *********/
+
+.btnStyle.custombtn {
+    padding: 16px 30px 12px;
+}
+.cardtableCol {
+    background-color: #fff;
+    padding: 15px 85px 15px 15px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.petInfo > ul > li > span {
+    display: inline-block;
+}
+.petInfolabel {
+    color: #828282;
+    font-size: 14px;
+    min-width: 115px;
+}
+.petInfo > ul > li {
+    display: block;
+}
+.petInfo > ul > li + li {
+    padding-top: 12px;
+}
+.petInfoText {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.petInfoText.lgtxet {
+    color: #15C8BC;
+    font-size: 16px;
+}
+.cardtbaleImg {
+    margin-right: 50px;
+}
+.cardtbaleImg > img {
+    border-radius: 20px 0 0 20px;
+    height: 210px;
+    object-fit: cover;
+}
+.cardtablebtn {
+    text-align: right;
+}
+.cardtablebtn .btnStyle {
+    min-width: 130px;
+    padding: 9px 15px;
+}
+.cardtablebtn > ul > li {
+    margin-top: 6px;
+}
+.btnStyle.btngreen {
+    background-color: #15C8BC;
+}
+.btnStyle.btngreen::before {
+    background-color: #12bfb4;
+}
+.btnStyle.btnred {
+    background-color: #eb5757;
+}
+.btnStyle.btnred::before {
+    background-color: #e04d4d;
+}
+.petdetailCol {
+    position: relative;
+    padding-top: 30px;
+}
+.tableIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tableIcon > a {
+    display: inline-block;
+}
+.tableIcon > a + a {
+    padding-left: 10px;
+}
+.customModle .modal-dialog{
+    max-width: 800px;
+}
+.customModle .modal-content {
+    padding: 30px;
+    border-radius: 20px;
+}
+.customModle .close {
+    opacity: .8;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 1;
+}
+.customModle .close img {
+    width: 15px;
+}
+.modal-body.modlFormStyle {
+    padding: 0;
+}
+.mdlTitle > h4 {
+    color: #172A48;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 40px;
+}
+.file-upload {
+  background-color: #ffffff;
+}
+.file-upload-content {
+  display: none;
+  text-align: center;
+  border: 2px dashed #F2F2F2;
+  padding: 15px;
+}
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.image-upload-wrap {
+    border: 2px dashed #F2F2F2;
+    position: relative;
+    border-radius: 8px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.image-title-wrap {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+}
+.drag-text {
+  text-align: center;
+}
+.drag-text > span {
+    color: #828282;
+    font-size: 13px;
+}
+.drag-text h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #074574;
+    font-size: 12px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.file-upload-image {
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.remove-image {
+    margin: 0;
+    color: #333333;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: #0053b6;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0;
+}
+.mdlTitle {
+    margin-bottom: 30px;
+}
+.modlFormStyle .formStyle {
+    border-color: #F2F2F2;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    padding: 0 45px 0px 0;
+    font-size: 15px;
+    color: #828282;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+.modlFormStyle .formStyle::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #828282;
+}
+.modlFormStyle .formStyle::-moz-placeholder { /* Firefox 19+ */
+  color: #828282;
+}
+.modlFormStyle .formStyle:-ms-input-placeholder { /* IE 10+ */
+  color: #828282;
+}
+.modlFormStyle .formStyle:-moz-placeholder { /* Firefox 18- */
+  color: #828282;
+}
+.modlFormStyle .inputformIcon {
+    right: 0;
+}
+.selectCol{
+    position: relative;
+}
+.selectCol::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 11px;
+    height: 11px;
+    border: solid #074574;
+    border-width: 0 2px 2px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+}
+.modlFormStyle .formGroup {
+    margin-bottom: 15px;
+}
+.datepickerInput .input-group-append {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 99;
+    padding: 13px 0;
+}
+.datepickerInput .input-group-text {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.datepickerInput .bootstrap-datetimepicker-widget.dropdown-menu{
+    width: 100%;
+}
+.datepickerInput .table thead th, .select_datepicker .table td {
+    border: 0;
+}
+.modlFormStyle .btnCol {
+    margin: 20px 0 10px;
+}
+.paratext {
+    color: #828282;
+    font-size: 14px;
+    line-height: 24px;
+}
+.tableStyle {
+    padding-top: 10px;
+}
+.tableStyle .table thead th, .tableStyle td {
+    border: 0;
+}
+.tableStyle .table thead th {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+}
+.tableStyle .table td {
+    color: #4f4f4f;
+    font-size: 13px;
+    font-weight: 400;
+}
+.tableStyle .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F8F8;
+}
+button.close:focus {
+    outline: none;
+}
+/************ my-pet page end *********/
+
+.tabSec {
+    margin-top: 20px;
+}
+.tablinks ul.tabs {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+.tablinks ul.tabs li {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    padding: 20px;
+    background-color:#EEF6FC;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px 0 0 15px;
+}
+.tablinks ul.tabs li.active {
+    background-color:#fff;
+    display: block;
+}
+.tabsCollapse .tab_container {
+    clear: both;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+    display: block;
+    border-radius: 15px;
+}
+.tabsCollapse .tab_content {
+    padding: 60px;
+    display: none;
+}
+.tabsCollapse .tab_drawer_heading {
+    display: none;
+}
+.tabuserCol > span {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 17px;
+}
+.tabuserCol.bgcircle1 > span{
+    background-color: #FF3EB3;
+}
+.tabuserCol.bgcircle2 > span{
+    background-color: #074574;
+}
+.tabuserCol.bgcircle3 > span{
+    background-color: #FF783E;
+}
+.tabuserCol.bgcircle4 > span{
+    background-color: #5A8E41;
+}
+.tablinks {
+    padding-top: 30px;
+    width: 280px;
+}
+.tabuserInfo > h5 {
+    font-size: 15px;
+    color: #172A48;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    padding-right: 50px;
+}
+.tabuserInfo > p {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 2px;
+    margin: 0;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.userseen {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #bdbdbd;
+    font-weight: 400;
+}
+.tabuserInfo {
+    padding-left: 5px;
+}
+.tabStatusText > p {
+    color: #172A48;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+.tabStatusForward > span {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.tabStatusForward > a {
+    padding-left: 20px;
+}
+.tabmsgCol {
+    border-top: 1px solid #E9E9E9;
+    margin-top: 25px;
+    padding: 50px 200px 0 0;
+}
+.tabmsgCol > p {
+    color: #4f4f4f;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+.tabRegardsCol span{
+    display: block;
+    color: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tabRegardsCol span + span{
+    margin-top: 8px;
+}
+.tabRegardsCol {
+    padding: 20px 0 0;
+}
+.lightTitle {
+    font-weight: 400;
+    text-transform: initial;
+}
+.cardwidthxl {
+    max-width: 685px;
+}
+.tabtitle > h4 {
+    color: #172A48;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.modifiedLink > a {
+    color: #FF3EB3;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.rightSpace {
+    margin-right: 150px;
+}
+.leftpd{
+  padding-left:30px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 180px;
+}
+.checkboxStyle2 {
+    margin: 20px 0;
+}
+.checkboxStyle2 .cardStyle2 {
+    padding: 10px;
+}
+.checkboxStyle.checkboxStyle2 input[type=checkbox] + label:before {
+    width: 24px;
+    height: 24px;
+    top: -6px;
+    right: -6px;
+}
+.checkboxStyle.checkboxStyle2 input[type=checkbox] + label:after {
+    width: 7px;
+    height: 12px;
+    border-width: 0 3px 3px 0;
+    right: 2px;
+    top: -2px;
+}
+.cardInfo > h4 {
+    color: #172A48;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+.priceCol > span {
+    color: #828282;
+    font-size: 13px;
+    font-weight: 600;
+}
+.viewDetailLink {
+    text-align: right;
+    padding-top: 8px;
+}
+.viewDetailLink > a {
+    color: #FF3EB3;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.viewDetailLink > a > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.viewDetailLink > a > span > img {
+    width: 18px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.reservationDetail {
+    padding-right: 100px;
+}
+.priceCol > span + span {
+    padding-left: 8px;
+}
+.navigationStyle ul.pagination {
+    justify-content: center;
+}
+.navigationStyle {
+    padding-top: 20px;
+}
+.navigationStyle a.page-link {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.navigationStyle a.page-link:focus {
+    box-shadow:none;
+}
+.navigationStyle .page-item.active .page-link {
+    background-color: transparent;
+    color: #FF3EB3;
+}
+.previous a.page-link {
+    transform: rotate(180deg);
+    margin-top: 1px;
+}
+.navigationStyle li.page-item.previous {
+    margin-right: 10px;
+}
+.navigationStyle li.page-item.next {
+    margin-left:10px;
+}
+.checkboxStyle2 .cardText {
+    padding: 15px 0 5px;
+}
+/* product detail page */
+.proDetailSlider {
+	width: 540px;
+}
+.proThumbsCol {
+    padding: 0 40px;
+    position: relative;
+}
+.proThumbCol {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+	width: 100%;
+	height: 85px;
+}
+.proThumbCol img, .proDtlImgCol img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+}
+.proThumbCol img{
+  border-radius: 8px;
+}
+.proDtlImgCol img {
+    border-radius: 10px;
+    height: 320px;
+    object-fit: cover;
+}
+.proDtlImgCol {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+}
+.proDtlContent .priceCol {
+	font-size: 26px;
+}
+.proThumbsCol .swiper-button-next:after, .proThumbsCol .swiper-button-prev:after{
+  display: none;
+}
+.proThumbsCol .swiper-button-next {
+    opacity: 1;
+    right: 0;
+    width: auto;
+}
+.proThumbsCol .swiper-button-prev {
+    opacity: 1;
+    left: 0;
+    transform: rotate(180deg);
+    width: auto;
+}
+.proThumbsCol .swiper-button-next img, .proThumbsCol .swiper-button-prev img {
+    width: 10px;
+}
+.titlexl.clrtheme > h5 {
+    color: #074574;
+}
+.titlethemeclr {
+    color: #FF3EB3;
+}
+.titlebaseclr {
+    color: #15C8BC;
+}
+.topspace{
+  padding-top: 15px;
+}
+.themeCol > h5 {
+    color: #172A48;
+    font-size: 18px;
+    font-weight: 800;
+}
+.themeCol > p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.proDtlContent .cancelationPolicy {
+    border: 0;
+}
+.proDetailImgSlide {
+    padding-bottom: 15px;
+}
+.cardwidthxxl {
+    max-width: 1080px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 80px;
+}
+.shopProduct .cardText {
+    padding: 12px 5px 6px;
+}
+.spacetopmd {
+    padding-top: 20px;
+}
+.shopingSelectStyle > ul > li {
+    display: inline-block;
+}
+.shopingSelectStyle > ul > li + li {
+    padding-left: 30px;
+}
+.radioCheckStyle2 label.radio-label {
+    margin: 0;
+    padding-left: 26px;
+    position: relative;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+ .radioCheckStyle2 input[type="radio"] {
+	 position: absolute;
+	 opacity: 0;
+}
+ .radioCheckStyle2 input[type="radio"] + .radio-label:before {
+	 content: "";
+	 background: #fff;
+	 border-radius: 100%;
+	 border:2px solid #DCDCDC;
+	 display: inline-block;
+	 width: 20px;
+	 height:20px;
+	 position: absolute;
+	 top: 0;
+   left: 0;
+	 cursor: pointer;
+	 text-align: center;
+	 transition: all 250ms ease;
+}
+.radioCheckStyle2 input[type="radio"]:checked + .radio-label:before {
+    background-color: #FF3EB3;
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+ .radioCheckStyle2 input[type="radio"]:focus + .radio-label:before {
+	 outline: none;
+	 border-color: #DCDCDC;
+}
+ .radioCheckStyle2 input[type="radio"]:disabled + .radio-label:before {
+	 box-shadow: inset 0 0 0 4px #f4f4f4;
+	 border-color: #DCDCDC;
+	 background: #fff;
+}
+ .radioCheckStyle2 input[type="radio"] + .radio-label:empty:before {
+	 margin-right: 0;
+}
+.proCardStyle {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 33px rgba(0, 0, 0, 6%);
+    margin-top: 30px;
+}
+.proCardStyleImg > a {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+.proCardStyleImg > a > img {
+    height: 140px;
+    object-fit: cover;
+}
+.proCardStyleText > h4 {
+    color: #172A48;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+.bookingVeterinary .widthStyle {
+    max-width: 225px;
+}
+.selectwidth{
+    max-width: 125px;
+}
+.productSelect {
+    position: relative;
+}
+.productSelect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border: solid #074574;
+    border-width: 0 2px 2px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+    margin-top: -1px;
+}
+.productSelect .form-control {
+    color: #4f4f4f;
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 7px 25px 7px 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-color: #e0e0e0;
+}
+.productSelect .form-control:focus {
+    color: #4f4f4f;
+    background-color: #fff;
+    border-color: #e0e0e0;
+    outline: 0;
+    box-shadow: none;
+}
+.selectAddOption {
+    padding-top: 10px;
+}
+.qtySelectorwidth{
+  width: 85px;
+}
+.qtySelector {
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 0px 5px;
+}
+.qtySelector .clicked{
+	-webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.qtyValue {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    color: #4f4f4f;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.decreaseQty, .increaseQty {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 22px;
+    height: 30px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.decreaseQty img, .increaseQty img {
+    width: 10px;
+}
+.cartPriceCol {
+    padding-top: 15px;
+    border-top: 1px solid #f2f2f2;
+    margin-top: 15px;
+}
+.productPrice > span {
+    color: #4f4f4f;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+}
+.productCart > a {
+    color: #FF3EB3;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.productCart > a > span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.productCart > a > span + span {
+    padding-left: 5px;
+}
+.proCardSec{
+    max-width:1260px;
+}
+.productDetailSec .proDetailImgSlide {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+.productDetailSec .proDtlImgCol img {
+    height: 240px;
+    width: auto;
+    border-radius: 0;
+}
+.productDetailSec .proThumbCol {
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+}
+.productDetailSec .proThumbCol > img {
+    height: 70px;
+    object-fit: contain;
+}
+.ratingStarts {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 2px;
+}
+.proDetailOption {
+    padding: 20px 0;
+    max-width: 520px;
+}
+.proDetailOption .productSelect .form-control {
+    height: 55px;
+    padding: 10px 40px 10px 20px;
+    font-size: 14px;
+}
+.proDetailOption .productSelect::before {
+    width: 10px;
+    height: 10px;
+    right: 25px;
+    margin-top: -3px;
+}
+.proDetailOption .qtySelector {
+    padding: 0 15px;
+}
+.proDetailOption .decreaseQty, .proDetailOption .increaseQty {
+    width: 35px;
+    height: 54px;
+}
+.proDetailOption .decreaseQty img, .proDetailOption .increaseQty img {
+    width: 15px;
+}
+.proDetailOption .qtyValue {
+    font-size: 14px;
+}
+.productDetailSec {
+    padding-right: 200px;
+}
+.viewCartTbl {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+.produttdImg {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 12px;
+}
+.produttdImg > img {
+    height: 40px;
+    object-fit: contain;
+}
+.produttdText {
+    color: #074574;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.selectwidthlg {
+    width: 150px;
+}
+.priceTblCol > span {
+    font-size: 14px;
+    color: #FF3EB3;
+    font-weight: 800;
+}
+.qtySelectorwidthlg{
+  width: 125px;
+}
+.viewCartTbl .table td, .viewCartTbl .table th {
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px;
+}
+.viewCartTbl .table td.deleteIcon {
+    padding-left: 20px;
+}
+.viewCartTbl .table th {
+    color: #172A48;
+    font-size: 12px;
+    font-weight: 700;
+}
+.viewCartTbl .decreaseQty, .viewCartTbl .increaseQty {
+    padding: 3px 5px;
+}
+.viewCartTbl .decreaseQty img {
+    height: 2px;
+}
+.btnStyle.smbtn {
+    padding: 12px 30px 8px;
+    font-size: 12px;
+}
+.tblebtnColLeft > ul > li {
+    display: inline-block;
+}
+.tblebtnColLeft > ul > li + li {
+    margin-left: 8px;
+}
+.formStyle.formStylemb {
+    height: 38px;
+    padding: 8px 20px;
+    min-width: 220px;
+}
+.tblebtnCol {
+    padding: 15px 0 30px;
+    border-bottom: 1px solid #828282;
+}
+.cartTotalCol {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.cartTotalCol > h4{
+  color: #074574;
+  font-size: 24px;
+  text-align: right;
+  font-weight: 800;
+}
+.cartTotalStyle {
+    text-align: right;
+}
+.cartTotalStyle > ul > li {
+    padding-top: 12px;
+}
+.cartsubPrice {
+    color: #FF3EB3;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 185px;
+    display: inline-block;
+}
+.cartsubTotal {
+    color: #074574;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.checkoutbtn {
+    text-align: right;
+    margin-top: 30px;
+}
+.checkoutbtn .btnStyle.smbtn {
+    min-width: 200px;
+}
+
+/**********************
+** Groomer-dDashboard **
+***************************/
+
+/****** dashboard *******/
+
+.tableStyle2 .table th {
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 20px;
+    font-weight: 700;
+}
+.tableStyle2 .table tbody tr {
+    background-color: #ffff;
+    border-radius: 10px;
+    border-bottom: 5px solid #eef6fc;
+}
+.tableStyle2 .table td {
+    color: #172A48;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+.tableStyle2 .table td:nth-child(1) {
+    padding-left: 30px;
+}
+.listclient {
+    position: relative;
+    padding-right: 50px;
+}
+.closeIcon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.petCardfeat2Icon {
+    padding: 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panelCol2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.1);
+    padding: 15px 80px 15px 20px;
+    position: relative;
+    margin-top: 15px;
+}
+.petCardfeat2 .userseen {
+    right: 15px;
+    color: #828282;
+    top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.tabuserInfo2 {
+    padding-left: 20px;
+}
+.tabuserInfo2 > h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.calendarInput {
+    position: relative;
+    max-width: 236px;
+    margin: 0 auto;
+}
+.calendarday > label {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.calendarInput .form-control {
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 40px 10px 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+}
+.calendarInput .form-control:focus{
+  box-shadow: none;
+}
+.calendarInput .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+.calendarInput .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+.calendarInput .form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #000000;
+}
+.calendarInput .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #000000;
+}
+.calendarInput > span {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+.preday > a > span, .nextday > a > span {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+}
+.preday > a > span > img {
+    transform: rotate(180deg);
+    padding-left: 8px;
+}
+.nextday > a > span > img {
+    padding-left: 8px;
+}
+.dateTime > span {
+    color: #172A48;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+.dateTime > span + span {
+    padding-left: 20px;
+}
+.dateTime > span > img {
+    padding-right: 5px;
+    margin-top: -2px;
+}
+.tableStyle2 .table td.texttable {
+    font-size: 14px;
+    font-weight: 700;
+}
+.tableStyle2 .table td.customselect {
+    font-size: 14px;
+    min-width: 100px;
+    padding-right: 40px;
+    position: relative;
+}
+.tableStyle2 .table td.customselect > span > img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+/******* profile **********/
+
+.uploadColStyle .fileinput-button {
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px dotted #15C8BC;
+}
+.uploadColStyle {
+    padding-top: 20px;
+}
+.uploadColStyle .fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.uploadColStyle .fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: "alpha(opacity=0)";
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+.uploadColStyle .thumb {
+    height:70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.uploadColStyle ul.thumb-Images li {
+  width: 70px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  height: 70px;
+  margin-right: 10px;
+}
+.uploadColStyle .img-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+.uploadColStyle .img-wrap .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 5px 2px 2px;
+    color: #000;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 10px;
+    border-radius: 50%;
+    text-shadow: none;
+}
+.uploadColStyle .FileNameCaptionStyle {
+  display: none;
+}
+.preday, .nextday {
+    padding-top: 20px;
+}
+.redclr {
+    color: #eb5757;
+}
+.greenclr{
+  color: #27ae60;
+}
+
+/******* book-appointment **********/
+
+.formContentGroup label {
+    color: #bdbdbd;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.customCardStyle2 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.formContentGroup .inputStyleCol {
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 16px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    padding-left: 5px;
+}
+.selectarrow{
+  position: relative;
+}
+select.form-control.inputStyleCol {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+}
+.selectarrow::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border: solid #828282;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+.formContentGroup .inputStyleCol:focus{
+  box-shadow: none;
+}
+.formContentGroup .inputStyleCol::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #828282;
+}
+.formContentGroup .inputStyleCol::-moz-placeholder { /* Firefox 19+ */
+  color: #828282;
+}
+.formContentGroup .inputStyleCol:-ms-input-placeholder { /* IE 10+ */
+  color: #828282;
+}
+.formContentGroup .inputStyleCol:-moz-placeholder { /* Firefox 18- */
+  color: #828282;
+}
+.formContentGroup {
+    margin-bottom: 20px;
+}
+.FormStyle2 .btnCol {
+    margin: 20px 0;
+}
+.btnStyle.btnwidthsm {
+    min-width: 132px;
+}
+.FormStyle2 .btn + .btn {
+    margin-left: 20px;
+}
+/******** performance ******/
+.reservationCalendar {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    width: 275px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
+}
+.reservationCalendar .date {
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+}
+.reservationCalendar .input-group-text {
+    border: 0;
+    background-color: transparent;
+    padding-right: 0;
+}
+.reservationCalendar .datetimepicker-input {
+    border: 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #928D8D;
+}
+.reservationCalendar ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #928D8D;
+}
+.reservationCalendar ::-moz-placeholder { /* Firefox 19+ */
+  color: #928D8D;
+}
+.reservationCalendar :-ms-input-placeholder { /* IE 10+ */
+  color: #928D8D;
+}
+.reservationCalendar :-moz-placeholder { /* Firefox 18- */
+  color: #928D8D;
+}
+.reservationCalendar .datetimepicker-input:focus {
+    box-shadow: none;
+}
+.reservationCalendar .input-group-append {
+    margin: 0;
+}
+.toggleSec {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    padding: 10px;
+}
+.colTogle {
+    position: relative;
+    padding-right: 60px;
+    margin-top: 10px;
+}
+.colTogle label {
+    color: #172A48;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.colTogle .toggleSwitch {
+    height: 20px;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+    width: 53px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.toggleSwitch span span {
+    display: none;
+}
+.toggleSwitch label, .toggleSwitch > span {
+    line-height: 24px;
+    height: 22px;
+    vertical-align: middle;
+}
+.toggleSwitch input:focus ~ a,
+.toggleSwitch input:focus + label {
+    outline: none;
+}
+.toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+}
+.toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+}
+.toggleSwitch > span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+.toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 10px;
+    width: 100%;
+    left: -80%;
+    top: 0px;
+    opacity: 0;
+    color: white;
+}
+.toggleSwitch a {
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    display: block;
+    height: 20px;
+    padding: 0;
+    left: 0;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    top: 1px;
+    border: 3px solid #ff7674;
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+}
+.toggleSwitch a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -10px;
+    top: 50%;
+    background-color: #fff;
+    height: 1px;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+.toggleSwitch > span span:first-of-type {
+    opacity: 1;
+    left: -20px;
+}
+.toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FF7674;
+    border-radius: 50px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.toggleSwitch input:checked ~ a {
+    left: 65%;
+    border-color: #01B995;
+}
+.toggleSwitch input:checked ~ a::before {
+    left: -8px;
+    right: 0;
+}
+.toggleSwitch input:checked ~ span:before {
+    background-color: #01B995;
+}
+.toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+}
+.toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff;
+}
+.btnStyle.btnwidthxs {
+    min-width: 110px;
+}
+.cardBox {
+    background-color: #fff;
+    padding: 15px 63px 15px 15px;
+    border-radius: 5px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
+    margin: 0 10px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.cardBoxIcon {
+    width: 43px;
+    height: 43px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.cardBoxIcon.cardBoxLightgreen {
+    background-color: rgba(21,200,188,0.2);
+}
+.cardBoxIcon.cardBoxLightorange {
+    background-color: rgba(253,164,88,0.2);
+}
+.cardBox > span.cardBoxIcon > svg {
+    width: 20px;
+}
+.cardBoxText {
+    color: #928D8D;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.performanceTitle {
+    display: block;
+    color: #15C8BC;
+    font-size: 18px;
+}
+.mdCol {
+    max-width: 1280px;
+    margin-left: -10px;
+}
+.tab-pane{
+  max-width: 980px;
+}
+.reviewCol {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.cUserImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.commentTopCol {
+    position: relative;
+}
+.uNameCol > span{
+  color: #828282;
+  font-size: 12px;
+  font-weight: 400;
+}
+.uNameCol .uName {
+    color: #2F80ED;
+    font-weight: 600;
+    font-size: 14px;
+}
+.ratingStarts {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 2px;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+.commentTopCol .ratingStarts {
+    line-height: 1;
+}
+.redStar .r5 .star1, .redStar .r5 .star2, .redStar .r5 .star3, .redStar .r5 .star4, .redStar .r5 .star5 {
+    color: #FF0000;
+    display: inline-block;
+}
+.commentTopCol .ratingStarts > ul > li > img {
+    margin-left: -2px;
+    width: 14px;
+}
+.commentTopCol h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+.commentDate {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.commentDate, .shareCol, .likeDislike {
+    color: #828282;
+    font-weight: 400;
+    font-size: 14px;
+}
+.shareCol {
+    font-size: 12px;
+}
+.vMiddle {
+    vertical-align: middle;
+}
+.likeDislike {
+    text-align: right;
+}
+.likeDislike > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.likeDislike > ul > li + li {
+    margin-left: 10px;
+}
+.ldIcon {
+    display: inline-block;
+    position: relative;
+}
+.blankLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.reviewContentCol > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/******* pet-medical-file *******/
+
+.petmedicalfile {
+    margin-bottom: 30px;
+}
+.btnStyle.btnmd {
+    padding: 10px 15px 8px;
+    font-size: 12px;
+    min-width: 135px;
+}
+.petmedicalfile .FormStyle2 .titlemd {
+    padding: 20px 0 10px;
+}
+.mdwdith {
+    max-width: 1060px;
+}
+/****************************************
+*********** MEDIA-QUARY ************
+*****************************************/
+
+@media (max-width: 1860px) {
+.imgCol {
+    margin-left: -350px;
+}
+.imgCol > img {
+      max-width: 960px;
+}
+.calendarStyle {
+    width: 620px;
+}
+.cardtbaleImg {
+    margin-right: 20px;
+}
+.cardtableCol {
+    padding: 15px 50px 15px 15px;
+}
+}
+@media (max-width: 1760px) {
+.imgCol {
+    margin-left: -330px;
+}
+.imgCol > img {
+    max-width: 900px;
+}
+.cardStyle {
+    padding: 40px;
+}
+.alertCardStyle {
+    margin-top: 20px;
+}
+.healthImgCol {
+    padding: 0 20px 0 0;
+}
+.rightSidebar {
+    padding: 0 30px 20px;
+}
+.sidebar-nav, .logoSec {
+    width: 260px;
+}
+.logoSec {
+    padding: 30px 20px 20px 30px;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 260px;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 20px 6px 30px;
+}
+.sidebarLink > ul > li + li {
+    margin: 12px 0;
+}
+.sideColCard {
+    padding: 150px 0 20px;
+}
+.alertCardStyle {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.healthText {
+    font-size: 18px;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 14px;
+}
+.cardImgCol > img {
+    height: 100px;
+}
+.cardText {
+    padding: 10px 10px 5px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.day {
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    border: 0;
+    height: auto;
+    padding: 12px;
+}
+.appointmentCol {
+    padding-top: 30px;
+}
+.alertCloseIcon {
+    right: 15px;
+}
+.calendarStyle {
+    width: 580px;
+}
+.bottombar {
+    padding: 20px;
+}
+.customCardStyle {
+    padding: 20px;
+}
+.cardwidthmd {
+    width: 480px;
+}
+.cardwidthlg {
+    width: 500px;
+}
+.mlSpace {
+    margin-left: 20px;
+}
+.userproDetail {
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.btnCol2 {
+    padding-top: 10px;
+}
+.formGroupStyle {
+    margin-bottom: 15px;
+}
+.cardtbaleImg > img {
+    height: 160px;
+}
+.cardtableCol {
+    padding: 15px;
+    margin-top: 15px;
+}
+.tableIcon {
+    padding-bottom: 8px;
+}
+.tableIcon > a + a {
+    padding-left: 5px;
+}
+.editIcon > img {
+    width: 12px;
+}
+.trashIcon > img {
+    width: 14px;
+}
+.btnStyle.custombtn {
+    padding: 12px 24px 10px;
+    font-size: 14px;
+}
+.petInfo > ul > li + li {
+    padding-top: 5px;
+}
+.tabsCollapse .tab_content {
+    padding: 40px;
+}
+.tabmsgCol {
+    margin-top: 20px;
+    padding: 30px 120px 0 0;
+}
+.productDetailSec {
+    padding-right: 120px;
+}
+.customCardStyle2 {
+    padding: 25px;
+}
+.formContentGroup label {
+    font-size: 14px;
+}
+.radioCheckStyle2 label.radio-label {
+    font-size: 14px;
+}
+.formContentGroup .inputStyleCol {
+    font-size: 14px;
+}
+.selectarrow::before {
+    right: 0;
+    width: 7px;
+    height: 7px;
+    border-width: 0 1px 1px 0;
+}
+}
+@media (max-width: 1640px) {
+.imgCol > img {
+    max-width: 800px;
+}
+.imgCol {
+    margin-left: -290px;
+}
+.dotShape::before {
+    right: 100px;
+    left: 100px;
+    bottom: 100px;
+    top: 100px;
+    background-size: contain;
+}
+.imgColStyle::before {
+    background-size: contain;
+    max-width: 550px;
+    margin-left: auto;
+}
+.imgColStyle::after {
+    background-size: contain;
+    top: 70px;
+    bottom: 70px;
+    max-width: 350px;
+    margin-left: auto;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before,
+.select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    top: 4px;
+    right: 4px;
+    width: 5px;
+    height: 5px;
+    border: 0;
+}
+.calendarStyle {
+    width: 480px;
+}
+.datepickerStyle {
+    max-width: 380px;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 70px;
+}
+.confirmappointment {
+    padding: 20px;
+}
+.confirmprice {
+    padding: 15px;
+}
+.tabmsgCol {
+    padding: 30px 50px 0 0;
+}
+.reservationDetail {
+    padding-right: 0;
+}
+.productDetailSec {
+    padding-right: 60px;
+}
+.tableStyle2 .table th, .tableStyle2 .table td {
+    padding: 15px;
+}
+.reservationCol .petdetailCol {
+    padding-top: 15px;
+}
+.reservationCol .cardtableCol {
+    padding: 15px;
+}
+.col-9.colwidth.colwidth2 {
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+.mdCol {
+    max-width: 100%;
+}
+.cardBox {
+    min-width: 100%;
+    padding: 15px;
+    height: 80px;
+}
+.performanceTitle {
+    font-size: 16px;
+}
+.cardBoxIcon {
+    width: 35px;
+    height: 35px;
+}
+.cardBoxIcon > svg {
+    width: 15px;
+    height: 15px;
+}
+
+}
+@media (max-width: 1500px) {
+.imgCol > img {
+    max-width: 700px;
+}
+.imgCol {
+    margin-left: -270px;
+}
+.cardStyle {
+    padding: 30px;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 20px;
+    font-size: 16px;
+}
+.sidebarLink > ul > li > a .linkIcon {
+    width: 30px;
+}
+.sideColCard {
+    padding: 130px 0 20px;
+}
+.logoSec {
+    padding: 20px;
+}
+.logoSec > a > img {
+    max-width: 60px;
+}
+.header-section {
+    padding: 15px;
+}
+.page-content {
+    margin-top: 65px;
+}
+.sidebar-nav, .logoSec {
+    width: 230px;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 230px;
+}
+.alertCardColImg img {
+    max-width: 30px;
+}
+.alertCardText {
+    padding-left: 5px;
+}
+.healthText {
+    font-size: 16px;
+}
+.alerthealthIcon > img {
+    max-width: 15px;
+}
+.alertCardText > ul > li {
+    padding-left: 20px;
+}
+.alertCardText > ul > li + li {
+    margin-top: 0;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 12px;
+}
+.btnStyle.btn_secondary {
+    padding: 6px 18px;
+    font-size: 12px;
+}
+.petCardfeatIcon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.petCardfeatText {
+    padding-left: 10px;
+}
+.petCardfeatText > h6 {
+    font-size: 12px;
+}
+.petCardArrow > svg {
+    width: 18px;
+}
+span.petCardArrow {
+    line-height: 15px;
+}
+.cardSection2 {
+    padding: 20px 0;
+}
+.cardStyle2 {
+    border-radius: 15px;
+    padding: 4px;
+}
+.cardImgCol > img {
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.day {
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    padding: 8px;
+    font-size: 13px;
+}
+.pleft {
+    padding-left: 8px;
+}
+.panelCol {
+    padding: 10px 30px 10px 10px;
+}
+.panelCol::before {
+    right: 12px;
+}
+.select_datepicker th.prev span::before {
+    left: 12px;
+    width: 36px;
+    height: 36px;
+}
+.select_datepicker th.next span::before {
+    right: 12px;
+    width: 36px;
+    height: 36px;
+}
+.callockText .alerthealthIcon > img {
+    max-width: 12px;
+}
+.calendarStyle {
+    width: 320px;
+}
+.bottombar {
+    padding: 15px;
+}
+.lgwidth {
+    min-width: 300px;
+    padding: 15px;
+}
+.pageInnerStyle.pdbottom {
+    padding-bottom: 120px;
+}
+.spacetop {
+    padding-top: 20px;
+}
+.selectOptionScroll {
+    padding: 25px 0 25px 25px;
+    border-radius: 15px;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 15px;
+}
+.select_datepicker.datepickerStyle2 {
+    margin-top: 20px;
+}
+.selectInputOption {
+    max-width: 250px;
+}
+.selectInputOption .form-control {
+    font-size: 14px;
+    padding: 10px 30px 7px 15px;
+}
+.selectInputOption::before {
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border-width: 0 2px 2px 0;
+}
+.cancelationPolicy {
+    padding: 20px;
+}
+.confirmbtn {
+    padding: 20px;
+}
+.confirmappointment .petCardfeatText > h5 {
+    font-size: 16px;
+}
+.confirmappointment .callockStyle2 {
+    font-size: 12px;
+    line-height: 16px;
+}
+.confirmTitle > h5 > span {
+    padding-left: 10px;
+}
+.confirmprice > h4 > span {
+    padding-left: 20px;
+}
+.confirmappointment .callockStyle2 span.iconCol > img {
+    max-width: 10px;
+}
+.confirmappointment .petCardfeatIcon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+.confirmprice > h4 {
+    font-size: 20px;
+}
+.confirmTitle {
+    padding: 15px;
+}
+.widthStyle {
+    max-width: 225px;
+}
+.inputvalue > p {
+    font-size: 14px;
+    line-height: 16px;
+}
+.cardwidthmd {
+    width: 420px;
+}
+.lebelsm {
+    font-size: 14px;
+}
+.lebelmd{
+    font-size: 16px;
+}
+.inputform {
+    padding: 0 0 8px 25px;
+    font-size: 14px;
+}
+.formCol {
+    padding-top: 15px;
+}
+.formCol label {
+    font-size: 14px;
+}
+.petInfo > ul > li + li {
+    padding-top: 0;
+}
+.cardtbaleImg > img {
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+}
+.cardtableCol {
+    border-radius: 10px;
+}
+.petInfolabel {
+    font-size: 13px;
+    min-width: 100px;
+}
+.cardtablebtn .btnStyle.btn_secondary {
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 115px;
+}
+.petInfoText {
+    font-size: 13px;
+}
+.cardtablebtn > ul > li {
+    margin-top: 4px;
+}
+.petInfoText.lgtxet {
+    font-size: 14px;
+}
+.petdetailCol {
+    padding-top: 25px;
+}
+.tabmsgCol {
+    padding: 20px 0 0 0;
+}
+.tabsCollapse .tab_content {
+    padding: 30px;
+}
+.tabStatusText > p {
+    font-size: 14px;
+}
+.tabStatusForward > span {
+    font-size: 14px;
+    padding-right: 0;
+}
+.tabStatusForward > a {
+    padding-left: 15px;
+}
+.deletearrow {
+    width: 30px;
+    display: inline-block;
+}
+.tabmsgCol > p {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+.tablinks ul.tabs li {
+    padding: 15px;
+}
+.tablinks {
+    padding-top: 20px;
+}
+.cardtitlelg > h4 {
+    font-size: 14px;
+}
+.shopProduct .cardText {
+    padding: 10px 5px 6px;
+}
+.productSelect .form-control {
+    padding: 7px 20px 7px 10px;
+}
+.productSelect::before {
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border-width: 0 1px 1px 0;
+}
+.proCardStyle {
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.qtySelectorwidth {
+    width: 75px;
+}
+.selectwidth {
+    max-width: 105px;
+}
+.productDetailSec {
+    padding-right: 0;
+}
+.viewCartTbl {
+    padding: 20px;
+}
+.produttdText {
+    padding-left: 10px;
+}
+.qtySelectorwidthlg {
+    width: 150px;
+}
+.btnStyle.smbtn {
+    padding: 8px 30px;
+}
+.formStyle.formStylemb {
+    height: 34px;
+    padding: 8px 15px;
+}
+.cartTotalCol {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.cartTotalCol > h4 {
+    font-size: 18px;
+}
+.cartTotalStyle > ul > li {
+    padding-top: 6px;
+}
+.cartsubTotal {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.cartsubPrice {
+    font-size: 14px;
+    min-width: 150px;
+}
+.checkoutbtn {
+    margin-top: 20px;
+}
+.produttdImg {
+    padding: 8px;
+}
+.deleteIcon > a > img {
+    width: 12px;
+}
+.tableStyle2 .table th, .tableStyle2 .table td {
+    white-space: nowrap;
+}
+.tableStyle2.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.reservationCol .cardtableCol {
+    padding: 10px;
+}
+.reservationCol {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.reservationCol .titlemd {
+    padding-bottom: 10px;
+}
+.calendarInput .form-control {
+    padding: 10px 40px 10px 15px;
+    font-size: 14px;
+}
+.dateTime > span {
+    font-size: 14px;
+}
+.tableStyle2 .table td.texttable {
+    font-size: 13px;
+}
+.tableStyle2 .table td.customselect {
+    font-size: 13px;
+}
+.petCardfeat2Icon {
+    width: 35px;
+    height: 35px;
+}
+.petCardfeat2Icon > img {
+    width: 20px;
+}
+.panelCol2 {
+    border-radius: 8px;
+    padding: 10px 80px 10px 15px;
+    margin-top: 10px;
+}
+.tabuserInfo2 {
+    padding-left: 10px;
+}
+.preday > a > span, .nextday > a > span {
+    font-size: 14px;
+}
+.preday > a > span > img {
+    padding-left: 5px;
+}
+.nextday > a > span > img {
+    padding-left: 5px;
+}
+.formContentGroup .inputStyleCol {
+    font-size: 14px;
+}
+.cardBox {
+    padding: 10px;
+    height: 70px;
+}
+.reviewCol {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+}
+@media (max-width: 1400px) {
+.imgCol {
+    margin-left: -200px;
+}
+.rightSidebar {
+    padding: 0 20px 20px;
+}
+.cardStyle {
+    padding: 20px;
+}
+.alertCardStyle {
+    padding: 0 25px 0 20px;
+    margin-bottom: 20px;
+}
+.healthImgCol > img {
+    max-width: 150px;
+}
+.cardboxSection {
+    padding: 20px 0;
+}
+.mlSpace {
+    margin-left: 0;
+}
+.cardwidthlg {
+    width: 420px;
+}
+.col-9.colwidth {
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 135px;
+}
+.leftpd {
+    padding-left: 20px;
+}
+.priceCol > span {
+    font-size: 12px;
+}
+.viewDetailLink > a {
+    font-size: 12px;
+}
+.viewDetailLink > a > span > img {
+    width: 14px;
+}
+.themeCol > p {
+    line-height: 20px;
+}
+.col-9.colwidth.colwidth2 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.reservationCol .petdetailCol {
+    padding-top: 10px;
+}
+.tab-pane {
+    max-width: 100%;
+}
+}
+@media (max-width: 1199px) {
+.imgCol {
+    margin-left: 0;
+}
+.imgCol > img {
+    max-width: 100%;
+}
+.header-section, .page-content, .bottombar {
+    margin-left:160px;
+}
+.sidebar-nav, .logoSec {
+    width: 160px;
+}
+.select_datepicker .table thead th, .select_datepicker .table td {
+    padding: 6px;
+}
+.cardStyle {
+    padding: 15px;
+}
+.cardStyle.cardLandingStyle {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.rightSidebar {
+    padding: 0 15px 20px;
+}
+.pleft {
+    padding-left: 0;
+}
+.sidebarLink > ul > li > a {
+    padding: 6px 15px;
+    font-size: 14px;
+}
+.healthImgCol > img {
+    max-width: 100px;
+}
+.sidebarLink > ul > li + li {
+    margin: 6px 0;
+}
+.alertCardCol {
+    padding: 8px 0;
+}
+.healthImgCol {
+    margin-top: -15px;
+}
+.petCardfeatText > h6 {
+    font-size: 10px;
+}
+.petCardfeatText {
+    padding-left: 8px;
+}
+.cardboxSection {
+    padding: 20px 0;
+}
+.cardImgCol > img {
+    height: 65px;
+    border-radius: 10px 10px 0 0;
+}
+.cardStyle2 {
+    border-radius: 10px;
+    padding: 2px;
+}
+.cardText {
+    padding: 8px 8px 3px;
+}
+.cardtitlelg > h4 {
+    font-size: 15px;
+}
+.cardtitlelg > span {
+    font-size: 10px;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 15px;
+}
+.select_datepicker .bootstrap-datetimepicker-widget table td.active.today:before,
+.select_datepicker .bootstrap-datetimepicker-widget table td.today:before {
+    top: 3px;
+    right: 3px;
+    width: 5px;
+    height: 5px;
+}
+.calendarStyle {
+    width: 250px;
+    margin-left: 20px;
+}
+.pageInnerStyle {
+    padding: 30px;
+}
+.customCardStyle {
+    padding: 15px;
+}
+.cardwidthmd {
+    width: 380px;
+}
+.cardwidthlg {
+    width: 360px;
+}
+.col-9.colwidth {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.tabsCollapse .tab_container {
+    border-radius: 10px;
+}
+.tabsCollapse .tab_content {
+    padding: 20px;
+}
+.proDtlContent {
+    margin-top: 30px;
+}
+.radioCheckStyle2 label.radio-label {
+    font-size: 14px
+}
+.shopingSelectStyle > ul > li + li {
+    padding-left: 15px;
+}
+.shopProduct .cardtitlelg > h4 {
+    font-size: 13px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 60px;
+}
+.viewCartTbl .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.viewCartTbl .table td, .viewCartTbl .table th {
+    padding: 8px;
+    white-space: nowrap;
+}
+.produttdText {
+    margin-right: 30px;
+}
+.cardSpaceTop {
+    margin-top: 15px;
+}
+}
+@media (max-width: 991px) {
+.imgColStyle {
+    background-color: transparent;
+    min-height: 100%;
+    display: block;
+    border-radius: 0;
+}
+.dotShape::before, .imgColStyle::before, .imgColStyle::after{
+	display: none;
+}
+.pageContent {
+    padding: 0 15px;
+}
+.formSection {
+    padding: 50px 0;
+}
+body.sidebarNavOpen {
+    position: relative;
+    overflow: hidden;
+}
+.sidebarNavOpen::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(35, 57, 82, 0.7);
+    z-index: 3;
+}
+.sidebarNavOpen .sidebar-nav {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.sidebar-nav {
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    z-index: 99;
+    width: 250px;
+}
+.sidebarNavOpen .bar:nth-child(1) {
+    transform: rotate(135deg);
+    top: 8px;
+}
+.sidebarNavOpen .bar:nth-child(2) {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+.sidebarNavOpen .bar:nth-child(3) {
+    transform: rotate(-135deg);
+    top: 8px;
+    width: 100%;
+}
+.toggle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.page-content {
+    padding: 20px 15px;
+    border-radius: 0;
+}
+.logoSec {
+    width: 60px;
+    padding: 0 0 0 15px;
+}
+.cardStyle.cardLandingStyle {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-height: auto;
+    height: auto;
+}
+.header-section, .page-content, .bottombar {
+    margin-left: 0;
+}
+.logoSec > a > img {
+    max-width: 45px;
+    margin-top: 10px;
+}
+.petCardfeat {
+    margin-bottom: 15px;
+}
+.cardImgCol > img {
+    height: 235px;
+}
+.cardtitlelg > h4 {
+    font-size: 20px;
+}
+.cardtitlelg > span {
+    font-size: 14px;
+}
+.cardText {
+    padding: 15px 15px 8px;
+}
+.cardStyle2 {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.titlemd > h5 {
+    font-size: 18px;
+}
+.rightSidebar {
+    padding: 30px 15px;
+}
+.sideColCard {
+    padding: 60px 0 20px;
+}
+.panelCol .petCardfeat {
+    margin-bottom: 0;
+}
+.checkboxStyle .cardImgCol > img {
+    height: 150px;
+}
+.calendarStyle {
+    margin-left: 0;
+}
+.page-content.pdbottom {
+    padding-bottom: 100px;
+}
+body {
+    background-color: #eef6fc;
+}
+.cardwidthmd,  .cardwidthlg{
+    width: 100%;
+}
+.inputvalue > p {
+    font-size: 16px;
+    line-height: 18px;
+}
+.customCardStyle {
+    margin: 15px 0;
+}
+.customCardStyle {
+    padding: 20px;
+    border-radius: 10px;
+}
+.userProfileImg > img {
+    border-radius: 10px;
+}
+.customModle .modal-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+.mdlTitle {
+    margin-bottom: 20px;
+}
+.tabStatusForward {
+    text-align: right;
+    margin-top: 10px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 235px;
+}
+.rightSpace {
+    margin-right: 100px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 100px;
+}
+.proCardSec {
+    max-width: 100%;
+}
+.proCardStyle {
+    margin: 0 0 20px;
+}
+.relatedPro .titlemd {
+    padding-bottom: 30px;
+}
+.reservationDetailCard > ul > li {
+    display: inline-block;
+    width: 49%;
+}
+.FormStyle2 .btn + .btn {
+    margin-left: 10px;
+}
+.mdwdith {
+    max-width: 100%;
+}
+}
+@media (max-width: 767px) {
+.cardImgCol > img {
+    height: 155px;
+}
+.healthImgCol {
+    display: none;
+}
+.petCardfeatText > h6 {
+    font-size: 12px;
+}
+.calendarStyle {
+    width: 100%;
+}
+.datepickerStyle {
+    max-width: 100%;
+}
+.selectOptionList > ul {
+    padding-right: 0;
+}
+.cardStylemd {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.btnStyle {
+    padding: 10px 30px;
+}
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
+.confirmprice {
+    padding: 10px;
+}
+.lgwidth {
+    min-width: 250px;
+}
+.confirmappointment, .cancelationPolicy, .confirmbtn {
+    padding: 15px;
+}
+.inputvalue > p {
+    text-align: left;
+}
+.uploadImgStyle {
+  left: 10px;
+  bottom: 10px;
+  padding: 5px 6px;
+  border-radius: 5px;
+}
+.formCol .form-control {
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+}
+.cardtablebtn {
+    text-align: left;
+}
+.cardtablebtn > ul > li {
+    display: inline-block;
+}
+.tablinks .tabs {
+    display: none;
+}
+.tabsCollapse .tab_drawer_heading {
+  display: block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 20px;
+  background-color: #eef6fc;
+  margin-bottom: 5px;
+}
+.tabsCollapse .d_active.tab_drawer_heading {
+    background-color: #fff;
+}
+.tabRegardsCol {
+    padding: 0;
+}
+.tabmsgCol {
+    padding: 15px 0 0 0;
+}
+.tabmsgCol {
+    margin-top: 15px;
+}
+.tabmsgCol > p {
+    padding-bottom: 0;
+}
+.selectOptionScroll {
+    border-radius: 8px;
+}
+.selectOptionList {
+    padding-right: 20px;
+}
+.selectOptionScroll .mCSB_scrollTools, .selectOptionScroll .mCSB_scrollTools .mCSB_draggerContainer {
+    right: 0;
+    width: 3px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 160px;
+}
+.rightSpace {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+.checkboxStyle2 {
+    margin: 0;
+}
+.reservationDetail .titlexl {
+    padding-bottom: 15px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 180px;
+}
+.shopProduct .cardtitlelg > h4 {
+    font-size: 15px;
+}
+.proDetailOption {
+    max-width: 100%;
+}
+.tblebtnCol {
+    padding: 10px 0 20px;
+}
+.rightbtn {
+    margin-bottom: 20px;
+}
+.formContentGroup {
+    margin-bottom: 10px;
+}
+.shopingSelectStyle > ul > li {
+    display: block;
+}
+.shopingSelectStyle > ul > li + li {
+    padding-left: 0;
+    padding-top: 10px;
+}
+.shopingSelectStyle {
+    margin-bottom: 30px;
+}
+}
+@media (max-width: 585px) {
+.formSection {
+    padding: 30px 0;
+    max-width: 100%;
+}
+.formContent > h4 {
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 26px;
+}
+.formSection {
+    padding: 20px 0;
+}
+.formStyle {
+    height: 45px;
+    padding: 10px 50px 10px 20px;
+}
+.chkLinkStyle {
+    padding: 10px 0 0;
+}
+.formCheck label {
+    font-size: 14px;
+    padding-left: 22px;
+    line-height: 14px;
+}
+.formCheck label:before {
+    width: 16px;
+    height: 16px;
+    top: -1px;
+}
+.formCheck input:checked + label:after {
+    width: 5px;
+    height: 9px;
+    left: 7px;
+}
+.forgetpass > a {
+    font-size: 14px;
+}
+.cardImgCol > img {
+    height: auto;
+}
+.rightIconbar > ul > li + li {
+    margin-left: 10px;
+}
+.selectInputOption {
+    max-width: 100%;
+}
+.checkboxStyle .cardImgCol > img {
+    height: auto;
+}
+.tagCol > span, .priceText > span {
+    display: inline-block;
+}
+.priceText, .tagCol {
+    padding-top: 2px;
+    padding-left: 35px;
+}
+.SuccesMdl .modal-dialog {
+    max-width: 100%;
+    padding: 15px;
+}
+.SuccesMdl .modal-body {
+    padding: 0;
+}
+.confirmprice > h4 {
+    font-size: 18px;
+}
+.confirmTitle > h5 {
+    font-size: 18px;
+}
+.colmd {
+    max-width: 100%;
+}
+.confirmappointment .petCardfeatText {
+    padding-left: 15px;
+}
+.formCol label {
+    font-size: 13px;
+}
+.inputform {
+    margin-top: 10px;
+}
+.inputvalue > p {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.customCardStyle {
+    padding: 15px;
+}
+.customCardStyle {
+    margin: 10px 0;
+}
+.cardtbaleImg > img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+}
+.cardtbaleImg {
+    margin-right: 0;
+}
+.cardtableStyle .col-sm-auto {
+    flex: 0 0 100%;
+    width: 100%;
+}
+.petInfolabel {
+    min-width: 150px;
+}
+.petInfo > ul > li {
+    margin-bottom: 5px;
+}
+.tabsCollapse .tab_drawer_heading {
+    padding: 15px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 270px;
+}
+.navigationStyle {
+    padding-top: 0;
+}
+.viewDetailLink {
+    padding-top: 5px;
+}
+.proDetailSlider {
+    width: 100%;
+}
+.themeCol > h5 {
+    font-size: 16px;
+}
+.proThumbsCol {
+    padding: 0 30px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 130px;
+}
+.proCardStyleImg > a {
+    padding: 10px;
+}
+.cartPriceCol {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.proCardStyleText > h4 {
+    padding-top: 15px;
+}
+.productCart > a > span > img {
+    max-width: 15px;
+    margin-top: -4px;
+}
+.proDetailOption .productSelect .form-control {
+    height: 45px;
+}
+.proDetailOption .decreaseQty, .proDetailOption .increaseQty {
+    height: 45px;
+}
+.proDetailOption .decreaseQty img, .proDetailOption .increaseQty img {
+    max-width: 16px;
+}
+.proDetailOption .qtySelector {
+    margin-top: 10px;
+}
+.productDetailSec .proDetailImgSlide {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.productDetailSec .proDtlImgCol img {
+    height: 180px;
+}
+.productDetailSec .proThumbCol > img {
+    height: 50px;
+}
+.productDetailSec .proThumbCol {
+    padding: 8px;
+}
+.tblebtnColRight {
+    margin-top: 10px;
+}
+.cartTotalCol {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.reservationDetailCard > ul > li {
+    display: block;
+    width: 100%;
+}
+.preday > a > span, .nextday > a > span {
+    font-size: 13px;
+}
+.nextday > a > span > img {
+    padding-left: 2px;
+    width: 8px;
+}
+.preday > a > span > img {
+    padding-left: 2px;
+    width: 8px;
+}
+.calendarInput .form-control {
+    padding: 10px 30px 10px 10px;
+    font-size: 13px;
+}
+.calendarInput > span {
+    right: 10px;
+    top: 5px;
+}
+.tableStyle2 .table td:nth-child(1) {
+    padding-left: 10px;
+}
+.formContentGroup .inputStyleCol {
+    background-color: #f5f7f8;
+    padding-left: 10px;
+}
+.FormStyle2 .btn + .btn {
+    margin-left: 5px;
+}
+.customCardStyle2 {
+    padding: 15px;
+    border-radius: 10px;
+}
+.FormStyle2 .btnCol {
+    margin: 15px 0;
+}
+.btnStyle.btnwidthsm {
+    min-width: 100px;
+}
+.reservationCalendar {
+    padding: 10px;
+    width: 100%;
+}
+.reviewCol {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.ratingStarts {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+.reviewContentCol > p {
+    font-size: 13px;
+}
+.likeDislike > ul > li + li {
+    margin-left: 5px;
+}
+.btnStyle.btnmd {
+    padding: 8px 10px 8px;
+    min-width: 120px;
+}
+}
+@media (max-width: 485px) {
+.textLinkCol {
+    padding-top: 10px;
+}
+.formContent > h4 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.formContent .btnCol {
+    padding-top: 15px;
+}
+.alertCardColImg {
+    display: none;
+}
+.alertCardText {
+    padding-left: 0;
+}
+.alertCardStyle {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.alertCloseIcon {
+    right: 8px;
+    top: 0px;
+}
+.btnStyle.btn_secondary {
+    padding: 4px 14px;
+    font-size: 10px;
+}
+.healthText {
+    font-size: 14px;
+}
+.alertCardText > ul > li.callockText {
+    font-size: 10px;
+}
+.cardboxSection {
+    padding: 20px 0 0;
+}
+.cardSection2 {
+    padding: 20px 0 0;
+}
+.alertCloseIcon img {
+    max-width: 8px;
+}
+.titlelg > h5 {
+    margin: 0;
+}
+.sidebar-nav {
+    width: 100%;
+}
+.header-section {
+    z-index: 999;
+}
+.sideColCard {
+    padding: 30px 0 20px;
+}
+.sidebar-nav {
+    padding-top: 70px;
+}
+.selectOptionScroll {
+    padding: 20px 0 20px 15px;
+    border-radius: 10px;
+}
+.radiocheckStyle .radio-label {
+    padding-left: 20px;
+}
+.selectOptionList > ul > li + li {
+    padding-top: 8px;
+}
+.listStyle {
+    padding: 6px 0 0 20px;
+}
+.titlexl > h5 {
+    font-size: 24px;
+    margin: 0;
+}
+.titlemd > h5 {
+    font-size: 16px;
+}
+.cardtitlelg > h4 {
+    font-size: 18px;
+}
+.radiocheckStyle input[type=radio] + .radio-label:before {
+    width: 15px;
+    height: 15px;
+    top: 3px;
+}
+.radiocheckStyle input[type=radio] + .radio-label:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 8px;
+}
+.priceText, .tagCol {
+    padding-left: 20px;
+}
+.lgwidth {
+    min-width: 100%;
+}
+.spacetop {
+    padding-top: 15px;
+}
+.page-content.pdbottom {
+    padding-bottom: 85px;
+}
+.success-message__content > p {
+    font-size: 14px;
+}
+.SuccesMdl .modal-content {
+    padding: 30px;
+}
+.success-message > img {
+    max-width: 60px;
+}
+.btn.mdbtn {
+    padding: 8px 50px;
+}
+.mdlbtn {
+    margin-top: 10px;
+}
+.cancelationPolicy > p {
+    font-size: 12px;
+}
+.btnStyle {
+    font-size: 14px;
+}
+.inputIcon > img {
+    max-width: 12px;
+}
+.inputform {
+    padding: 0 0 6px 20px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.inputIcon {
+    top: -2px;
+}
+.formGroupStyle {
+    margin-bottom: 10px;
+}
+.btnStyle.lgbtn {
+    padding: 8px;
+}
+.cardtbaleImg > img {
+    height: 220px;
+}
+.cardtableCol {
+    padding: 10px;
+    margin-top: 10px;
+}
+.checkboxStyle.checkboxStyle2 .cardImgCol > img {
+    height: 200px;
+}
+.proThumbsCol {
+    padding: 0 20px;
+}
+.proDtlImgCol img {
+    height: 250px;
+}
+.proDetailImgSlide {
+    padding-bottom: 5px;
+}
+.proDtlContent {
+    margin-top: 20px;
+}
+.shopProduct .checkboxStyle .cardImgCol > img {
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+}
+.shopProduct .checkboxStyle .cardStyle2 {
+    padding: 4px;
+    border-radius: 4px;
+}
+.radioCheckStyle2 label.radio-label {
+    font-size: 13px;
+}
+.proCardStyleImg > a > img {
+    height: 100px;
+}
+.colbreakStyle {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.cartsubPrice {
+    min-width: 100px;
+}
+.produttdText {
+    font-size: 13px;
+}
+.produttdImg > img {
+    height: 30px;
+}
+.selectwidthlg {
+    width: 120px;
+}
+.qtySelectorwidthlg {
+    width: 100px;
+}
+.priceTblCol > span {
+    font-size: 13px;
+}
+.cartTotalCol > h4 {
+    font-size: 16px;
+}
+.cartsubTotal {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.checkoutbtn .btnStyle.smbtn {
+    min-width: 160px;
+}
+.viewCartTbl {
+    padding: 15px;
+}
+.formStyle.formStylemb {
+    min-width: 150px;
+}
+.btnStyle.smbtn {
+    padding: 8px 20px;
+}
+}
+@media (max-width: 385px) {
+  .proDtlImgCol img {
+      height: 180px;
+  }
+  .proThumbCol {
+    height: 60px;
+  }
+  .proThumbsCol {
+      padding: 0 15px;
+  }
+  .tblebtnColLeft > ul > li {
+    display: block;
+}
+  .tblebtnColLeft > ul > li + li {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  .btnStyle.smbtn {
+    width: 100%;
+  }
+  .calendarInput .form-control {
+    padding: 8px 30px 8px 8px;
+    font-size: 12px;
+  }
+  .btnStyle.btnwidthsm {
+    min-width: 75px;
+}
+}
