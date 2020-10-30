@@ -1651,6 +1651,9 @@ a.btn_primary:focus, a.btn_primary:hover {
 .tableStyle .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F8F8F8;
 }
+.tableStyle .table-striped tbody tr:last-child {
+    border-bottom: 1px solid #f2f2f2;
+}
 button.close:focus {
     outline: none;
 }
@@ -2510,19 +2513,37 @@ button.close:focus {
     font-size: 14px;
     font-weight: 700;
 }
-.tableStyle2 .table td.customselect {
+.tableStyle2 .table .customselectCol {
     font-size: 14px;
     min-width: 100px;
+}
+.customselectCol .form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
     padding-right: 40px;
-    position: relative;
 }
-.tableStyle2 .table td.customselect > span > img {
+.customselectCol .form-control:focus{
+  box-shadow: none;
+}
+.customselectCol{
+  position: relative;
+}
+.customselectCol::before {
+    content: "";
     position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(0, -50%) rotate(90deg);
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/angle-arrow.svg);
+    background-position: center;
+    z-index: 1;
+    width: 15px;
+    pointer-events: none;
+    transform:rotate(90deg);
 }
-
 /******* profile **********/
 
 .uploadColStyle .fileinput-button {
@@ -2616,12 +2637,11 @@ button.close:focus {
     border-radius: 20px;
 }
 .formContentGroup .inputStyleCol {
-    border-bottom: 1px solid #F2F2F2;
+    border: 2px solid #DCDCDC;
     font-size: 16px;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    padding-left: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 50px;
 }
 .selectarrow{
   position: relative;
@@ -2630,13 +2650,13 @@ select.form-control.inputStyleCol {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding-right: 30px;
+    padding-right: 45px;
 }
 .selectarrow::before {
     content: '';
     position: absolute;
-    top: 12px;
-    right: 10px;
+    top: 18px;
+    right: 20px;
     width: 8px;
     height: 8px;
     border: solid #074574;
@@ -2660,7 +2680,7 @@ select.form-control.inputStyleCol {
   color: #828282;
 }
 .formContentGroup {
-    margin-bottom: 20px;
+    margin: 10px 20px;
 }
 .FormStyle2 .btnCol {
     margin: 20px 0;
@@ -2670,6 +2690,9 @@ select.form-control.inputStyleCol {
 }
 .FormStyle2 .btn + .btn {
     margin-left: 20px;
+}
+.mdwidth{
+  max-width: 1320px;
 }
 /******** performance ******/
 .reservationCalendar {
@@ -3002,6 +3025,10 @@ select.form-control.inputStyleCol {
     font-weight: 400;
     padding-bottom: 10px;
 }
+.calendarInput.datepickerInput .input-group-append {
+    right: 20px;
+    padding: 18px 0;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -3256,6 +3283,9 @@ select.form-control.inputStyleCol {
 .cardBoxIcon > svg {
     width: 15px;
     height: 15px;
+}
+.mdwidth {
+    max-width: 100%;
 }
 }
 @media (max-width: 1500px) {
@@ -3642,7 +3672,7 @@ span.petCardArrow {
 .tableStyle2 .table td.texttable {
     font-size: 13px;
 }
-.tableStyle2 .table td.customselect {
+.tableStyle2 .table .customselectCol {
     font-size: 13px;
 }
 .petCardfeat2Icon {
@@ -3738,6 +3768,9 @@ span.petCardArrow {
 }
 .tab-pane {
     max-width: 100%;
+}
+.formContentGroup {
+    margin: 10px 0;
 }
 }
 @media (max-width: 1199px) {
@@ -4071,6 +4104,10 @@ body {
 .FormStyle2 .btn + .btn {
     margin-left: 10px;
 }
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -4098,10 +4135,7 @@ body {
 .btnStyle {
     padding: 10px 30px;
 }
-.rightSidebar {
-    height: auto;
-    min-height: auto;
-}
+
 .confirmprice {
     padding: 10px;
 }
@@ -4200,7 +4234,7 @@ body {
     margin-bottom: 20px;
 }
 .formContentGroup {
-    margin-bottom: 10px;
+    margin: 0 0 15px;
 }
 }
 @media (max-width: 585px) {
@@ -4412,10 +4446,6 @@ body {
 .tableStyle2 .table td:nth-child(1) {
     padding-left: 10px;
 }
-.formContentGroup .inputStyleCol {
-    background-color: #f5f7f8;
-    padding-left: 10px;
-}
 .FormStyle2 .btn + .btn {
     margin-left: 5px;
 }
@@ -4447,6 +4477,17 @@ body {
 }
 .likeDislike > ul > li + li {
     margin-left: 5px;
+}
+.formContentGroup .inputStyleCol {
+    padding: 6px 20px;
+    height: 40px;
+}
+select.form-control.inputStyleCol {
+    padding-right: 40px;
+}
+.selectarrow::before {
+    top: 15px;
+    border-width: 0 1px 1px 0;
 }
 }
 @media (max-width: 485px) {
@@ -4695,7 +4736,12 @@ body {
     width: 100%;
   }
   .calendarInput .form-control {
-    padding: 8px 30px 8px 8px;
-    font-size: 12px;
+      padding: 8px 25px 8px 8px;
+      font-size: 12px;
+      height: 35px;
   }
+  .calendarInput.datepickerInput .input-group-append {
+    right: 10px;
+    padding: 12px 0;
+}
 }

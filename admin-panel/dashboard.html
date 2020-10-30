@@ -34,7 +34,7 @@
                         <span class="title_sidebar_list">Dashboard</span>
                     </a>
                   </li>
-                    <li><a href="JavaScript:void(0);">
+                    <li class="dropOpen"><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -49,8 +49,8 @@
                     </a>
                     <div class="subMenuLink">
                       <ul>
-                        <li><a href="JavaScript:void(0);">Customers</a></li>
-                        <li><a href="JavaScript:void(0);">Admins</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="admins.html">Admins</a></li>
                         <li><a href="JavaScript:void(0);">Groomer Sub-users</a></li>
                         <li><a href="JavaScript:void(0);">Vet Sub-users</a></li>
                         <li><a href="JavaScript:void(0);">Pet Hotel Sub-user</a></li>
@@ -66,6 +66,10 @@
                         </svg>
                       </span>
                       <span class="title_sidebar_list">Groomer</span>
+                      <span class="updownArrow">
+                        <img src="images/arrow-down.svg" alt="..." class="downAngle">
+                        <img src="images/arrow-up.svg" alt="..." class="upAngle">
+                      </span>
                       </a>
                     </li>
                     <li><a href="JavaScript:void(0);">
@@ -80,6 +84,10 @@
                         </svg>
                       </span>
                     <span class="title_sidebar_list">Veterinary</span>
+                    <span class="updownArrow">
+                      <img src="images/arrow-down.svg" alt="..." class="downAngle">
+                      <img src="images/arrow-up.svg" alt="..." class="upAngle">
+                    </span>
                     </a>
                     </li>
                     <li><a href="javascript:void(0);">
@@ -105,6 +113,10 @@
                         </svg>
                       </span>
                       <span class="title_sidebar_list">Pet Hotels</span></a>
+                      <span class="updownArrow">
+                        <img src="images/arrow-down.svg" alt="..." class="downAngle">
+                        <img src="images/arrow-up.svg" alt="..." class="upAngle">
+                      </span>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
@@ -114,6 +126,10 @@
                         </svg>
                       </span>
                       <span class="title_sidebar_list">System Settings</span>
+                      <span class="updownArrow">
+                        <img src="images/arrow-down.svg" alt="..." class="downAngle">
+                        <img src="images/arrow-up.svg" alt="..." class="upAngle">
+                      </span>
                     </a>
                   </li>
                 </ul>
@@ -165,124 +181,299 @@
             <div class="row no-gutters">
               <div class="col-lg-8">
                 <div class="cardStyle cardLandingStyle">
-                  <div class="form-row align-items-center">
-                    <div class="col-auto">
-                      <div class="preday">
-                        <a href="javascript:void(0);">
-                          <span><img src="Images/angle-arrow.svg" alt="..."></span>
-                          <span>Prev Day</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="calendarday">
-                        <label for="">Today</label>
-                        <div class="calendarInput">
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Oct 3rd, 2020">
-                          <span><img src="images/calendar-sm.svg" alt="..."></span>
+                  <div class="titlexl">
+                    <h5>Users</h5>
+                  </div>
+                  <div class="cardSection2 pt-0 mt-lg-5">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-6 col-xl-3">
+                          <div class="cardBox cardSpaceTop">
+                            <div class="cardBoxText">
+                              <span class="performanceTitle">1273</span>
+                              Customers
+                            </div>
+                            <div class="cardBoxIcon cardBoxLightgreen">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M13.7632 0C12.0828 0 10.6655 1.41725 10.6655 3.09765C10.6655 4.77805 12.0828 6.1953 13.7632 6.1953C15.4436 6.1953 16.81 4.77805 16.81 3.09765C16.81 1.41725 15.4436 0 13.7632 0Z" fill="#15C8BC"/>
+                                <path d="M17.1448 6.19531C16.3077 7.12354 15.1087 7.71875 13.7632 7.71875C12.4177 7.71875 11.1679 7.12354 10.3308 6.19531C9.59993 7.00573 9.14209 8.06741 9.14209 9.24218V10.0039C9.14209 10.4249 9.48278 10.7656 9.90381 10.7656H17.5718C17.9928 10.7656 18.3335 10.4249 18.3335 10.0039V9.24218C18.3335 8.06741 17.8756 7.00573 17.1448 6.19531Z" fill="#15C8BC"/>
+                                <path d="M7.36051 23.3802L3.47874 15.5978C3.10393 14.8462 2.1917 14.5398 1.43927 14.9126L0.424714 15.4152C0.0469535 15.6025 -0.106761 16.0616 0.0817893 16.4387L4.65209 25.5793C4.84003 25.9563 5.29722 26.1063 5.67193 25.9215L6.67344 25.4253C7.42881 25.0511 7.73669 24.1346 7.36051 23.3802Z" fill="#15C8BC"/>
+                                <path d="M25.3768 12.5796C24.7521 12.1226 23.8838 12.214 23.3659 12.7777L19.2018 17.8964C18.9124 18.2011 18.3639 18.3839 18.0745 18.3839H14.5248C14.0982 18.3839 13.7631 18.0488 13.7631 17.6222C13.7631 17.1956 14.0982 16.8605 14.5248 16.8605C15.545 16.8605 16.6745 16.8605 17.5717 16.8605C18.4096 16.8605 19.0951 16.1749 19.0951 15.337C19.0951 14.4991 18.4096 13.8136 17.5717 13.8136C13.9944 13.8136 17.4066 13.8136 13.5803 13.8136C13.2006 13.8136 13.0113 13.5728 12.7119 13.3108C11.5333 12.2502 9.76921 11.7393 7.98323 12.1532C6.99158 12.3831 6.32284 12.7837 5.64461 13.3209L5.62201 13.3025L4.52026 14.2721L8.85007 22.9542H10.1322H17.5717C19.0037 22.9542 20.3749 22.2687 21.228 21.1261L25.6967 14.7277C26.1994 14.0573 26.0623 13.0824 25.3768 12.5796Z" fill="#15C8BC"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="26" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-xl-3">
+                          <div class="cardBox cardSpaceTop">
+                            <div class="cardBoxText">
+                              <span class="performanceTitle">2</span>
+                              Groomers
+                            </div>
+                            <div class="cardBoxIcon cardBoxLightorange">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M21.379 16.8086C20.1203 16.8086 18.9041 17.3375 18.0412 18.2599L4.59396 0.31209C4.41765 0.0710823 4.11789 -0.0449527 3.8263 0.0160355C3.53472 0.0763127 3.30412 0.300207 3.23714 0.59032C3.13451 1.03516 3.08779 1.48772 3.09775 1.93744C3.12167 3.01603 3.46495 4.07873 4.09702 4.9806L17.6328 23.9943C18.4905 25.2187 19.8905 26 21.379 26C23.8992 26 26 23.8991 26 21.3789C26 18.8587 23.8992 16.8086 21.379 16.8086ZM21.379 23.6641C20.1189 23.6641 19.0938 22.639 19.0938 21.3789C19.0938 20.1188 20.1189 19.0938 21.379 19.0938C22.639 19.0938 23.6641 20.1188 23.6641 21.3789C23.6641 22.639 22.6391 23.6641 21.379 23.6641Z" fill="#F2994A"/>
+                                <path d="M22.1738 0.0160355C21.8822 -0.0449528 21.5824 0.0710824 21.4062 0.31209L13.9526 10.2828L16.1075 13.1507L21.903 4.98061C22.5352 4.07874 22.8785 3.01604 22.9023 1.93745C22.9123 1.48768 22.8656 1.03511 22.7629 0.590321C22.696 0.300207 22.4654 0.0762621 22.1738 0.0160355Z" fill="#F2994A"/>
+                                <path d="M4.62109 26C6.10959 26 7.50953 25.2187 8.36723 23.9943L12.0642 18.8151L9.86081 15.7286L7.95884 18.2599C7.09597 17.3375 5.87976 16.8086 4.62109 16.8086C3.5978 16.8086 2.61132 17.1586 1.84879 17.7287C1.64836 17.4675 1.52344 17.1506 1.52344 16.8086C1.52344 15.9688 2.25784 15.2852 3.09766 15.2852C3.51868 15.2852 3.85938 14.9445 3.85938 14.5234C3.85938 14.1024 3.51868 13.7617 3.09766 13.7617C1.41725 13.7617 0 15.1282 0 16.8086C0 17.5676 0.307125 18.264 0.792797 18.8117C0.293363 19.5441 0 20.4275 0 21.3789C0 23.8991 2.10092 26 4.62109 26ZM4.62109 19.0937C5.88118 19.0937 6.90625 20.1188 6.90625 21.3789C6.90625 22.639 5.88118 23.6641 4.62109 23.6641C3.36101 23.6641 2.33594 22.639 2.33594 21.3789C2.33594 20.1188 3.36101 19.0937 4.62109 19.0937Z" fill="#F2994A"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="26" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-xl-3">
+                          <div class="cardBox cardSpaceTop">
+                            <div class="cardBoxText">
+                              <span class="performanceTitle">1</span>
+                              Vets
+                            </div>
+                            <div class="cardBoxIcon cardBoxLightgreen">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17.4434 0C13.2152 0 9.77539 3.46262 9.77539 7.71875C9.77539 11.9469 13.2152 15.3867 17.4434 15.3867C21.6995 15.3867 25.1621 11.9469 25.1621 7.71875C25.1621 3.47938 21.6817 0 17.4434 0ZM16.6851 5.00297C16.7271 4.60672 17.0572 4.31641 17.4434 4.31641C18.0809 4.31641 18.4407 5.06162 18.0324 5.56105C17.774 5.87818 17.2942 5.93998 16.9605 5.66719C16.7669 5.50982 16.6595 5.2552 16.6851 5.00297ZM14.5829 5.46046C14.9793 5.1999 15.4808 5.35905 15.6772 5.73518C15.8782 6.11071 15.7314 6.5686 15.3644 6.76503C15.0161 6.95185 14.5916 6.84013 14.3726 6.51671C14.1379 6.15956 14.2355 5.69517 14.5829 5.46046ZM20.4511 9.64575C20.4511 10.7633 19.3826 11.5649 18.3123 11.2591C17.7439 11.0968 17.1429 11.0967 16.5745 11.2591C15.5023 11.5656 14.4357 10.7616 14.4357 9.64575V9.53677C14.4357 7.8783 15.7849 6.52905 17.4434 6.52905C19.1019 6.52905 20.4511 7.87825 20.4511 9.53677V9.64575H20.4511ZM20.639 6.16886C20.595 6.59374 20.2159 6.89355 19.8057 6.85186C19.3723 6.80682 19.0811 6.42043 19.1227 6.01905C19.1689 5.57451 19.5778 5.26211 20.0296 5.34676C20.434 5.43055 20.6766 5.79912 20.639 6.16886Z" fill="#15C8BC"/>
+                              <path d="M8.50012 9.8418C4.22388 10.1401 0.837891 13.6332 0.837891 17.8846C0.837891 22.359 4.54152 25.9991 9.09385 25.9991C14.0389 25.9991 17.8886 21.7317 17.289 16.9073C13.0199 16.8366 9.44983 13.8412 8.50012 9.8418ZM11.7559 18.6359H9.67383V20.7179C9.67383 21.1386 9.33278 21.4796 8.91211 21.4796C8.49144 21.4796 8.15039 21.1386 8.15039 20.7179V18.6359H6.06836C5.64769 18.6359 5.30664 18.2948 5.30664 17.8742C5.30664 17.4535 5.64769 17.1124 6.06836 17.1124H8.15039V15.0304C8.15039 14.6097 8.49144 14.2687 8.91211 14.2687C9.33278 14.2687 9.67383 14.6097 9.67383 15.0304V17.1124H11.7559C12.1765 17.1124 12.5176 17.4535 12.5176 17.8742C12.5176 18.2948 12.1765 18.6359 11.7559 18.6359Z" fill="#15C8BC"/>
+                              <path d="M16.0089 9.81421C16.0369 9.83534 16.0832 9.85687 16.1443 9.8394C16.9866 9.59875 17.8769 9.5988 18.7191 9.8394C18.8186 9.86784 18.916 9.79344 18.916 9.69087V9.58194C18.916 8.7635 18.2501 8.09766 17.4317 8.09766C16.6132 8.09766 15.9474 8.7635 15.9474 9.58194C15.9475 9.68772 15.9343 9.7579 16.0089 9.81421Z" fill="#15C8BC"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-xl-3">
+                          <div class="cardBox cardSpaceTop">
+                            <div class="cardBoxText">
+                              <span class="performanceTitle">14</span>
+                              Pet Hotel
+                            </div>
+                            <div class="cardBoxIcon cardBoxLightorange">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0)">
+                              <path d="M3.04688 23.7676V25.2389C3.04688 25.6596 3.38792 26.0006 3.80859 26.0006H8.88672C9.30739 26.0006 9.64844 25.6596 9.64844 25.2389V23.7676H3.04688V23.7676Z" fill="#F2994A"/>
+                              <path d="M9.0515 17.5274L7.00126 14.5993C6.4675 13.8369 5.43045 13.5951 4.64024 14.0486C4.40258 14.1851 4.20195 14.375 4.05158 14.6019C4.05107 14.601 4.05057 14.6001 4.05006 14.5993C3.65336 15.1914 3.6365 15.9914 4.0692 16.6094L4.94391 17.8585C5.18522 18.2031 5.10148 18.6781 4.75688 18.9194C4.41228 19.1607 3.93732 19.077 3.69601 18.7323L2.82136 17.4832C2.31608 16.7615 2.12215 15.8856 2.27541 15.0169C2.42338 14.1777 2.87859 13.4438 3.55966 12.9394C3.55672 12.8799 3.55469 12.8203 3.55469 12.7606V8.00602C3.55469 7.03549 2.79048 6.21877 1.8202 6.19582C0.820676 6.17216 0 6.97836 0 7.97261V14.9757C0 15.0788 0.0209219 15.1809 0.0615469 15.2757L3.04688 22.2435H9.64844V19.4206C9.64844 18.7397 9.44206 18.085 9.0515 17.5274Z" fill="#F2994A"/>
+                              <path d="M22.9531 23.7676V25.2389C22.9531 25.6596 22.6121 26.0006 22.1914 26.0006H17.1133C16.6926 26.0006 16.3516 25.6596 16.3516 25.2389V23.7676H22.9531V23.7676Z" fill="#F2994A"/>
+                              <path d="M16.9485 17.5274L18.9987 14.5994C19.5325 13.837 20.5696 13.5951 21.3598 14.0487C21.5974 14.1851 21.7981 14.375 21.9484 14.602C21.9489 14.6011 21.9494 14.6002 21.9499 14.5993C22.3466 15.1914 22.3635 15.9915 21.9308 16.6094L21.0561 17.8586C20.8148 18.2032 20.8985 18.6782 21.2431 18.9195C21.5877 19.1608 22.0627 19.077 22.304 18.7324L23.1786 17.4832C23.6839 16.7616 23.8779 15.8857 23.7246 15.0169C23.5766 14.1778 23.1214 13.4439 22.4403 12.9394C22.4433 12.8799 22.4453 12.8203 22.4453 12.7606V8.00602C22.4453 7.03549 23.2095 6.21877 24.1798 6.19582C25.1793 6.17221 26 6.97841 26 7.97265V14.9757C26 15.0789 25.9791 15.181 25.9385 15.2757L22.9531 22.2436H16.3516V19.4206C16.3516 18.7398 16.558 18.0851 16.9485 17.5274Z" fill="#F2994A"/>
+                              <path d="M12.2383 8.63281H13.7617V12.6953H12.2383V8.63281Z" fill="#F2994A"/>
+                              <path d="M20.1077 6.06053L13.5061 0.192448C13.2175 -0.0641494 12.7826 -0.0641494 12.4939 0.192448L5.89236 6.06053C5.57797 6.33998 5.54964 6.82148 5.82914 7.13587C6.10859 7.45026 6.59004 7.47864 6.90453 7.19914L7.66798 6.5205V11.9336C7.66798 12.3543 8.00902 12.6954 8.4297 12.6954H10.7149V7.87113C10.7149 7.45046 11.0559 7.10941 11.4766 7.10941H14.5234C14.9441 7.10941 15.2852 7.45046 15.2852 7.87113V12.6954H17.5703C17.991 12.6954 18.332 12.3543 18.332 11.9336V6.5205L19.0955 7.19914C19.2406 7.32818 19.4213 7.39155 19.6013 7.39155C19.8113 7.39155 20.0204 7.30517 20.1709 7.13587C20.4504 6.82148 20.422 6.34003 20.1077 6.06053Z" fill="#F2994A"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0">
+                              <rect width="26" height="26" fill="white"/>
+                              </clipPath>
+                              </defs>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <div class="nextday text-right">
-                        <a href="javascript:void(0);">
-                          <span>Next Day</span>
-                          <span><img src="Images/angle-arrow.svg" alt="..."></span>
-                        </a>
+                  <div class="cardSection2">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="formControlInputStyle">
+                          <div class="input-group date" id="multidatepicker" data-target-input="nearest">
+                            <div class="input-group-append" data-target="#multidatepicker" data-toggle="datetimepicker">
+                              <div class="input-group-text"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5556 5.44451H1.44445M4 17.0001H14.0001C15.6569 17.0001 17.0001 15.657 17.0001 14.0001V5.77783C17.0001 4.12098 15.6569 2.77783 14.0001 2.77783H4C2.34315 2.77783 1 4.12098 1 5.77783V14.0001C1 15.657 2.34315 17.0001 4 17.0001Z" stroke="#F46B7F" stroke-width="1.4" stroke-linecap="round"/>
+                                <path d="M5 2.77772V0.77771" stroke="#F46B7F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 2.77772V0.77771" stroke="#F46B7F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.66635 13.8889H4.33301M5.66635 11.2222H4.33301M5.66635 8.55554H4.33301M9.66637 13.8889H8.33303M9.66637 11.2222H8.33303M9.66637 8.55554H8.33303M13.6664 13.8889H12.3331M13.6664 11.2222H12.3331M13.6664 8.55554H12.3331" stroke="#F46B7F" stroke-width="1.4" stroke-linecap="round"/>
+                                </svg>
+                              </div>
+                            </div>
+                            <input type="text" class="form-control datetimepicker-input" data-target="#multidatepicker"/ placeholder="01/01/2019 - 01/01/2020">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="formControlInputStyle selectInputStyle">
+                          <div class="input-group">
+                            <select class="form-control" id="">
+                              <option>Select Country or All</option>
+                              <option>Select Country or All</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+
                   <div class="cardSection2">
-                    <div class="tableStyle2  table-responsive">
+                    <div class="titlemd">
+                      <h5 class="mb-0">GROOMER</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
                       <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Bookings</th>
+                            <th scope="col">No Show</th>
+                            <th scope="col">Cancellations</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Revenue</th>
+                            <th scope="col">Admin Commission</th>
+                          </tr>
+                        </thead>
                         <tbody>
                           <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable"></td>
-                            <td class="customselect">
-                              <span class="redclr">UNAVAILABLE</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable"></td>
-                            <td class="customselect">
-                              <span class="redclr">UNAVAILABLE</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable">Nails Clipping</td>
-                            <td class="customselect">
-                              <span>LUNA</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable">Wash and Blow Dry</td>
-                            <td class="customselect">
-                              <span>Pancho</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable">Full Service</td>
-                            <td class="customselect">
-                              <span>Jazzy</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable"></td>
-                            <td class="customselect">
-                              <span class="greenclr">AVAILABLE</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable"></td>
-                            <td class="customselect">
-                              <span class="redclr">UNAVAILABLE</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable"></td>
-                            <td class="customselect">
-                              <span class="redclr">UNAVAILABLE</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable">Nails Clipping</td>
-                            <td class="customselect">
-                              <span>LUNA</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="dateTime"><span><img src="Images/callock.svg" alt="...">9:30 AM</span><span>24 Oct, 2020</span></td>
-                            <td class="texttable">Wash and Blow Dry</td>
-                            <td class="customselect">
-                              <span>Pancho</span>
-                              <span><img src="images/angle-arrow.svg" alt="..."></span>
-                            </td>
+                            <td>1273</td>
+                            <td>2</td>
+                            <td>23</td>
+                            <td>4.5*</td>
+                            <td>Ang 14520.00</td>
+                            <td>Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                  <div>
-                </div>
+                  </div>
+
+                  <div class="cardSection2">
+                    <div class="titlemd">
+                      <h5 class="mb-0">VETERINARY</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Bookings</th>
+                            <th scope="col">No Show</th>
+                            <th scope="col">Cancellations</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Revenue</th>
+                            <th scope="col">Admin Commission</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1273</td>
+                            <td>2</td>
+                            <td>23</td>
+                            <td>4.5*</td>
+                            <td>Ang 14520.00</td>
+                            <td>Ang 245.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="cardSection2">
+                    <div class="titlemd">
+                      <h5 class="mb-0">PET HOTELS</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Bookings</th>
+                            <th scope="col">No Show</th>
+                            <th scope="col">Cancellations</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Revenue</th>
+                            <th scope="col">Admin Commission</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1273</td>
+                            <td>2</td>
+                            <td>23</td>
+                            <td>4.5*</td>
+                            <td>Ang 14520.00</td>
+                            <td>Ang 245.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="cardSection2">
+                    <div class="titlemd">
+                      <h5 class="mb-0">SHOP</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Purchases</th>
+                            <th scope="col" class="text-center">Revenue</th>
+                            <th scope="col" class="text-right">Admin Commission</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1888</td>
+                            <td class="text-center">Ang 4520.00</td>
+                            <td class="text-right">Ang 245.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="cardSection2">
+                    <div class="titlemd">
+                      <h5 class="mb-0">TRANSPORT</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Rides</th>
+                            <th scope="col" class="text-center">Revenue</th>
+                            <th scope="col" class="text-right">Admin Commission</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1888</td>
+                            <td class="text-center">Ang 4520.00</td>
+                            <td class="text-right">Ang 245.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="cardSection2">
+                    <div class="titlemd">
+                      <h5 class="mb-0">TOTAL ADMIN COMMISSIONS</h5>
+                    </div>
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">GROOMER</th>
+                            <th scope="col">VETERINARY</th>
+                            <th scope="col">PET HOTELS</th>
+                            <th scope="col">SHOP</th>
+                            <th scope="col">TRANSPORT</th>
+                            <th scope="col">TOTAL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ang 245.00 </td>
+                            <td>Ang 245.00 </td>
+                            <td>Ang 245.00 </td>
+                            <td>Ang 245.00 </td>
+                            <td>Ang 245.00 </td>
+                            <td>Ang 245.00 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+
               </div>
-            </div>
             </div>
             <div class="col-lg-4">
               <div class="rightSidebar">
@@ -409,6 +600,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

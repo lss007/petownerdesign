@@ -874,7 +874,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     font-weight: 800;
 }
 .checkboxStyle .cardImgCol > img {
-    height: 100px;
+    height: 60px;
     border-radius: 10px 10px 0 0;
 }
 .checkboxStyle .cardStyle2 {
@@ -1221,7 +1221,6 @@ a.btn_primary:focus, a.btn_primary:hover {
     color: #172A48;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
     padding-top: 0;
 }
 .confirmappointment .iconCol > img {
@@ -1461,15 +1460,16 @@ a.btn_primary:focus, a.btn_primary:hover {
     height: 210px;
     object-fit: cover;
 }
-.cardtablebtn {
-    text-align: right;
-}
 .cardtablebtn .btnStyle {
-    min-width: 130px;
-    padding: 9px 15px;
+    min-width: 132px;
+    padding: 10px 15px;
+    font-size: 16px;
 }
 .cardtablebtn > ul > li {
-    margin-top: 6px;
+  display: inline-block;
+}
+.cardtablebtn > ul > li + li {
+    margin-left: 10px;
 }
 .btnStyle.btngreen {
     background-color: #15C8BC;
@@ -1498,8 +1498,8 @@ a.btn_primary:focus, a.btn_primary:hover {
 .tableIcon > a + a {
     padding-left: 10px;
 }
-.customModle .modal-dialog{
-    max-width: 800px;
+.customModle .modal-dialog {
+    max-width: 1020px;
 }
 .customModle .modal-content {
     padding: 30px;
@@ -1597,7 +1597,13 @@ a.btn_primary:focus, a.btn_primary:hover {
     padding: 0;
 }
 .mdlTitle {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.tableStyle .table-striped tbody tr {
+    border-top: 1px solid #f2f2f2;
+}
+.tableStyle .table-striped tbody tr:last-child {
+    border-bottom: 1px solid #f2f2f2;
 }
 .modlFormStyle .formStyle {
     border-color: #F2F2F2;
@@ -1681,14 +1687,17 @@ a.btn_primary:focus, a.btn_primary:hover {
     border: 0;
 }
 .tableStyle .table thead th {
-    color: #172A48;
-    font-size: 14px;
-    font-weight: 700;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .tableStyle .table td {
-    color: #4f4f4f;
+    color: #172A48;
     font-size: 13px;
     font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 .tableStyle .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F8F8F8;
@@ -2432,6 +2441,7 @@ button.close:focus {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     padding: 20px;
+    vertical-align: middle;
 }
 .tableStyle2 .table td:nth-child(1) {
     padding-left: 30px;
@@ -2658,12 +2668,11 @@ button.close:focus {
     border-radius: 20px;
 }
 .formContentGroup .inputStyleCol {
-    border-bottom: 1px solid #F2F2F2;
-    font-size: 16px;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    padding-left: 5px;
+  border: 2px solid #DCDCDC;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  height: 50px;
 }
 .selectarrow{
   position: relative;
@@ -2702,7 +2711,7 @@ select.form-control.inputStyleCol {
   color: #828282;
 }
 .formContentGroup {
-    margin-bottom: 20px;
+    margin: 10px 20px;
 }
 .FormStyle2 .btnCol {
     margin: 20px 0;
@@ -2714,44 +2723,43 @@ select.form-control.inputStyleCol {
     margin-left: 20px;
 }
 /******** performance ******/
-.reservationCalendar {
+.formControlInputStyle {
     background-color: #fff;
     padding: 15px;
     border-radius: 4px;
     width: 275px;
     box-shadow: 0 0 32px rgba(0,0,0,0.6%);
 }
-.reservationCalendar .date {
+.formControlInputStyle .input-group, .formControlInputStyle .form-control {
     border: 1px solid #EFEFEF;
     border-radius: 4px;
 }
-.reservationCalendar .input-group-text {
+.formControlInputStyle .input-group-text {
     border: 0;
     background-color: transparent;
     padding-right: 0;
 }
-.reservationCalendar .datetimepicker-input {
-    border: 0;
+.formControlInputStyle .datetimepicker-input {
     background-color: transparent;
     font-size: 14px;
     color: #928D8D;
 }
-.reservationCalendar ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.formControlInputStyle ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #928D8D;
 }
-.reservationCalendar ::-moz-placeholder { /* Firefox 19+ */
+.formControlInputStyle ::-moz-placeholder { /* Firefox 19+ */
   color: #928D8D;
 }
-.reservationCalendar :-ms-input-placeholder { /* IE 10+ */
+.formControlInputStyle :-ms-input-placeholder { /* IE 10+ */
   color: #928D8D;
 }
-.reservationCalendar :-moz-placeholder { /* Firefox 18- */
+.formControlInputStyle :-moz-placeholder { /* Firefox 18- */
   color: #928D8D;
 }
-.reservationCalendar .datetimepicker-input:focus {
+.formControlInputStyle .datetimepicker-input:focus, .formControlInputStyle .form-control:focus {
     box-shadow: none;
 }
-.reservationCalendar .input-group-append {
+.formControlInputStyle .input-group-append {
     margin: 0;
 }
 .toggleSec {
@@ -2906,7 +2914,6 @@ select.form-control.inputStyleCol {
     display: flex;
     align-items: center;
     box-shadow: 0 0 32px rgba(0,0,0,0.6%);
-    margin: 0 10px;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
@@ -3059,7 +3066,62 @@ select.form-control.inputStyleCol {
     padding: 20px 0 10px;
 }
 .mdwdith {
-    max-width: 1060px;
+    max-width: 1120px;
+}
+.tableStyle2 {
+    margin-top: 20px;
+}
+.formControlInputStyle.selectInputStyle {
+    margin-left: auto;
+}
+.formControlInputStyle select.form-control {
+    padding-right: 35px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+.selectInputStyle .input-group {
+    position: relative;
+}
+.selectInputStyle .input-group::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border: solid #333333;
+    border-width: 0 2px 2px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+    z-index: 5;
+    margin-top: -1px;
+}
+.selectpetCol {
+    max-width: 480px;
+    padding: 40px 0;
+}
+.selectpetCol .cardText {
+    padding: 8px 5px 2px;
+}
+.selectpetCol .cardtitlelg > h4 {
+    color: #172A48;
+    font-size: 13px;
+}
+.selectpetCol .checkboxStyle input[type=checkbox] + label .cardStyle2:before {
+    border-width: 1px;
+}
+.selectpetCol .checkboxStyle input[type=checkbox] + label:before {
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    top: -5px;
+}
+.selectpetCol .checkboxStyle input[type=checkbox] + label:after {
+    top: -3px;
+    right: 0px;
+    width: 5px;
+    height: 8px;
 }
 /****************************************
 *********** MEDIA-QUARY ************
@@ -3224,14 +3286,23 @@ select.form-control.inputStyleCol {
 .radioCheckStyle2 label.radio-label {
     font-size: 14px;
 }
-.formContentGroup .inputStyleCol {
-    font-size: 14px;
-}
 .selectarrow::before {
     right: 0;
     width: 7px;
     height: 7px;
     border-width: 0 1px 1px 0;
+}
+.subMenuLink > ul > li {
+    margin: 14px;
+}
+.subMenuLink > ul > li > a {
+    font-size: 16px;
+    padding: 6px 0 6px 58px;
+}
+.formContentGroup .inputStyleCol {
+    font-size: 14px;
+    padding: 10px 15px;
+    height: 40px;
 }
 }
 @media (max-width: 1640px) {
@@ -3273,9 +3344,6 @@ select.form-control.inputStyleCol {
 }
 .datepickerStyle {
     max-width: 380px;
-}
-.checkboxStyle .cardImgCol > img {
-    height: 70px;
 }
 .confirmappointment {
     padding: 20px;
@@ -3570,9 +3638,6 @@ span.petCardArrow {
 .petInfoText {
     font-size: 13px;
 }
-.cardtablebtn > ul > li {
-    margin-top: 4px;
-}
 .petInfoText.lgtxet {
     font-size: 14px;
 }
@@ -3738,9 +3803,6 @@ span.petCardArrow {
 .nextday > a > span > img {
     padding-left: 5px;
 }
-.formContentGroup .inputStyleCol {
-    font-size: 14px;
-}
 .cardBox {
     padding: 10px;
     height: 70px;
@@ -3749,6 +3811,12 @@ span.petCardArrow {
     padding: 20px;
     border-radius: 10px;
     margin-top: 15px;
+}
+.subMenuLink > ul > li {
+    margin: 10px;
+}
+.subMenuLink > ul > li > a {
+    padding: 6px 0 6px 45px;
 }
 }
 @media (max-width: 1400px) {
@@ -3951,6 +4019,19 @@ span.petCardArrow {
 .cardSpaceTop {
     margin-top: 15px;
 }
+.formControlInputStyle {
+    width: 100%;
+}
+.subMenuLink > ul > li {
+    margin: 10px 5px;
+}
+.subMenuLink > ul > li > a {
+    padding: 6px 0 6px 15px;
+    font-size: 14px;
+}
+.tableStyle .table thead th, .tableStyle td {
+    white-space: nowrap;
+}
 }
 @media (max-width: 991px) {
 .imgColStyle {
@@ -4071,9 +4152,6 @@ body.sidebarNavOpen {
 .panelCol .petCardfeat {
     margin-bottom: 0;
 }
-.checkboxStyle .cardImgCol > img {
-    height: 150px;
-}
 .calendarStyle {
     margin-left: 0;
 }
@@ -4139,6 +4217,17 @@ body {
 .mdwdith {
     max-width: 100%;
 }
+.subMenuLink > ul > li {
+    margin: 15px 35px;
+}
+.selectpetCol {
+    max-width: 520px;
+    padding: 15px 0;
+}
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -4166,10 +4255,7 @@ body {
 .btnStyle {
     padding: 10px 30px;
 }
-.rightSidebar {
-    height: auto;
-    min-height: auto;
-}
+
 .confirmprice {
     padding: 10px;
 }
@@ -4191,12 +4277,6 @@ body {
 .formCol .form-control {
     padding: 5px 0 5px 0;
     font-size: 14px;
-}
-.cardtablebtn {
-    text-align: left;
-}
-.cardtablebtn > ul > li {
-    display: inline-block;
 }
 .tablinks .tabs {
     display: none;
@@ -4268,7 +4348,7 @@ body {
     margin-bottom: 20px;
 }
 .formContentGroup {
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 .shopingSelectStyle > ul > li {
     display: block;
@@ -4279,6 +4359,16 @@ body {
 }
 .shopingSelectStyle {
     margin-bottom: 30px;
+}
+.formControlInputStyle {
+    margin-top: 15px;
+}
+.modleStyle .modal-dialog {
+    height: auto;
+}
+.customModle .close {
+    right: 20px;
+    top: 15px;
 }
 }
 @media (max-width: 585px) {
@@ -4504,7 +4594,7 @@ body {
 .btnStyle.btnwidthsm {
     min-width: 100px;
 }
-.reservationCalendar {
+.formControlInputStyle {
     padding: 10px;
     width: 100%;
 }
@@ -4526,6 +4616,22 @@ body {
 .btnStyle.btnmd {
     padding: 8px 10px 8px;
     min-width: 120px;
+}
+.selectpetCol .cardtitlelg > h4 {
+    font-size: 25px;
+}
+.selectpetCol .cardText {
+    padding: 12px 8px 5px;
+}
+.selectpetCol .checkboxStyle input[type=checkbox] + label:before {
+    width: 20px;
+    height: 20px;
+}
+.selectpetCol .checkboxStyle input[type=checkbox] + label:after {
+    top: -3px;
+    right: 1px;
+    width: 7px;
+    height: 12px;
 }
 }
 @media (max-width: 485px) {

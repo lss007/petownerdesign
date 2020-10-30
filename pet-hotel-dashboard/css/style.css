@@ -1340,9 +1340,6 @@ a.btn_primary:focus, a.btn_primary:hover {
 .inputvalue {
     padding-bottom: 10px;
 }
-.btnCol2 {
-    padding-top: 20px;
-}
 .btnStyle.lgbtn {
     min-width: 116px;
     padding: 10px 8px;
@@ -1485,7 +1482,9 @@ a.btn_primary:focus, a.btn_primary:hover {
     padding-right: 40px;
 }
 .file-upload {
-  background-color: #ffffff;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 .file-upload-content {
   display: none;
@@ -1650,6 +1649,9 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .tableStyle .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F8F8F8;
+}
+.tableStyle .table-striped tbody tr:last-child {
+    border-bottom: 1px solid #f2f2f2;
 }
 button.close:focus {
     outline: none;
@@ -2310,9 +2312,16 @@ button.close:focus {
     height: 2px;
 }
 .btnStyle.smbtn {
-    padding: 12px 30px 8px;
+    padding: 10px 15px 8px;
     font-size: 12px;
+    min-width: 130px;
 }
+.btnStyle.xsbtn {
+    padding: 6px;
+    font-size: 12px;
+    min-width: 85px;
+}
+
 .tblebtnColLeft > ul > li {
     display: inline-block;
 }
@@ -2496,7 +2505,7 @@ button.close:focus {
     padding: 15px;
     border-radius: 4px;
     width: 275px;
-    box-shadow: 0 0 32px rgba(0,0,0,0.1);
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
 }
 .reservationCalendar .date {
     border: 1px solid #EFEFEF;
@@ -2548,32 +2557,432 @@ button.close:focus {
 .formContentGroup {
     padding: 10px 0;
 }
+
+.formContentGroup .inputStyleCol {
+    border: 1px solid #DCDCDC;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 45px;
+}
 .formContentGroup label {
     color: #bdbdbd;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: 400;
 }
-.checkboxCrl label.radio-label {
-    padding-left: 25px;
+.checkboxCrl label {
+    margin: 0;
+    padding-left: 26px;
+    position: relative;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
 }
-.checkboxStyle.checkboxCrl input[type=checkbox] label:before{
-  background-color: #FF3EB3;
-  -webkit-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
+ .checkboxCrl input[type="checkbox"] {
+	 position: absolute;
+	 opacity: 0;
 }
-.checkboxStyle.checkboxCrl input[type=checkbox]:checked + label:before {
-    background-color: transparent;
-    border: 2px solid #DCDCDC;
-    width: 20px;
+ .checkboxCrl input[type="checkbox"] + label:before {
+	 content: "";
+	 background: #fff;
+	 border-radius: 100%;
+	 border:2px solid #DCDCDC;
+	 display: inline-block;
+	 width: 20px;
+	 height:20px;
+	 position: absolute;
+	 top: 0;
+   left: 0;
+	 cursor: pointer;
+	 text-align: center;
+	 transition: all 250ms ease;
+}
+.checkboxCrl input[type="checkbox"]:checked + label:before {
+    background-color: #FF3EB3;
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+ .checkboxCrl input[type="checkbox"]:focus + label:before {
+	 outline: none;
+	 border-color: #DCDCDC;
+}
+ .checkboxCrl input[type="checkbox"]:disabled + label:before {
+	 box-shadow: inset 0 0 0 4px #f4f4f4;
+	 border-color: #DCDCDC;
+	 background: #fff;
+}
+ .checkboxCrl input[type="checkbox"] + label:before {
+	 margin-right: 0;
+}
+
+.mdwdith {
+    max-width: 980px;
+}
+.petmedicalfile .titlemd {
+    padding: 30px 0 10px;
+}
+.btnStyle.btnwidthsm {
+    min-width: 132px;
+}
+.btnCol2 {
+    margin-top: 30px;
+}
+.btnCol2 .btn + .btn {
+    margin-left: 15px;
+}
+
+.toggleSec {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    padding: 10px;
+}
+.colTogle {
+    position: relative;
+    padding-right: 60px;
+    margin-top: 10px;
+}
+.colTogle label {
+    color: #172A48;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.colTogle .toggleSwitch {
     height: 20px;
-    left: 0;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+    width: 53px;
+    position: absolute;
     right: 0;
     top: 0;
 }
+.toggleSwitch span span {
+    display: none;
+}
+.toggleSwitch label, .toggleSwitch > span {
+    line-height: 24px;
+    height: 22px;
+    vertical-align: middle;
+}
+.toggleSwitch input:focus ~ a,
+.toggleSwitch input:focus + label {
+    outline: none;
+}
+.toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+}
+.toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+}
+.toggleSwitch > span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+.toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 10px;
+    width: 100%;
+    left: -80%;
+    top: 0px;
+    opacity: 0;
+    color: white;
+}
+.toggleSwitch a {
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    display: block;
+    height: 20px;
+    padding: 0;
+    left: 0;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    top: 1px;
+    border: 3px solid #ff7674;
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+}
+.toggleSwitch a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -10px;
+    top: 50%;
+    background-color: #fff;
+    height: 1px;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+.toggleSwitch > span span:first-of-type {
+    opacity: 1;
+    left: -20px;
+}
+.toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FF7674;
+    border-radius: 50px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.toggleSwitch input:checked ~ a {
+    left: 65%;
+    border-color: #01B995;
+}
+.toggleSwitch input:checked ~ a::before {
+    left: -8px;
+    right: 0;
+}
+.toggleSwitch input:checked ~ span:before {
+    background-color: #01B995;
+}
+.toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+}
+.toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff;
+}
+.btnStyle.btnwidthxs {
+    min-width: 110px;
+}
 
+.cardBox {
+    background-color: #fff;
+    padding: 15px 63px 15px 15px;
+    border-radius: 5px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 32px rgba(0,0,0,0.6%);
+    margin: 0 10px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.cardBoxIcon {
+    width: 43px;
+    height: 43px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.cardBoxIcon.cardBoxLightgreen {
+    background-color: rgba(21,200,188,0.2);
+}
+.cardBoxIcon.cardBoxLightorange {
+    background-color: rgba(253,164,88,0.2);
+}
+.cardBox > span.cardBoxIcon > svg {
+    width: 20px;
+}
+.cardBoxText {
+    color: #928D8D;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.performanceTitle {
+    display: block;
+    color: #15C8BC;
+    font-size: 18px;
+}
+.mdCol {
+    max-width: 1280px;
+    margin-left: -10px;
+}
+.tab-pane{
+  max-width: 980px;
+}
+.reviewCol {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.cUserImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.commentTopCol {
+    position: relative;
+}
+.uNameCol > span{
+  color: #828282;
+  font-size: 12px;
+  font-weight: 400;
+}
+.uNameCol .uName {
+    color: #2F80ED;
+    font-weight: 600;
+    font-size: 14px;
+}
+.ratingStarts {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 2px;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+.commentTopCol .ratingStarts {
+    line-height: 1;
+}
+.redStar .r5 .star1, .redStar .r5 .star2, .redStar .r5 .star3, .redStar .r5 .star4, .redStar .r5 .star5 {
+    color: #FF0000;
+    display: inline-block;
+}
+.commentTopCol .ratingStarts > ul > li > img {
+    margin-left: -2px;
+    width: 14px;
+}
+.commentTopCol h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+.commentDate {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.commentDate, .shareCol, .likeDislike {
+    color: #828282;
+    font-weight: 400;
+    font-size: 14px;
+}
+.shareCol {
+    font-size: 12px;
+}
+.vMiddle {
+    vertical-align: middle;
+}
+.likeDislike {
+    text-align: right;
+}
+.likeDislike > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.likeDislike > ul > li + li {
+    margin-left: 10px;
+}
+.ldIcon {
+    display: inline-block;
+    position: relative;
+}
+.blankLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.reviewContentCol > p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.selectStylesm label {
+    color: #828282;
+    font-size: 13px;
+    font-weight: 400;
+}
+.selectStylesm .selectarrow {
+    position: relative;
+}
+.selectStylesm .selectarrow::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 8px;
+    height: 8px;
+    border: solid #074574;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+.selectStylesm .inputStyleCol {
+    border: 1px solid #DCDCDC;
+    font-size: 14px;
+    padding: 8px 30px 8px 15px;
+    border-radius: 50px;
+    height: 42px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.selectStylesm .inputStyleCol:focus{
+  box-shadow: none;
+}
+.lgwdith{
+  max-width: 1120px;
+}
+.selectarrow {
+    position: relative;
+}
+.selectarrow::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border: solid #074574;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+select.form-control.inputStyleCol {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 45px;
+}
+.form-control:focus{
+  box-shadow: none;
+}
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -2686,9 +3095,7 @@ button.close:focus {
     padding-top: 10px;
     margin-top: 15px;
 }
-.btnCol2 {
-    padding-top: 10px;
-}
+
 .formGroupStyle {
     margin-bottom: 15px;
 }
@@ -2801,7 +3208,25 @@ button.close:focus {
     flex: 0 0 90%;
     max-width: 90%;
 }
-
+.mdCol {
+    max-width: 100%;
+}
+.cardBox {
+    min-width: 100%;
+    padding: 15px;
+    height: 80px;
+}
+.performanceTitle {
+    font-size: 16px;
+}
+.cardBoxIcon {
+    width: 35px;
+    height: 35px;
+}
+.cardBoxIcon > svg {
+    width: 15px;
+    height: 15px;
+}
 }
 @media (max-width: 1500px) {
 .imgCol > img {
@@ -2863,8 +3288,10 @@ button.close:focus {
     font-size: 12px;
 }
 .btnStyle.btn_secondary {
-    padding: 6px 18px;
-    font-size: 12px;
+    padding: 8px 18px;
+}
+.btnStyle.btnwidthsm {
+    min-width: 110px;
 }
 .petCardfeatIcon {
     width: 40px;
@@ -3177,6 +3604,18 @@ span.petCardArrow {
 .reservationCol .titlemd {
     padding-bottom: 10px;
 }
+.cardBox {
+    padding: 10px;
+    height: 70px;
+}
+.reviewCol {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.tab-pane {
+    max-width: 100%;
+}
 }
 @media (max-width: 1400px) {
 .imgCol {
@@ -3372,6 +3811,9 @@ span.petCardArrow {
 .produttdText {
     margin-right: 30px;
 }
+.cardSpaceTop {
+    margin-top: 15px;
+}
 }
 @media (max-width: 991px) {
 .imgColStyle {
@@ -3561,6 +4003,10 @@ body {
     display: inline-block;
     width: 49%;
 }
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -3588,10 +4034,7 @@ body {
 .btnStyle {
     padding: 10px 30px;
 }
-.rightSidebar {
-    height: auto;
-    min-height: auto;
-}
+
 .confirmprice {
     padding: 10px;
 }
@@ -3688,6 +4131,16 @@ body {
 }
 .rightbtn {
     margin-bottom: 20px;
+}
+.petmedicalfile .titlemd {
+    padding: 20px 0 0;
+}
+.customCardStyle2 {
+    border-radius: 10px;
+    padding: 20px;
+}
+.pttopmb{
+  padding-top: 15px;
 }
 }
 @media (max-width: 585px) {
@@ -3877,6 +4330,10 @@ body {
     display: block;
     width: 100%;
 }
+.reservationCalendar {
+    padding: 10px;
+    width: 100%;
+}
 }
 @media (max-width: 485px) {
 .textLinkCol {
@@ -3907,8 +4364,7 @@ body {
     top: 0px;
 }
 .btnStyle.btn_secondary {
-    padding: 4px 14px;
-    font-size: 10px;
+    padding: 6px 14px;
 }
 .healthText {
     font-size: 14px;
@@ -4102,6 +4558,9 @@ body {
 .btnStyle.smbtn {
     padding: 8px 20px;
 }
+.btnStyle.btnwidthxs {
+    min-width: 100px;
+}
 }
 @media (max-width: 385px) {
   .proDtlImgCol img {
@@ -4123,4 +4582,11 @@ body {
   .btnStyle.smbtn {
     width: 100%;
   }
+  .btnStyle.xsbtn {
+    padding: 5px;
+    min-width: 74px;
+}
+.customCardStyle2 {
+    padding: 15px;
+}
 }

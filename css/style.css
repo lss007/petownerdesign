@@ -678,7 +678,14 @@ a.btn_primary:focus, a.btn_primary:hover {
 .inputformIcon {
     position: absolute;
     right: 20px;
-    top: 13px;
+    top: 10px;
+}
+.input-group>.custom-select.formStyle:not(:last-child), .input-group>.form-control.formStyle:not(:last-child) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.datepickerInput .bootstrap-datetimepicker-widget.dropdown-menu {
+    top: 100% !important;
 }
 .imgColStyle {
     background-color: #172A48;
@@ -1523,14 +1530,15 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .drag-text > span {
     color: #828282;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 400;
 }
 .drag-text h3 {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: #074574;
     font-size: 12px;
-    padding: 5px 0;
+    padding: 0;
     letter-spacing: 2px;
     margin: 0;
 }
@@ -1538,37 +1546,31 @@ a.btn_primary:focus, a.btn_primary:hover {
     max-height: 120px;
     max-width: 120px;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .remove-image {
     margin: 0;
-    color: #333333;
+    color: #828282;
     background: transparent;
     border: none;
     border-radius: 0;
     border-bottom: #0053b6;
     transition: all .2s ease;
     outline: none;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
     padding: 0;
 }
 .mdlTitle {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .modlFormStyle .formStyle {
-    border-color: #F2F2F2;
-    border-radius: 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    padding: 0 45px 0px 0;
-    font-size: 15px;
+    padding: 10px 45px 10px 20px;
     color: #828282;
     appearance: none;
     -moz-appearance: none;
-    -webkit-appearance:none;
+    -webkit-appearance: none;
+    height: 45px;
 }
 .modlFormStyle .formStyle::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #828282;
@@ -1582,9 +1584,6 @@ a.btn_primary:focus, a.btn_primary:hover {
 .modlFormStyle .formStyle:-moz-placeholder { /* Firefox 18- */
   color: #828282;
 }
-.modlFormStyle .inputformIcon {
-    right: 0;
-}
 .selectCol{
     position: relative;
 }
@@ -1592,9 +1591,9 @@ a.btn_primary:focus, a.btn_primary:hover {
     content: '';
     position: absolute;
     top: 50%;
-    right: 0;
-    width: 11px;
-    height: 11px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
     border: solid #074574;
     border-width: 0 2px 2px 0;
     transform: translate(0, -50%) rotate(45deg);
@@ -1605,11 +1604,11 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .datepickerInput .input-group-append {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 50%;
     margin: 0;
     z-index: 99;
-    padding: 13px 0;
+    transform: translate(0, -50%);
 }
 .datepickerInput .input-group-text {
     background-color: transparent;
@@ -1631,6 +1630,7 @@ a.btn_primary:focus, a.btn_primary:hover {
     color: #828282;
     font-size: 14px;
     line-height: 24px;
+    font-weight: 400;
 }
 .tableStyle {
     padding-top: 10px;
@@ -1640,16 +1640,25 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .tableStyle .table thead th {
     color: #172A48;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
 }
 .tableStyle .table td {
     color: #4f4f4f;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
+}
+.bookinggroomer .widthStyle {
+    max-width: 185px;
 }
 .tableStyle .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F8F8F8;
+}
+.tableStyle .table-striped tbody tr {
+    border-top: 1px solid #f2f2f2;
+}
+.tableStyle .table-striped tbody tr:last-child {
+    border-bottom: 1px solid #f2f2f2;
 }
 button.close:focus {
     outline: none;
@@ -3365,6 +3374,10 @@ body {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+.rightSidebar {
+    height: auto;
+    min-height: auto;
+}
 }
 @media (max-width: 767px) {
 .cardImgCol > img {
@@ -3392,10 +3405,7 @@ body {
 .btnStyle {
     padding: 10px 30px;
 }
-.rightSidebar {
-    height: auto;
-    min-height: auto;
-}
+
 .confirmprice {
     padding: 10px;
 }
@@ -3673,6 +3683,10 @@ body {
 .cartTotalCol {
     margin-top: 20px;
     padding-bottom: 20px;
+}
+.customModle .close {
+    right: 20px;
+    top: 15px;
 }
 }
 @media (max-width: 485px) {
