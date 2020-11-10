@@ -34,7 +34,7 @@
                         <span class="title_sidebar_list">Dashboard</span>
                     </a>
                   </li>
-                    <li class="dropOpen"><a href="JavaScript:void(0);">
+                    <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,9 +51,9 @@
                       <ul>
                         <li><a href="customers.html">Customers</a></li>
                         <li><a href="admins.html">Admins</a></li>
-                        <li><a href="JavaScript:void(0);">Groomer Sub-users</a></li>
-                        <li><a href="JavaScript:void(0);">Vet Sub-users</a></li>
-                        <li><a href="JavaScript:void(0);">Pet Hotel Sub-user</a></li>
+                        <li><a href="groomer-sub-users.html">Groomer Sub-users</a></li>
+                        <li><a href="vet-sub-users.html">Vet Sub-users</a></li>
+                        <li><a href="pet-hotel-sub-user.html">Pet Hotel Sub-user</a></li>
                       </ul>
                     </div>
                     </li>
@@ -71,6 +71,15 @@
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
                       </a>
+                      <div class="subMenuLink">
+                        <ul>
+                          <li><a href="groomers.html">Groomers</a></li>
+                          <li><a href="groomer-services.html">Groomer Services</a></li>
+                          <li><a href="reviews.html">Reviews</a></li>
+                          <li><a href="reporting.html">Reporting</a></li>
+                          <li><a href="reconciliations.html">Reconciliations</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon fillIcon">
@@ -89,6 +98,15 @@
                       <img src="images/arrow-up.svg" alt="..." class="upAngle">
                     </span>
                     </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Veterinarians.html">Veterinarians</a></li>
+                        <li><a href="Vet-services.html">Vet Services</a></li>
+                        <li><a href="Vet-reviews.html">Reviews</a></li>
+                        <li><a href="Vet-reporting.html">Reporting</a></li>
+                        <li><a href="Vet-reconciliations.html">Reconciliations</a></li>
+                      </ul>
+                    </div>
                     </li>
                     <li><a href="javascript:void(0);">
                       <span class="linkIcon fillIcon">
@@ -112,11 +130,20 @@
                           <path d="M9.10042 14.9805H8.11858C7.80135 14.9805 7.5437 15.2494 7.5437 15.5814V16.6076C7.5437 16.9392 7.80096 17.2085 8.11858 17.2085H9.10042C9.41765 17.2085 9.6753 16.9396 9.6753 16.6076V15.5814C9.6753 15.2494 9.41804 14.9805 9.10042 14.9805Z" fill="#074574" stroke="white" stroke-width="0.3"/>
                         </svg>
                       </span>
-                      <span class="title_sidebar_list">Pet Hotels</span></a>
+                      <span class="title_sidebar_list">Pet Hotels</span>
                       <span class="updownArrow">
                         <img src="images/arrow-down.svg" alt="..." class="downAngle">
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
+                    </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Pet-Hotels.html">Pet Hotels</a></li>
+                        <li><a href="Pet-reviews.html">Pet Reviews</a></li>
+                        <li><a href="Pet-reporting.html">Pet Reporting</a></li>
+                        <li><a href="Pet-reconciliations.html">Pet Reconciliations</a></li>
+                      </ul>
+                    </div>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
@@ -131,6 +158,14 @@
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
                     </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Countries.html">Countries</a></li>
+                        <li><a href="Email-Templates.html">Email Templates</a></li>
+                        <li><a href="SMS-Templates.html">SMS Templates</a></li>
+                        <li><a href="Push-Messages.html">Push Messages</a></li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -181,9 +216,24 @@
             <div class="row no-gutters">
               <div class="col-lg-8">
                 <div class="cardStyle cardLandingStyle">
-                  <div class="titlexl">
-                    <h5>Users</h5>
+                  <div class="form-row align-items-center">
+                    <div class="col-md-6">
+                      <div class="titlexl">
+                        <h5>Users</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="formControlInputStyle selectInputStyle bgNone">
+                        <div class="input-group">
+                          <select class="form-control" id="">
+                            <option>Select Country or All</option>
+                            <option>Select Country or All</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
                   <div class="cardSection2 pt-0 mt-lg-5">
                     <div class="row">
                       <div class="col-sm-6 col-lg-6 col-xl-3">
@@ -275,7 +325,7 @@
                     </div>
                   <div class="cardSection2">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="formControlInputStyle">
                           <div class="input-group date" id="multidatepicker" data-target-input="nearest">
                             <div class="input-group-append" data-target="#multidatepicker" data-toggle="datetimepicker">
@@ -291,16 +341,6 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="formControlInputStyle selectInputStyle">
-                          <div class="input-group">
-                            <select class="form-control" id="">
-                              <option>Select Country or All</option>
-                              <option>Select Country or All</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
 
@@ -312,6 +352,7 @@
                       <table class="table table-borderless">
                         <thead>
                           <tr>
+                            <th scope="col">Name</th>
                             <th scope="col">Bookings</th>
                             <th scope="col">No Show</th>
                             <th scope="col">Cancellations</th>
@@ -322,12 +363,13 @@
                         </thead>
                         <tbody>
                           <tr>
+                            <td>Shelly Drama</td>
                             <td>1273</td>
                             <td>2</td>
-                            <td>23</td>
+                            <td class="redclr">23</td>
                             <td>4.5*</td>
-                            <td>Ang 14520.00</td>
-                            <td>Ang 245.00</td>
+                            <td class="darkblue">Ang 14520.00</td>
+                            <td class="syanClr">Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
@@ -342,6 +384,7 @@
                       <table class="table table-borderless">
                         <thead>
                           <tr>
+                            <th scope="col">Name</th>
                             <th scope="col">Bookings</th>
                             <th scope="col">No Show</th>
                             <th scope="col">Cancellations</th>
@@ -352,12 +395,13 @@
                         </thead>
                         <tbody>
                           <tr>
+                            <td>Shelly Drama</td>
                             <td>1273</td>
                             <td>2</td>
-                            <td>23</td>
+                            <td class="redclr">23</td>
                             <td>4.5*</td>
-                            <td>Ang 14520.00</td>
-                            <td>Ang 245.00</td>
+                            <td class="darkblue">Ang 14520.00</td>
+                            <td class="syanClr">Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
@@ -372,6 +416,7 @@
                       <table class="table table-borderless">
                         <thead>
                           <tr>
+                            <th scope="col">Name</th>
                             <th scope="col">Bookings</th>
                             <th scope="col">No Show</th>
                             <th scope="col">Cancellations</th>
@@ -382,12 +427,13 @@
                         </thead>
                         <tbody>
                           <tr>
+                            <td>Shelly Drama</td>
                             <td>1273</td>
                             <td>2</td>
-                            <td>23</td>
+                            <td class="redclr">23</td>
                             <td>4.5*</td>
-                            <td>Ang 14520.00</td>
-                            <td>Ang 245.00</td>
+                            <td class="darkblue">Ang 14520.00</td>
+                            <td class="syanClr">Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
@@ -410,8 +456,8 @@
                         <tbody>
                           <tr>
                             <td>1888</td>
-                            <td class="text-center">Ang 4520.00</td>
-                            <td class="text-right">Ang 245.00</td>
+                            <td class="text-center darkblue">Ang 4520.00</td>
+                            <td class="text-right syanClr">Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
@@ -434,8 +480,8 @@
                         <tbody>
                           <tr>
                             <td>1888</td>
-                            <td class="text-center">Ang 4520.00</td>
-                            <td class="text-right">Ang 245.00</td>
+                            <td class="text-center darkblue">Ang 4520.00</td>
+                            <td class="text-right syanClr">Ang 245.00</td>
                           </tr>
                         </tbody>
                       </table>
@@ -460,12 +506,12 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Ang 245.00 </td>
-                            <td>Ang 245.00 </td>
-                            <td>Ang 245.00 </td>
-                            <td>Ang 245.00 </td>
-                            <td>Ang 245.00 </td>
-                            <td>Ang 245.00 </td>
+                            <td class="darkblue">Ang 245.00 </td>
+                            <td class="darkblue">Ang 245.00 </td>
+                            <td class="darkblue">Ang 245.00 </td>
+                            <td class="darkblue">Ang 245.00 </td>
+                            <td class="darkblue">Ang 245.00 </td>
+                            <td class="syanClr">Ang 245.00 </td>
                           </tr>
                         </tbody>
                       </table>

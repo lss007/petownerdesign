@@ -34,7 +34,7 @@
                         <span class="title_sidebar_list">Dashboard</span>
                     </a>
                   </li>
-                    <li class="dropOpen"><a href="JavaScript:void(0);" class="active">
+                    <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,14 +50,14 @@
                     <div class="subMenuLink">
                       <ul>
                         <li><a href="customers.html">Customers</a></li>
-                        <li><a href="admins.html" class="active">Admins</a></li>
+                        <li><a href="admins.html">Admins</a></li>
                         <li><a href="groomer-sub-users.html">Groomer Sub-users</a></li>
                         <li><a href="vet-sub-users.html">Vet Sub-users</a></li>
                         <li><a href="pet-hotel-sub-user.html">Pet Hotel Sub-user</a></li>
                       </ul>
                     </div>
                     </li>
-                    <li><a href="JavaScript:void(0);">
+                    <li class="dropOpen"><a href="JavaScript:void(0);" class="active">
                       <span class="linkIcon fillIcon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M4.10156 14.1406C5.07082 14.1406 5.85938 14.9292 5.85938 15.8984C5.85938 16.8677 5.07082 17.6563 4.10156 17.6563C3.1323 17.6563 2.34375 16.8677 2.34375 15.8984C2.34375 14.9292 3.1323 14.1406 4.10156 14.1406ZM4.10156 16.4844C4.42465 16.4844 4.6875 16.2215 4.6875 15.8984C4.6875 15.5754 4.42465 15.3125 4.10156 15.3125C3.77848 15.3125 3.51562 15.5754 3.51562 15.8984C3.51562 16.2215 3.77848 16.4844 4.10156 16.4844Z" fill="#074574"/>
@@ -75,7 +75,7 @@
                         <ul>
                           <li><a href="groomers.html">Groomers</a></li>
                           <li><a href="groomer-services.html">Groomer Services</a></li>
-                          <li><a href="reviews.html">Reviews</a></li>
+                          <li><a href="reviews.html" class="active">Reviews</a></li>
                           <li><a href="reporting.html">Reporting</a></li>
                           <li><a href="reconciliations.html">Reconciliations</a></li>
                         </ul>
@@ -135,15 +135,15 @@
                         <img src="images/arrow-down.svg" alt="..." class="downAngle">
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
-                      </a>
-                      <div class="subMenuLink">
-                        <ul>
-                          <li><a href="Pet-Hotels.html">Pet Hotels</a></li>
-                          <li><a href="Pet-reviews.html">Pet Reviews</a></li>
-                          <li><a href="Pet-reporting.html">Pet Reporting</a></li>
-                          <li><a href="Pet-reconciliations.html">Pet Reconciliations</a></li>
-                        </ul>
-                      </div>
+                    </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Pet-Hotels.html">Pet Hotels</a></li>
+                        <li><a href="Pet-reviews.html">Pet Reviews</a></li>
+                        <li><a href="Pet-reporting.html">Pet Reporting</a></li>
+                        <li><a href="Pet-reconciliations.html">Pet Reconciliations</a></li>
+                      </ul>
+                    </div>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
@@ -214,11 +214,11 @@
           </div>
         <div class="page-inner">
           <div class="btnspace text-right ">
-            <button class="btn btnStyle btn_primary custombtn" type="button" data-toggle="modal" data-target="#addnewpet">+  Add User</button>
+            <button class="btn btnStyle btn_primary custombtn" type="button" data-toggle="modal" data-target="#addgroomer">+  Add Groomer</button>
           </div>
           <div class="mdwdith">
             <div class="titlexl">
-              <h5>Admins</h5>
+              <h5 class="text-capitalize">reviews</h5>
             </div>
             <div class="cardSection2 pt-0 mt-lg-5">
               <div class="formControlInputStyle selectInputStyle mr-auto ml-0">
@@ -250,135 +250,118 @@
                     <tr>
                       <th scope="col">User ID</th>
                       <th scope="col">Full Name</th>
-                      <th scope="col">Role</th>
-                      <th scope="col">E-mail</th>
+                      <th scope="col">Rating</th>
+                      <th scope="col">Review</th>
+                      <th scope="col">Groomer</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">5*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top">Dana White</td>
+                      <td class="align-top">3*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Cheryl Ommen</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top">Yindee Oppoff</td>
+                      <td class="align-top">2*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Best GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> 8 Dana White</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">5*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">3*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">2*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">GAP GRooming</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                   </tbody>
@@ -389,9 +372,14 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+
 </section>
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

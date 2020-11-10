@@ -51,9 +51,9 @@
                       <ul>
                         <li><a href="customers.html" class="active">Customers</a></li>
                         <li><a href="admins.html">Admins</a></li>
-                        <li><a href="JavaScript:void(0);">Groomer Sub-users</a></li>
-                        <li><a href="JavaScript:void(0);">Vet Sub-users</a></li>
-                        <li><a href="JavaScript:void(0);">Pet Hotel Sub-user</a></li>
+                        <li><a href="groomer-sub-users.html">Groomer Sub-users</a></li>
+                        <li><a href="vet-sub-users.html">Vet Sub-users</a></li>
+                        <li><a href="pet-hotel-sub-user.html">Pet Hotel Sub-user</a></li>
                       </ul>
                     </div>
                     </li>
@@ -71,6 +71,15 @@
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
                       </a>
+                      <div class="subMenuLink">
+                        <ul>
+                          <li><a href="groomers.html">Groomers</a></li>
+                          <li><a href="groomer-services.html">Groomer Services</a></li>
+                          <li><a href="reviews.html">Reviews</a></li>
+                          <li><a href="reporting.html">Reporting</a></li>
+                          <li><a href="reconciliations.html">Reconciliations</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon fillIcon">
@@ -89,6 +98,15 @@
                       <img src="images/arrow-up.svg" alt="..." class="upAngle">
                     </span>
                     </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Veterinarians.html">Veterinarians</a></li>
+                        <li><a href="Vet-services.html">Vet Services</a></li>
+                        <li><a href="Vet-reviews.html">Reviews</a></li>
+                        <li><a href="Vet-reporting.html">Reporting</a></li>
+                        <li><a href="Vet-reconciliations.html">Reconciliations</a></li>
+                      </ul>
+                    </div>
                     </li>
                     <li><a href="javascript:void(0);">
                       <span class="linkIcon fillIcon">
@@ -112,11 +130,20 @@
                           <path d="M9.10042 14.9805H8.11858C7.80135 14.9805 7.5437 15.2494 7.5437 15.5814V16.6076C7.5437 16.9392 7.80096 17.2085 8.11858 17.2085H9.10042C9.41765 17.2085 9.6753 16.9396 9.6753 16.6076V15.5814C9.6753 15.2494 9.41804 14.9805 9.10042 14.9805Z" fill="#074574" stroke="white" stroke-width="0.3"/>
                         </svg>
                       </span>
-                      <span class="title_sidebar_list">Pet Hotels</span></a>
+                      <span class="title_sidebar_list">Pet Hotels</span>
                       <span class="updownArrow">
                         <img src="images/arrow-down.svg" alt="..." class="downAngle">
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
+                    </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Pet-Hotels.html">Pet Hotels</a></li>
+                        <li><a href="Pet-reviews.html">Pet Reviews</a></li>
+                        <li><a href="Pet-reporting.html">Pet Reporting</a></li>
+                        <li><a href="Pet-reconciliations.html">Pet Reconciliations</a></li>
+                      </ul>
+                    </div>
                     </li>
                     <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
@@ -131,6 +158,14 @@
                         <img src="images/arrow-up.svg" alt="..." class="upAngle">
                       </span>
                     </a>
+                    <div class="subMenuLink">
+                      <ul>
+                        <li><a href="Countries.html">Countries</a></li>
+                        <li><a href="Email-Templates.html">Email Templates</a></li>
+                        <li><a href="SMS-Templates.html">SMS Templates</a></li>
+                        <li><a href="Push-Messages.html">Push Messages</a></li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -195,7 +230,20 @@
                 </div>
               </div>
             </div>
-            <div class="cardSection2 pt-0">
+            <div class="cardSection2 showCol pt-0">
+              <div class="shownum">
+                <div class="form-row selectStylesm align-items-center justify-content-end">
+                  <label for="staticEmail" class="col-auto col-form-label text-capitalize">show</label>
+                  <div class="col-auto">
+                    <div class="input-group">
+                     <select class="form-control" id="">
+                       <option>50</option>
+                       <option>60</option>
+                     </select>
+                   </div>
+                  </div>
+                </div>
+              </div>
               <div class="tableStyle2 table-responsive mt-0">
                 <table class="table table-borderless">
                   <thead>
@@ -204,7 +252,6 @@
                       <th scope="col">Full Name</th>
                       <th scope="col">Tel</th>
                       <th scope="col">E-mail</th>
-                      <th scope="col"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -214,16 +261,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -235,16 +282,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -256,16 +303,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -277,16 +324,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -298,16 +345,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -319,16 +366,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>
@@ -340,16 +387,16 @@
                       <td>1234567890</td>
                       <td>andrews.berry@gmail.com</td>
                       <td>
-                        <div class="cardtablebtn">
+                        <div class="cardtablebtn text-right">
                           <ul>
                             <li>
                               <button type="button" value="button" class="btn btnStyle btn_secondary btngreen" data-toggle="modal" data-target="#edit">Edit</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnyellow" data-toggle="modal" data-target="#transactionhistory">Transaction History</button>
                             </li>
                             <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred" data-toggle="modal" data-target="#pets">Pets</button>
+                              <button type="button" value="button" class="btn btnStyle btn_secondary btnpink" data-toggle="modal" data-target="#pets">Pets</button>
                             </li>
                           </ul>
                         </div>

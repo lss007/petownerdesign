@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Petowner</title>
+</head>
+
+<body>
+  <section>
+    <div class="mainContent">
+      <div class="sidebar-nav mCustomScrollbar light" id="content-2">
+        <div class="sidebarLinks">
+          <div class="logoSec d-none d-lg-block">
+            <a href="dashboard.html"><img src="images/logo.png" alt="..."></a>
+          </div>
+          <div class="sideColCard">
+            <div class="sidebarLink">
+              <ul>
+                <li>
+                  <a href="dashboard.html">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z" stroke="#074574" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 21V11H13V21" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Dashboard</span>
+                  </a>
+                </li>
+                <li><a href="profile.html">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Profile</span>
+                  </a>
+                </li>
+                <li><a href="performance.html">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 8H13.5L11.25 14.75L6.75 1.25L4.5 8H1.5" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Performance</span>
+                  </a>
+                </li>
+                <li><a href="javascript:void(0);">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19 13C19 13.5304 18.7893 14.0391 18.4142 14.4142C18.0391 14.7893 17.5304 15 17 15H5L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V13Z"
+                          stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Inbox</span>
+                  </a>
+                </li>
+                <li><a href="book-appointment.html">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13 3H15C15.5304 3 16.0391 3.21071 16.4142 3.58579C16.7893 3.96086 17 4.46957 17 5V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V5C1 4.46957 1.21071 3.96086 1.58579 3.58579C1.96086 3.21071 2.46957 3 3 3H5"
+                          stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 1H6C5.44772 1 5 1.44772 5 2V4C5 4.55228 5.44772 5 6 5H12C12.5523 5 13 4.55228 13 4V2C13 1.44772 12.5523 1 12 1Z" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Book Appointment</span></a>
+                </li>
+                <li><a href="calendar.html">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3Z" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14 1V5" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 1V5" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 9H19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Calendar</span>
+                  </a>
+                </li>
+                <li><a href="pet-medical-file.html" class="active">
+                    <span class="linkIcon strokeIcon">
+                      <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M22 17.278V8.16693C21.9996 7.7675 21.8941 7.37519 21.6943 7.02937C21.4944 6.68355 21.207 6.39638 20.8611 6.19666L12.8889 1.6411C12.5426 1.44118 12.1498 1.33594 11.75 1.33594C11.3502 1.33594 10.9574 1.44118 10.6111 1.6411L2.63889 6.19666C2.29297 6.39638 2.00564 6.68355 1.80575 7.02937C1.60585 7.37519 1.50041 7.7675 1.5 8.16693V17.278C1.50041 17.6775 1.60585 18.0698 1.80575 18.4156C2.00564 18.7614 2.29297 19.0486 2.63889 19.2483L10.6111 23.8039C10.9574 24.0038 11.3502 24.109 11.75 24.109C12.1498 24.109 12.5426 24.0038 12.8889 23.8039L20.8611 19.2483C21.207 19.0486 21.4944 18.7614 21.6943 18.4156C21.8941 18.0698 21.9996 17.6775 22 17.278Z"
+                          stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.80737 6.98242L11.7499 12.7338L21.6924 6.98242" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.75 24.2027V12.7227" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="title_sidebar_list">Product / Service</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content pageInnerStyle">
+        <div class="header-section">
+          <div class="header-top">
+            <div class="form-row align-items-center">
+              <div class="col-auto d-block d-lg-none">
+                <div class="logoSec">
+                  <a href="dashboard.html"><img src="images/logo.png" alt="..."></a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rightIconbar">
+                  <ul>
+                    <li class="notification">
+                      <a href="javascript:void(0);">
+                        <img src="images/bell.svg" alt="...">
+                      </a>
+                    </li>
+                    <li class="userCol">
+                      <a href="javascript:void(0);">
+                        <img src="images/user.png" alt="...">
+                      </a>
+                    </li>
+                    <li class="notification">
+                      <a href="login.html">
+                        <img src="images/log-out.svg" alt="...">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto d-block d-lg-none">
+                <div class="toggle">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-inner">
+          <div class="btnspace text-right ">
+            <button class="btn btnStyle btn_primary custombtn" type="button" data-toggle="modal" data-target="#productservice">+ Add Prodcut / Service</button>
+          </div>
+          <div class="titlexl">
+            <h5>Product / Service</h5>
+          </div>
+          <div class="cardSection2">
+            <div class="mdwidth">
+              <div class="tabSection">
+                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a id="tab-A" href="#pane-A" class="nav-link active" data-toggle="tab" role="tab">Client Booking Option List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">Vet Option List</a>
+                  </li>
+                </ul>
+                <div id="content" class="tab-content" role="tablist">
+                  <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                    <div class="tableStyle2 table-responsive">
+                      <table class="table table-borderless mb-0">
+                        <tbody>
+                          <tr>
+                            <td>Wash & Blow </td>
+                            <td class="baseclr">Ang. 40,00</td>
+                            <td>
+                              <div class="cardtablebtn">
+                                <ul>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                  </li>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Wash & Blow & Cut</td>
+                            <td class="baseclr">Ang. 40,00</td>
+                            <td>
+                              <div class="cardtablebtn">
+                                <ul>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                  </li>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Nails CLipping</td>
+                            <td class="baseclr">Ang. 40,00</td>
+                            <td>
+                              <div class="cardtablebtn">
+                                <ul>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                  </li>
+                                  <li>
+                                    <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+                    <div class="tableStyle2 table-responsive">
+                        <table class="table table-borderless mb-0">
+                          <tbody>
+                            <tr>
+                              <td>Wash & Blow </td>
+                              <td class="baseclr">Ang. 40,00</td>
+                              <td>
+                                <div class="cardtablebtn">
+                                  <ul>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                    </li>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Wash & Blow & Cut</td>
+                              <td class="baseclr">Ang. 40,00</td>
+                              <td>
+                                <div class="cardtablebtn">
+                                  <ul>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                    </li>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Nails CLipping</td>
+                              <td class="baseclr">Ang. 40,00</td>
+                              <td>
+                                <div class="cardtablebtn">
+                                  <ul>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
+                                    </li>
+                                    <li>
+                                      <button type="button" value="button" class="btn btnStyle btn_secondary btnred">Delete</button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade modleStyle customModle customModleLg" id="productservice" tabindex="-1" aria-labelledby="productserviceLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span><img src="images/close.svg" alt="..."></span>
+        </button>
+        <div class="modal-body modlFormStyle">
+          <div class="mdlTitle">
+            <h4>CREATE PRODUCT / SERVICE</h4>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="formContentGroup">
+                    <div class="form-row align-items-center">
+                      <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">Select Service Category</label>
+                      <div class="col-sm-7">
+                        <div class="selectarrow">
+                          <select class="form-control inputStyleCol" id="exampleFormControlSelect1">
+                            <option selected>Was & Blow Dry</option>
+                            <option>Nails Clipping</option>
+                            <option>Wash, Blow Dry & Cut</option>
+                            <option>Wash, Blow Dry & Plucking</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="formContentGroup">
+                    <div class="form-row align-items-center">
+                      <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">Product / Service Name:</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control-plaintext inputStyleCol" id="staticEmail" placeholder="DENTAL CHECK">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="formContentGroup">
+                    <div class="form-row align-items-center">
+                      <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">Product / Service code:</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control-plaintext inputStyleCol" id="staticEmail" placeholder="21545">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="formContentGroup">
+                    <div class="form-row align-items-center">
+                      <label for="staticEmail" class="col-form-label text-capitalize">Product / Service Discription:</label>
+                      <div class="col-12">
+                        <textarea class="form-control custom_textarea" id="exampleFormControlTextarea1" rows="3" placeholder="TYPE HERE.."></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pt-lg-3 spaceTopCol">
+              <div class="mdlTitle">
+                <h4 class="pr-0">Price Filters</h4>
+              </div>
+              <div class="checkstyle">
+                <h6>Age Group</h6>
+                <div class="form-row">
+                  <div class="col-sm">
+                    <label for="young" class="checkstyle1">Young
+                      <input id="young" type="radio" checked="checked" name="age">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="adult"  class="checkstyle1">Adult
+                      <input id="adult" type="radio" name="age">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="senior"  class="checkstyle1">Senior
+                      <input id="senior" type="radio" name="age">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="checkstyle">
+                <h6>Weight Group</h6>
+                <div class="form-row">
+                  <div class="col-sm">
+                    <label for="small" class="checkstyle1">Small
+                      <input id="small" type="radio"  name="weight">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="medium" class="checkstyle1">Medium
+                      <input id="medium" type="radio" name="weight">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="large" class="checkstyle1">Large
+                      <input id="large" type="radio" name="weight">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="xlarge" class="checkstyle1">X-Large
+                      <input id="xlarge" type="radio" name="weight">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="checkstyle">
+                <h6>Coat Type</h6>
+                <div class="form-row">
+                  <div class="col-sm">
+                    <label for="smooth" class="checkstyle1">Smooth,Short
+                      <input id="smooth" type="radio"  name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="wirecoat" class="checkstyle1">Wire Coat
+                      <input id="wirecoat" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-sm">
+                    <label for="Combination" class="checkstyle1">Combination
+                      <input id="Combination" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="longcoat" class="checkstyle1">Long Coat
+                      <input id="longcoat" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-sm">
+                    <label for="silkycoat" class="checkstyle1">Silky Coat
+                      <input id="silkycoat" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="curly" class="checkstyle1">Curly / Wavy / Fleece
+                      <input id="curly" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                  <div class="form-row">
+                  <div class="col-sm">
+                    <label for="doublecoat" class="checkstyle1">Double Coat
+                      <input id="doublecoat" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-sm">
+                    <label for="heavycoat" class="checkstyle1">Heavy Coat
+                      <input id="heavycoat" type="radio" name="coat">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  </div>
+              </div>
+              <div class="formContentGroup mt-3">
+                <div class="form-row align-items-center">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">Product / Service Name:</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control-plaintext inputStyleCol" id="staticEmail" placeholder="30">
+                  </div>
+                </div>
+              </div>
+              <div class="formContentGroup">
+                <div class="form-row align-items-center">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">Product / Service Name:</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control-plaintext inputStyleCol" id="staticEmail" placeholder="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btnCol text-center">
+           <a href="book.html" class="btn btnStyle btn_secondary btnwidthsm btngreen">Save</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="js/slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

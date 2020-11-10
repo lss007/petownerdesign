@@ -1260,7 +1260,6 @@ a.btn_primary:focus, a.btn_primary:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     margin: 0 auto;
     padding: 15px;
 }

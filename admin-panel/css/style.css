@@ -187,7 +187,7 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .subMenuLink > ul > li {
     display: block;
-    margin: 30px;
+    margin: 15px 28px;
 }
 .subMenuLink > ul > li > a {
     color: #172A48;
@@ -1301,7 +1301,6 @@ a.btn_primary:focus, a.btn_primary:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -1482,6 +1481,18 @@ a.btn_primary:focus, a.btn_primary:hover {
 }
 .btnStyle.btnred::before {
     background-color: #e04d4d;
+}
+.btnStyle.btnyellow {
+    background-color: #F2994A;
+}
+.btnStyle.btnyellow::before {
+    background-color: #e6964d;
+}
+.btnStyle.btnpink {
+    background-color: #FF3EB3;
+}
+.btnStyle.btnpink::before {
+    background-color: #ea45a4;
 }
 .petdetailCol {
     position: relative;
@@ -2437,7 +2448,7 @@ button.close:focus {
 .tableStyle2 .table td {
     color: #172A48;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     padding: 20px;
@@ -2659,7 +2670,7 @@ button.close:focus {
 .formContentGroup label {
     color: #bdbdbd;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
 }
 .customCardStyle2 {
@@ -2683,11 +2694,12 @@ select.form-control.inputStyleCol {
     appearance: none;
     padding-right: 20px;
 }
+/************** changed 6nov ****************/
 .selectarrow::before {
     content: '';
     position: absolute;
-    top: 12px;
-    right: 0;
+    top: 16px;
+    right: 20px;
     width: 8px;
     height: 8px;
     border: solid #828282;
@@ -2695,6 +2707,8 @@ select.form-control.inputStyleCol {
     transform: rotate(45deg);
     pointer-events: none;
 }
+/************** changed 6nov *****************/
+
 .formContentGroup .inputStyleCol:focus{
   box-shadow: none;
 }
@@ -3066,7 +3080,7 @@ select.form-control.inputStyleCol {
     padding: 20px 0 10px;
 }
 .mdwdith {
-    max-width: 1120px;
+    max-width: 1160px;
 }
 .tableStyle2 {
     margin-top: 20px;
@@ -3123,6 +3137,89 @@ select.form-control.inputStyleCol {
     width: 5px;
     height: 8px;
 }
+
+/******************* new css *******************/
+.resetpswrd a {
+   text-decoration: underline;
+   padding-top: 10px;
+   color: #EB5757;
+}
+.shownum label {
+    color: #928D8D;
+    font-size: 15px;
+}
+.formControlInputStyle.selectInputStyle.fullwidthInput {
+    padding: 10px;
+    width: 100%;
+}
+.shownum select.form-control {
+    border-color: #EFEFEF;
+    border-radius: 4px;
+    color: #172A48;
+    font-size: 16px;
+    padding-right: 20px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    min-width: 70px;
+}
+.shownum select.form-control:focus{
+  box-shadow: none;
+}
+.shownum .input-group::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 7px;
+    height: 7px;
+    border: solid #333333;
+    border-width: 0 2px 2px 0;
+    transform: translate(0, -50%) rotate(45deg);
+    pointer-events: none;
+    z-index: 5;
+    margin-top: -3px;
+}
+.inputStyleCol1  {
+   padding: 0 40px;
+}
+.modal-content.modal_content_sm {
+    width: 60%;
+}
+.formControlInputStyle.selectInputStyle.bgNone {
+    background-color: transparent;
+    padding: 0;
+}
+.tableStyle2 .table td.redclr {
+    color: #eb5757;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.tableStyle2 .table td.darkblue {
+    color: #074574;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.tableStyle2 .table td.syanClr {
+    color: #15C8BC;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.showCol{
+  position: relative;
+}
+.shownum {
+    margin-bottom: 15px;
+}
+.lgwdith {
+    max-width: 1320px;
+}
+.resetpswrd {
+    padding-top: 10px;
+}
+/******************* new css *******************/
+
+
 /****************************************
 *********** MEDIA-QUARY ************
 *****************************************/
@@ -3286,12 +3383,12 @@ select.form-control.inputStyleCol {
 .radioCheckStyle2 label.radio-label {
     font-size: 14px;
 }
-.selectarrow::before {
+/* .selectarrow::before {
     right: 0;
     width: 7px;
     height: 7px;
     border-width: 0 1px 1px 0;
-}
+} */
 .subMenuLink > ul > li {
     margin: 14px;
 }
@@ -3406,7 +3503,7 @@ select.form-control.inputStyleCol {
     padding: 30px;
 }
 .sidebarLink > ul > li > a {
-    padding: 6px 20px;
+    padding: 5px 20px;
     font-size: 16px;
 }
 .sidebarLink > ul > li > a .linkIcon {
@@ -3816,7 +3913,7 @@ span.petCardArrow {
     margin: 10px;
 }
 .subMenuLink > ul > li > a {
-    padding: 6px 0 6px 45px;
+    padding: 5px 8px 5px 42px;
 }
 }
 @media (max-width: 1400px) {
@@ -3879,6 +3976,12 @@ span.petCardArrow {
 .tab-pane {
     max-width: 100%;
 }
+.lgwdith {
+    max-width: 100%;
+}
+.col-xl.xlCol {
+    flex-basis: auto;
+}
 }
 @media (max-width: 1199px) {
 .imgCol {
@@ -3888,10 +3991,16 @@ span.petCardArrow {
     max-width: 100%;
 }
 .header-section, .page-content, .bottombar {
-    margin-left:160px;
+    margin-left:200px;
 }
 .sidebar-nav, .logoSec {
-    width: 160px;
+    width: 200px;
+}
+.sidebarLink > ul > li > a .linkIcon {
+    width: 25px;
+}
+.updownArrow {
+    right: 10px;
 }
 .select_datepicker .table thead th, .select_datepicker .table td {
     padding: 6px;
@@ -4023,7 +4132,7 @@ span.petCardArrow {
     width: 100%;
 }
 .subMenuLink > ul > li {
-    margin: 10px 5px;
+    margin: 5px 25px;
 }
 .subMenuLink > ul > li > a {
     padding: 6px 0 6px 15px;
@@ -4633,6 +4742,19 @@ body {
     width: 7px;
     height: 12px;
 }
+.btnStyle.custombtn {
+    padding: 6px 20px;
+}
+.tableStyle2 .table th, .tableStyle2 .table td {
+    padding: 10px 15px;
+}
+.customModle .modal-content {
+    padding: 15px;
+    border-radius: 0;
+}
+.checkboxStyle .cardStyle2 {
+    padding: 0;
+}
 }
 @media (max-width: 485px) {
 .textLinkCol {
@@ -4857,6 +4979,9 @@ body {
 }
 .btnStyle.smbtn {
     padding: 8px 20px;
+}
+.shownum {
+    margin-top: 20px;
 }
 }
 @media (max-width: 385px) {

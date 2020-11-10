@@ -34,7 +34,7 @@
                         <span class="title_sidebar_list">Dashboard</span>
                     </a>
                   </li>
-                    <li class="dropOpen"><a href="JavaScript:void(0);" class="active">
+                    <li><a href="JavaScript:void(0);">
                       <span class="linkIcon strokeIcon">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="#074574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,7 +50,7 @@
                     <div class="subMenuLink">
                       <ul>
                         <li><a href="customers.html">Customers</a></li>
-                        <li><a href="admins.html" class="active">Admins</a></li>
+                        <li><a href="admins.html">Admins</a></li>
                         <li><a href="groomer-sub-users.html">Groomer Sub-users</a></li>
                         <li><a href="vet-sub-users.html">Vet Sub-users</a></li>
                         <li><a href="pet-hotel-sub-user.html">Pet Hotel Sub-user</a></li>
@@ -102,13 +102,13 @@
                       <ul>
                         <li><a href="Veterinarians.html">Veterinarians</a></li>
                         <li><a href="Vet-services.html">Vet Services</a></li>
-                        <li><a href="Vet-reviews.html">Reviews</a></li>
+                        <li><a href="Vet-reviews.html" class="active">Reviews</a></li>
                         <li><a href="Vet-reporting.html">Reporting</a></li>
                         <li><a href="Vet-reconciliations.html">Reconciliations</a></li>
                       </ul>
                     </div>
                     </li>
-                    <li><a href="javascript:void(0);">
+                    <li class="dropOpen"><a href="JavaScript:void(0);" class="active">
                       <span class="linkIcon fillIcon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M20.4045 19.755H19.8089V3.27989C19.8089 2.02293 18.9184 1 17.8238 1H12.3647C11.2702 1 10.3796 2.02293 10.3796 3.27989V6.3055C10.22 6.26649 10.0556 6.23908 9.88333 6.23908H4.42432C3.32975 6.23908 2.4392 7.07776 2.4392 8.10937V19.755H1.59554C1.26678 19.755 1 20.0339 1 20.3775C1 20.7211 1.26678 21 1.59554 21H20.4045C20.7332 21 21 20.7212 21 20.3775C21 20.0339 20.7332 19.755 20.4045 19.755ZM4.02728 8.10942C4.02728 8.04842 4.16663 7.89904 4.42432 7.89904H9.88338C10.141 7.89904 10.2804 8.04801 10.2804 8.10942V19.755H4.02728V8.10942ZM11.9677 3.27989C11.9677 2.9143 12.177 2.65991 12.3648 2.65991H17.8239C18.0117 2.65991 18.2209 2.9143 18.2209 3.27989V19.7551H11.9677V3.27989Z" fill="#074574" stroke="white" stroke-width="0.3"/>
@@ -138,8 +138,8 @@
                       </a>
                       <div class="subMenuLink">
                         <ul>
-                          <li><a href="Pet-Hotels.html">Pet Hotels</a></li>
-                          <li><a href="Pet-reviews.html">Pet Reviews</a></li>
+                          <li><a href="Pet-Hotels.html" >Pet Hotels</a></li>
+                          <li><a href="Pet-reviews.html" class="active">Pet Reviews</a></li>
                           <li><a href="Pet-reporting.html">Pet Reporting</a></li>
                           <li><a href="Pet-reconciliations.html">Pet Reconciliations</a></li>
                         </ul>
@@ -213,12 +213,9 @@
             </div>
           </div>
         <div class="page-inner">
-          <div class="btnspace text-right ">
-            <button class="btn btnStyle btn_primary custombtn" type="button" data-toggle="modal" data-target="#addnewpet">+  Add User</button>
-          </div>
           <div class="mdwdith">
             <div class="titlexl">
-              <h5>Admins</h5>
+              <h5 class="text-capitalize">reviews</h5>
             </div>
             <div class="cardSection2 pt-0 mt-lg-5">
               <div class="formControlInputStyle selectInputStyle mr-auto ml-0">
@@ -250,135 +247,118 @@
                     <tr>
                       <th scope="col">User ID</th>
                       <th scope="col">Full Name</th>
-                      <th scope="col">Role</th>
-                      <th scope="col">E-mail</th>
+                      <th scope="col">Rating</th>
+                      <th scope="col">Review</th>
+                      <th scope="col">Pet Hotel</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">5*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top">Dana White</td>
+                      <td class="align-top">3*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Cheryl Ommen</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top">Yindee Oppoff</td>
+                      <td class="align-top">2*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> 8 Dana White</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">5*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                     <tr>
-                      <td>12451</td>
-                      <td>Andrew Berry</td>
-                      <td>Super Admin</td>
-                      <td>andrews.berry@gmail.com</td>
-                      <td>
-                        <div class="cardtablebtn text-right">
-                          <ul>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btngreen">Edit</button>
-                            </li>
-                            <li>
-                              <button type="button" value="button" class="btn btnStyle btn_secondary btnred">De- activate</button>
-                            </li>
-                          </ul>
-                        </div>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">3*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">2*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-top">12451</td>
+                      <td class="align-top"> Shelly Drama</td>
+                      <td class="align-top">4*</td>
+                      <td class="align-top">Lorem ipsum dolor sit amet, consectetuer <br>
+                          adipiscing elit, sed diam nonummy nibh <br>
+                          euismod tincidunt ut laoreet dolore <br>
+                          magna...<a href="#" class="btn-link">read more</a></td>
+                      <td class="align-top">Paw Hotel</td>
+                      <td class="align-top">
                       </td>
                     </tr>
                   </tbody>
@@ -389,9 +369,14 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+
 </section>
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
